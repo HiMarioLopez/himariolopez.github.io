@@ -74,7 +74,7 @@ class ProfilePage extends React.Component {
           className={classes.parallax}
         />
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <div className={classes.container}>
+          <div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8}>
                 <div className={classes.profile}>
