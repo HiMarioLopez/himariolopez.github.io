@@ -30,21 +30,17 @@ class AboutMeSection extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={10} sm={10} md={8}>
             <div className={classes.profile}>
-              {/* @TODO Your professional head-shot */}
               <img
                 src={mario}
                 alt="Mario Profile"
                 className={imageClasses} />
               <div className={classes.name}>
-                {/* @TODO Your name */}
                 <h3 className={classes.title}>
                   Mario Arturo Lopez Martinez
                 </h3>
-                {/* @TODO Add your [desired] position(s) */}
                 <h6>Software Engineer</h6>
                 <h6>Emerging Technologist</h6>
                 <h6>Software Project Manager</h6>
-                {/* @TODO LinkedIn profile link */}
                 <Button
                   justIcon
                   simple
@@ -55,7 +51,6 @@ class AboutMeSection extends React.Component {
                 >
                   <i className={"fab fa-linkedin"} />
                 </Button>
-                {/* @TODO GitHub profile link */}
                 <Button
                   justIcon
                   simple
@@ -66,7 +61,6 @@ class AboutMeSection extends React.Component {
                 >
                   <i className={"fab fa-github"} />
                 </Button>
-                {/* @TODO Facebook profile link */}
                 <Button
                   justIcon
                   simple
@@ -77,7 +71,6 @@ class AboutMeSection extends React.Component {
                 >
                   <i className={"fab fa-facebook"} />
                 </Button>
-                {/* @TODO Twitter profile link */}
                 <Button
                   justIcon
                   simple
@@ -97,7 +90,6 @@ class AboutMeSection extends React.Component {
                 classNames(classes.description, classes.textCenter)
               }
             >
-              {/* @TODO Short description of yourself/objective statement. */}
               <p>
                 I am a software engineer from Rioverde, San Luis Potosí,
                 Mexico who is currently working towards a B.S. in Computer

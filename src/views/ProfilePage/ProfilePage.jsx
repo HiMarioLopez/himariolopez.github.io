@@ -8,18 +8,15 @@ import Tooltip from "@material-ui/core/Tooltip";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import People from "@material-ui/icons/People";
-import Add from "@material-ui/icons/Add";
 import Favorite from "@material-ui/icons/Favorite";
+// Sections
+import AboutMeSection from "./Sections/AboutMeSection";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-import NavPills from "components/NavPills/NavPills.jsx";
 import Card from "components/Card/Card.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
@@ -27,9 +24,9 @@ import Badge from "components/Badge/Badge.jsx";
 import Muted from "components/Typography/Muted.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import Clearfix from "components/Clearfix/Clearfix.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-
-import mario from "assets/img/mario_profile.jpeg";
+// Other libraries
+import Particles from 'react-particles-js';
+// Images
 import oluEletu from "assets/img/examples/olu-eletu.jpg";
 import clemOnojeghuo from "assets/img/examples/clem-onojeghuo.jpg";
 import mariyaGeorgieva from "assets/img/examples/mariya-georgieva.jpg";
@@ -40,7 +37,6 @@ import kendall from "assets/img/faces/kendall.jpg";
 import cardProfile2Square from "assets/img/faces/card-profile2-square.jpg";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
-import AboutMeSection from "./Sections/AboutMeSection";
 
 class ProfilePage extends React.Component {
   componentDidMount() {
@@ -49,16 +45,10 @@ class ProfilePage extends React.Component {
   }
   render() {
     const { classes, ...rest } = this.props;
-    const imageClasses = classNames(
-      classes.imgRaised,
-      classes.imgRoundedCircle,
-      classes.imgFluid
-    );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
       <div>
         <Header
-          color="transparent"
+          color="white"
           brand="Mario Arturo Lopez Martinez"
           links={<HeaderLinks dropdownHoverColor="primary" />}
           fixed
@@ -68,10 +58,30 @@ class ProfilePage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax
-          image={require("assets/img/tech_background.png")}
-          className={classes.parallax}
-        />
+        <Parallax className={classes.parallax}>
+          <Particles
+            width={"100vw"}
+            height={"100vh"}
+            params={{
+              "particles": {
+                "number": {
+                  "value": 100
+                },
+                "size": {
+                  "value": 5
+                }
+              },
+              "interactivity": {
+                "events": {
+                  "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                  }
+                }
+              }
+            }}
+          />
+        </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <AboutMeSection />
