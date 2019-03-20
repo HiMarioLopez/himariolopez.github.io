@@ -13,7 +13,7 @@ import mario from "assets/img/mario_profile.jpeg";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
-class AboutMeSection extends React.Component {
+class SectionAboutMe extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -109,4 +109,4 @@ class AboutMeSection extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(AboutMeSection);
+export default withStyles(profilePageStyle)(SectionAboutMe);

@@ -2,18 +2,13 @@
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-// react components for routing our app without refresh
-import { Link } from "react-router-dom";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Icon from "@material-ui/core/Icon";
-
 // @material-ui/icons
 import Mail from "@material-ui/icons/Mail";
-
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 
@@ -25,32 +20,12 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#about-us"}
+          href={"#my-work"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          About Us
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href={"#faq"}
-          color={"transparent"}
-          className={classes.navButton}
-          round
-        >
-          F.A.Q.
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href={"#schedule"}
-          color={"transparent"}
-          className={classes.navButton}
-          round
-        >
-          Schedule
+          My Work
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

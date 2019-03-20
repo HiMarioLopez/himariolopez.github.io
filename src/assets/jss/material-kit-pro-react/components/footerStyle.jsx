@@ -68,12 +68,7 @@ const footerStyle = {
     backgroundColor: "transparent"
   },
   dark: {
-    background:
-      "radial-gradient(ellipse at center," +
-      grayColor[4] +
-      " 0," +
-      grayColor[5] +
-      " 100%)",
+    background: "#202020",
     backgroundSize: "550% 450%",
     color: whiteColor,
     "& p": {
