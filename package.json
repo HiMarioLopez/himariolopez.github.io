@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "3.9.2",
     "@material-ui/icons": "3.0.2",
+    "@react-pdf/renderer": "^1.4.1",
     "@types/googlemaps": "3.30.16",
     "@types/markerclustererplus": "2.1.33",
     "ajv": "6.9.1",
@@ -16,6 +17,7 @@
     "moment": "2.24.0",
     "node-sass": "4.11.0",
     "nouislider": "13.1.0",
+    "pdfjs-dist": "^2.0.943",
     "prop-types": "15.7.1",
     "react": "16.8.1",
     "react-animate-on-scroll": "2.1.5",
