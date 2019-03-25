@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b46029-46cf-472b-829c-03732d44340f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/assets/img/work/project_1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/work/project_1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,13 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="225">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#603#646#0" expanded="true" />
+                <element signature="e#1060#1350#0" />
+                <element signature="e#1359#1963#0" />
               </folding>
             </state>
           </provider>
@@ -30,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="635">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="51" />
+            <state relative-caret-position="627">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -39,13 +45,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="681">
+              <caret line="125" column="80" lean-forward="true" selection-start-line="125" selection-start-column="80" selection-end-line="125" selection-end-column="80" />
               <folding>
-                <element signature="e#353#415#0" expanded="true" />
+                <element signature="e#212#274#0" expanded="true" />
+                <element signature="e#5291#5807#0" />
+                <element signature="e#7451#7966#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/components/badgeStyle.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-313">
+              <folding>
+                <element signature="e#0#171#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,8 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1419">
-              <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+            <state relative-caret-position="1164">
+              <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#644#687#0" expanded="true" />
@@ -119,20 +138,20 @@
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/MyWorkSection.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/components/footerStyle.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx" />
-        <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" />
         <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" />
+        <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1052" />
-    <option name="height" value="834" />
+    <option name="width" value="1707" />
+    <option name="height" value="1373" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -184,25 +203,6 @@
               <item name="jss" type="462c0819:PsiDirectoryNode" />
               <item name="material-kit-pro-react" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mario-personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="jss" type="462c0819:PsiDirectoryNode" />
-              <item name="material-kit-pro-react" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mario-personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="jss" type="462c0819:PsiDirectoryNode" />
-              <item name="material-kit-pro-react" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
@@ -305,12 +305,12 @@
       <workItem from="1552937103240" duration="4506000" />
       <workItem from="1553045987436" duration="3446000" />
       <workItem from="1553106857656" duration="6465000" />
-      <workItem from="1553523279187" duration="1047000" />
+      <workItem from="1553523279187" duration="6167000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24216000" />
+    <option name="totallyTimeSpent" value="29336000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,16 +322,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1052" height="834" extended-state="0" />
+    <frame x="0" y="23" width="1707" height="1373" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4986226" visible="true" weight="0.2900097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986226" visible="true" weight="0.17734282" />
       <window_info id="Structure" order="1" sideWeight="0.5013774" side_tool="true" weight="0.2748162" />
       <window_info id="npm" order="2" sideWeight="0.5013774" side_tool="true" weight="0.2748162" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47107437" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23794466" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -456,33 +456,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#242#304#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="e#0#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#353#415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -496,8 +475,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="80" column="29" lean-forward="true" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+        <state relative-caret-position="1164">
+          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#644#687#0" expanded="true" />
@@ -507,20 +486,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="51" />
+        <state relative-caret-position="627">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="11">
+          <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#242#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#603#646#0" expanded="true" />
+            <element signature="e#1060#1350#0" />
+            <element signature="e#1359#1963#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/components/badgeStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-313">
+          <folding>
+            <element signature="e#0#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="125" column="80" lean-forward="true" selection-start-line="125" selection-start-column="80" selection-end-line="125" selection-end-column="80" />
+          <folding>
+            <element signature="e#212#274#0" expanded="true" />
+            <element signature="e#5291#5807#0" />
+            <element signature="e#7451#7966#0" />
           </folding>
         </state>
       </provider>

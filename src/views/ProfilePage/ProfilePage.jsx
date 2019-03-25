@@ -15,10 +15,14 @@ import Parallax from "components/Parallax/Parallax.jsx";
 // Other libraries
 import Particles from 'react-particles-js';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor'
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
+configureAnchors({offset: -80, scrollDuration: 500});
+
 class ProfilePage extends React.Component {
+
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -64,7 +68,7 @@ class ProfilePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <AboutMeSection />
-          <ScrollableAnchor id={"my-work"}>
+          <ScrollableAnchor id={"work"}>
             <MyWorkSection />
           </ScrollableAnchor>
         </div>
