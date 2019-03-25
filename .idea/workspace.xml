@@ -2,36 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b46029-46cf-472b-829c-03732d44340f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/work/project_1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/css/demo-documentation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/css/material-dashboard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/apple-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/cover.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/faces/marc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/mask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/new_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/reactlogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/sidebar-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/sidebar-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/sidebar-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/sidebar-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/img/tim_80x80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/assets/js/jquery-3.2.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/tutorial-components.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ISSUE_TEMPLATE.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/components/footerStyle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/components/footerStyle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/Sections/AboutMeSection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,26 +20,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+            <state relative-caret-position="1725">
+              <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#2061#2347#0" />
-                <element signature="e#2399#3112#0" />
-                <element signature="e#15276#15991#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-528">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#353#415#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
-              <folding>
-                <element signature="e#353#415#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -123,12 +102,13 @@
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1109" />
+    <option name="y" value="23" />
+    <option name="width" value="1052" />
     <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -157,21 +137,6 @@
               <item name="mario-personal-website" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mario-personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mario-personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mario-personal-website" type="b2602c69:ProjectViewProjectNode" />
@@ -316,12 +281,13 @@
       <workItem from="1551990003340" duration="1630000" />
       <workItem from="1552937103240" duration="4506000" />
       <workItem from="1553045987436" duration="3446000" />
-      <workItem from="1553106857656" duration="6215000" />
+      <workItem from="1553106857656" duration="6465000" />
+      <workItem from="1553523279187" duration="764000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22919000" />
+    <option name="totallyTimeSpent" value="23933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,10 +299,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1109" height="834" extended-state="0" />
+    <frame x="0" y="23" width="1052" height="834" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986226" visible="true" weight="0.2748162" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4986226" visible="true" weight="0.2900097" />
       <window_info id="Structure" order="1" sideWeight="0.5013774" side_tool="true" weight="0.2748162" />
       <window_info id="npm" order="2" sideWeight="0.5013774" side_tool="true" weight="0.2748162" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -350,7 +316,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292011" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3292011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -512,24 +478,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        <state relative-caret-position="1725">
+          <caret line="82" column="11" selection-start-line="82" selection-start-column="11" selection-end-line="82" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#2061#2347#0" />
-            <element signature="e#2399#3112#0" />
-            <element signature="e#15276#15991#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="103" column="23" lean-forward="true" selection-start-line="103" selection-start-column="23" selection-end-line="103" selection-end-column="23" />
+        <state relative-caret-position="-528">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#353#415#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
         </state>
       </provider>
     </entry>

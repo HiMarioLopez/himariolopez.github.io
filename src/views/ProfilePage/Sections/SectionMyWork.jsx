@@ -1,10 +1,7 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-import Subject from "@material-ui/icons/Subject";
-import Delete from "@material-ui/icons/Delete";
 import Refresh from "@material-ui/icons/Refresh";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -33,10 +30,13 @@ class SectionMyWork extends React.Component {
       var rotatingWrapper = rotatingCard.parentElement;
       var cardWidth = rotatingCard.parentElement.offsetWidth;
       var cardHeight = rotatingCard.children[0].children[0].offsetHeight;
+
       rotatingWrapper.style.height = cardHeight + "px";
       rotatingWrapper.style["margin-bottom"] = 30 + "px";
+
       var cardFront = rotatingCard.getElementsByClassName(classes.front)[0];
       var cardBack = rotatingCard.getElementsByClassName(classes.back)[0];
+
       cardFront.style.height = cardHeight + 35 + "px";
       cardFront.style.width = cardWidth + "px";
       cardBack.style.height = cardHeight + 35 + "px";
@@ -101,6 +101,10 @@ class SectionMyWork extends React.Component {
                         className={`${classes.back} ${
                           classes.wrapperWarning
                           }`}
+                        style={{
+                          background: "#202020",
+                          opacity: .95
+                        }}
                       >
                         <CardBody background className={classes.cardBodyRotate}>
                           <h5 className={classes.cardTitleWhite}>
