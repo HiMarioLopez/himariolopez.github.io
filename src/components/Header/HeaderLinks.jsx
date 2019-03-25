@@ -8,7 +8,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Icon from "@material-ui/core/Icon";
 // @material-ui/icons
-import Mail from "@material-ui/icons/Mail";
+import Description from "@material-ui/icons/Description";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
 
@@ -40,12 +40,13 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="mailto:Mario.Lopez.Arturo@Gmail.com?subject=Howdy! Let's Talk!"
-          color={window.innerWidth < 960 ? "info" : "white"}
+          href={process.env.PUBLIC_URL + '/Resume.pdf'}
+          target={"_blank"}
+          color={window.innerWidth < 960 ? "github" : "white"}
           className={classes.navButton}
           round
         >
-          <Mail className={classes.icons} /> &nbsp;Contact
+          <Description className={classes.icons} /> &nbsp;Resume
         </Button>
       </ListItem>
     </List>

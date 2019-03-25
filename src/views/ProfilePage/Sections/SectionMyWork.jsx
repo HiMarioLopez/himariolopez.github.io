@@ -72,6 +72,91 @@ class SectionMyWork extends React.Component {
                   <div
                     className={`${classes.rotatingCardContainer} ${
                       classes.manualRotate
+                      } ${this.state.activeRotate2}`}
+                  >
+                    <Card className={classes.cardRotate}>
+                      <div
+                        className={`${classes.front} ${
+                          classes.wrapperBackground
+                          }`}
+                        style={{
+                          backgroundImage: `url(${project2})`,
+                          opacity: .95
+                        }}
+                      >
+                        <CardBody background className={classes.cardBodyRotate}>
+                          <h6 className={classes.cardCategoryWhite}>
+                            Baylor University
+                          </h6>
+                          <h3 className={classes.cardTitleWhite}>
+                            Classroom Technology Assistant & Developer
+                          </h3>
+                          <p className={classes.cardDescriptionWhite}>
+                            Jan 2018 - Present
+                          </p>
+                          <div className={classes.textCenter}>
+                            <Button
+                              round
+                              color="danger"
+                              onClick={() =>
+                                this.setState({
+                                  activeRotate2: classes.activateRotate
+                                })
+                              }
+                            >
+                              <Refresh /> Learn More
+                            </Button>
+                          </div>
+                        </CardBody>
+                      </div>
+                      <div
+                        className={`${classes.back} ${
+                          classes.wrapperWarning
+                          }`}
+                        style={{
+                          background: "#202020",
+                          opacity: .95
+                        }}
+                      >
+                        <CardBody background className={classes.cardBodyRotate}>
+                          <h5 className={classes.cardTitleWhite}>
+                            What do I do?
+                          </h5>
+                          <p className={classes.cardDescriptionWhite}>
+                            I help people teach more effectively. I also install
+                            and troubleshoot hardware around campus. Over 100
+                            tickets completed with 100% completion and
+                            satisfaction rate. I also build tools for internal
+                            use by our library staff!
+                            <br />
+                            <div style={{ padding: "10px" }}>
+                              <Badge color={"info"}>React</Badge>
+                              <Badge color={"success"}>NodeJS</Badge>
+                              <Badge color={"danger"}>MongoDB</Badge>
+                            </div>
+                          </p>
+                          <div className={classes.textCenter}>
+                            <Button
+                              round
+                              color="danger"
+                              onClick={() =>
+                                this.setState({
+                                  activeRotate2: ""
+                                })
+                              }
+                            >
+                              <Refresh /> Back...
+                            </Button>
+                          </div>
+                        </CardBody>
+                      </div>
+                    </Card>
+                  </div>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={6} lg={6}>
+                  <div
+                    className={`${classes.rotatingCardContainer} ${
+                      classes.manualRotate
                       } ${this.state.activeRotate1}`}
                   >
                     <Card className={classes.cardRotate}>
@@ -92,7 +177,7 @@ class SectionMyWork extends React.Component {
                             Software Engineering Intern
                           </h3>
                           <p className={classes.cardDescriptionWhite}>
-                            May 2018 - Present
+                            May 2018 - Aug 2018
                           </p>
                           <div className={classes.textCenter}>
                             <Button
@@ -120,12 +205,13 @@ class SectionMyWork extends React.Component {
                       >
                         <CardBody background className={classes.cardBodyRotate}>
                           <h5 className={classes.cardTitleWhite}>
-                            What do I do?
+                            What did I do?
                           </h5>
                           <p className={classes.cardDescriptionWhite}>
                             Created a productivity platform; Android application
                             (for wearable devices, phones, and tablets), back
                             end database and storage hosted on Microsoft Azure.
+                            Presented to the President and CIO!
                             <br />
                             <div style={{ padding: "10px" }}>
                               <Badge color={"success"}>Android</Badge>
@@ -151,90 +237,6 @@ class SectionMyWork extends React.Component {
                     </Card>
                   </div>
                 </GridItem>
-                <GridItem xs={12} sm={12} md={6} lg={6}>
-                <div
-                  className={`${classes.rotatingCardContainer} ${
-                    classes.manualRotate
-                    } ${this.state.activeRotate2}`}
-                >
-                  <Card className={classes.cardRotate}>
-                    <div
-                      className={`${classes.front} ${
-                        classes.wrapperBackground
-                        }`}
-                      style={{
-                        backgroundImage: `url(${project2})`,
-                        opacity: .95
-                      }}
-                    >
-                      <CardBody background className={classes.cardBodyRotate}>
-                        <h6 className={classes.cardCategoryWhite}>
-                          Baylor University
-                        </h6>
-                        <h3 className={classes.cardTitleWhite}>
-                          Classroom Technology Assistant & Developer
-                        </h3>
-                        <p className={classes.cardDescriptionWhite}>
-                          Jan 2018 - Present
-                        </p>
-                        <div className={classes.textCenter}>
-                          <Button
-                            round
-                            color="danger"
-                            onClick={() =>
-                              this.setState({
-                                activeRotate2: classes.activateRotate
-                              })
-                            }
-                          >
-                            <Refresh /> Learn More
-                          </Button>
-                        </div>
-                      </CardBody>
-                    </div>
-                    <div
-                      className={`${classes.back} ${
-                        classes.wrapperWarning
-                        }`}
-                      style={{
-                        background: "#202020",
-                        opacity: .95
-                      }}
-                    >
-                      <CardBody background className={classes.cardBodyRotate}>
-                        <h5 className={classes.cardTitleWhite}>
-                          What do I do?
-                        </h5>
-                        <p className={classes.cardDescriptionWhite}>
-                          Helped people teach effectively, install and update
-                          hardware around campus. Over 100 tickets completed
-                          with 100% completion and satisfaction. I also build
-                          tools for internal use by our library staff!
-                          <br />
-                          <div style={{ padding: "10px" }}>
-                            <Badge color={"info"}>React</Badge>
-                            <Badge color={"success"}>NodeJS</Badge>
-                            <Badge color={"danger"}>MongoDB</Badge>
-                          </div>
-                        </p>
-                        <div className={classes.textCenter}>
-                          <Button
-                            round
-                            color="danger"
-                            onClick={() =>
-                              this.setState({
-                                activeRotate2: ""
-                              })
-                            }
-                          >
-                            <Refresh /> Back...
-                          </Button>
-                        </div>
-                      </CardBody>
-                    </div>
-                  </Card>
-                </div>
-              </GridItem>
                 <GridItem xs={12} sm={12} md={6} lg={6}>
                   <div
                     className={`${classes.rotatingCardContainer} ${

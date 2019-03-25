@@ -28,14 +28,15 @@
     "react-particles-js": "^2.5.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "^2.1.8",
+    "react-scrollable-anchor": "^0.6.1",
     "react-sky": "^1.1.0",
     "react-slick": "0.23.2",
     "react-swipeable-views": "0.13.1",
     "react-tagsinput": "3.19.0",
-    "react-scrollable-anchor": "^0.6.1"
+    "serve": "^10.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
