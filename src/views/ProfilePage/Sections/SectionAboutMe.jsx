@@ -9,9 +9,9 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 
-import mario from "assets/img/mario_profile.jpeg";
-
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
+
+import mario from "assets/img/mario_profile.jpeg";
 
 class SectionAboutMe extends React.Component {
   componentDidMount() {

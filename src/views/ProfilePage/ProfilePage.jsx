@@ -6,7 +6,7 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 // Sections
 import AboutMeSection from "./Sections/SectionAboutMe";
-import MyWorkSection from "./Sections/SectionMyWork";
+import WorkSection from "./Sections/SectionWork";
 // core components
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
@@ -18,6 +18,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
+import SectionAcademics from "./Sections/SectionAcademics";
 
 configureAnchors({offset: -80, scrollDuration: 500});
 
@@ -68,8 +69,11 @@ class ProfilePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <AboutMeSection />
+          <ScrollableAnchor id={"academics"}>
+            <SectionAcademics />
+          </ScrollableAnchor>
           <ScrollableAnchor id={"work"}>
-            <MyWorkSection />
+            <WorkSection />
           </ScrollableAnchor>
         </div>
         <Footer

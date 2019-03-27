@@ -30,12 +30,12 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#projects"}
+          href={"#academics"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          Projects
+          Academics
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

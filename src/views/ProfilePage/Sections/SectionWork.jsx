@@ -11,14 +11,14 @@ import CardBody from "components/Card/CardBody.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Badge from "components/Badge/Badge.jsx";
 
-import styles from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
+import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
 
 import project1 from "assets/img/work/project_1.jpeg";
 import project2 from "assets/img/work/project_2.jpeg";
 import project3 from "assets/img/work/project_3.png";
 import project4 from "assets/img/work/project_4.jpeg";
 
-class SectionMyWork extends React.Component {
+class SectionWork extends React.Component {
   constructor(props) {
     super(props);
     // State of all the cards I use for this section...
@@ -64,9 +64,7 @@ class SectionMyWork extends React.Component {
         <div style={{ paddingBottom: "50px" }}>
           <div id="morphingCards" className="cd-section">
             <div className={classes.container}>
-              <div className={classes.title}>
-                <h2>Work Experience</h2>
-              </div>
+              <h2 className={classes.title}>Work Experience</h2>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6} lg={6}>
                   <div
@@ -145,7 +143,7 @@ class SectionMyWork extends React.Component {
                                 })
                               }
                             >
-                              <Refresh /> Back...
+                              <Refresh /> Go back
                             </Button>
                           </div>
                         </CardBody>
@@ -229,7 +227,7 @@ class SectionMyWork extends React.Component {
                                 })
                               }
                             >
-                              <Refresh /> Back...
+                              <Refresh /> Go back
                             </Button>
                           </div>
                         </CardBody>
@@ -313,7 +311,7 @@ class SectionMyWork extends React.Component {
                                 })
                               }
                             >
-                              <Refresh /> Back...
+                              <Refresh /> Go back
                             </Button>
                           </div>
                         </CardBody>
@@ -396,7 +394,7 @@ class SectionMyWork extends React.Component {
                                 })
                               }
                             >
-                              <Refresh /> Back...
+                              <Refresh /> Go back
                             </Button>
                           </div>
                         </CardBody>
@@ -413,4 +411,4 @@ class SectionMyWork extends React.Component {
   }
 }
 
-export default withStyles(styles)(SectionMyWork);
+export default withStyles(stylesSectionWork)(SectionWork);
