@@ -59,6 +59,11 @@ class Header extends React.Component {
       window.removeEventListener("scroll", this.headerColorChange);
     }
   }
+
+  clickBrand = () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  };
+
   render() {
     const { classes, color, links, brand, fixed, absolute } = this.props;
     const appBarClasses = classNames({
@@ -70,7 +75,9 @@ class Header extends React.Component {
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          <Button className={classes.title}>
+          <Button
+            onClick={() => this.clickBrand()}
+            className={classes.title}>
             <Link to="/">{brand}</Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>

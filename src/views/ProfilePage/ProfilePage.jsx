@@ -50,7 +50,7 @@ class ProfilePage extends React.Component {
             params={{
               "particles": {
                 "number": {
-                   "value": 50
+                  "value": 50
                 },
                 "size": {
                   "value": 5
