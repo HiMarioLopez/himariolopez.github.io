@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2b46029-46cf-472b-829c-03732d44340f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAcademics.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionWork.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,14 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionWork.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
+              <caret line="66" column="60" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
               <folding>
                 <element signature="e#212#274#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -123,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx" />
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionMyWork.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/ProfilePage.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAboutMe.jsx" />
         <option value="$PROJECT_DIR$/src/assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx" />
@@ -131,6 +131,7 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionAcademics.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionWork.jsx" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -304,12 +305,12 @@
       <workItem from="1552937103240" duration="4506000" />
       <workItem from="1553045987436" duration="3446000" />
       <workItem from="1553106857656" duration="6465000" />
-      <workItem from="1553523279187" duration="17325000" />
+      <workItem from="1553523279187" duration="17426000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40494000" />
+    <option name="totallyTimeSpent" value="40595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
@@ -547,10 +541,17 @@
     <entry file="file://$PROJECT_DIR$/src/views/ProfilePage/Sections/SectionWork.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
-          <caret line="66" column="59" selection-start-line="66" selection-start-column="59" selection-end-line="66" selection-end-column="59" />
+          <caret line="66" column="60" selection-start-line="66" selection-start-column="60" selection-end-line="66" selection-end-column="60" />
           <folding>
             <element signature="e#212#274#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
         </state>
       </provider>
     </entry>
