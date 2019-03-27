@@ -2,34 +2,42 @@ import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
 import Danger from "components/Typography/Danger.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import CardHeader from "components/Card/CardHeader.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
 import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
 import baylor from "assets/img/logos/baylorLogo.png";
-import utsa from "assets/img/logos/utsaLogo.jpeg";
+import utsa from "assets/img/logos/utsaLogo.png";
 
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;
   return (
-    <div className="cd-section" {...rest} style={{ marginBottom: "-50px" }}>
+    <div
+      {...rest}
+      className="cd-section"
+      style={{ marginBottom: "-50px" }}
+    >
       <div className={classes.blog}>
         <div className={classes.container}>
+          <h2 className={classes.title}>Academics</h2>
+          <hr />
           <GridContainer>
             <GridItem
-              xs={12}
-              sm={12}
-              md={12}
+              xs={9}
               className={`${classes.mlAuto} ${classes.mrAuto}`}
             >
-              <h2 className={classes.title}>Academics</h2>
               <Card plain blog className={classes.card}>
                 <GridContainer>
-                  <GridItem xs={12} sm={4} md={4} style={{ paddingBottom: "4vh" }}>
+                  <GridItem
+                    xs={12}
+                    sm={4}
+                    md={4}
+                    style={{ paddingBottom: "3vh" }}
+                  >
                     <CardHeader image plain>
                       <a href="https://www.baylor.edu/" target={"_blank"}>
                         <img src={baylor} alt="Baylor Logo" />
@@ -114,9 +122,14 @@ function SectionAcademics({ ...props }) {
               </Card>
               <Card plain blog className={classes.card}>
                 <GridContainer>
-                  <GridItem xs={12} sm={4} md={4}>
+                  <GridItem
+                    xs={12}
+                    sm={4}
+                    md={4}
+                    style={{ paddingBottom: "3vh" }}
+                  >
                     <CardHeader image plain>
-                      <a href="https://www.utsa.edu/">
+                      <a href="https://www.utsa.edu/" target={"_blank"}>
                         <img src={utsa} alt="UTSA Logo" />
                       </a>
                       <div

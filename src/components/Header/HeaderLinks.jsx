@@ -20,6 +20,16 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
+          href={"#academics"}
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          Academics
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
           href={"#work"}
           color={"transparent"}
           className={classes.navButton}
@@ -30,12 +40,12 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#academics"}
+          href={"#projects"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          Academics
+          Projects
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>

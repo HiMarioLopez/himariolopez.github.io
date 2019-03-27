@@ -5,29 +5,29 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // Sections
-import AboutMeSection from "./Sections/SectionAboutMe";
 import WorkSection from "./Sections/SectionWork";
+import AboutMeSection from "./Sections/SectionAboutMe";
+import SectionAcademics from "./Sections/SectionAcademics";
 // core components
-import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
-import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import Header from "components/Header/Header.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
+import HeaderLinks from "components/Header/HeaderLinks.jsx";
 // Other libraries
 import Particles from 'react-particles-js';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
-import SectionAcademics from "./Sections/SectionAcademics";
 
 configureAnchors({offset: -80, scrollDuration: 500});
 
 class ProfilePage extends React.Component {
-
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
+
   render() {
     const { classes, ...rest } = this.props;
     return (

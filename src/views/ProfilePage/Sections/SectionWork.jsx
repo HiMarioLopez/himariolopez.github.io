@@ -64,7 +64,8 @@ class SectionWork extends React.Component {
         <div style={{ paddingBottom: "50px" }}>
           <div id="morphingCards" className="cd-section">
             <div className={classes.container}>
-              <h2 className={classes.title}>Work Experience</h2>
+              <h2 className={classes.title}>Work</h2>
+              <hr />
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6} lg={6}>
                   <div

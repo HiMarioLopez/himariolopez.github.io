@@ -34,8 +34,7 @@ const profilePageStyle = {
   },
   description: {
     margin: "1.071rem auto 0",
-    maxWidth: "600px",
-    color: grayColor[0]
+    maxWidth: "600px"
   },
   textCenter: {
     textAlign: "center !important"

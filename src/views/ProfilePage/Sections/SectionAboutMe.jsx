@@ -5,19 +5,20 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
-
-import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
 
 import mario from "assets/img/mario_profile.jpeg";
+
+import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
 class SectionAboutMe extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
+
   render() {
     const { classes } = this.props;
     const imageClasses = classNames(
@@ -28,7 +29,7 @@ class SectionAboutMe extends React.Component {
     return (
       <div>
         <GridContainer justify="center">
-          <GridItem xs={10} sm={10} md={8}>
+          <GridItem xs={10} md={8}>
             <div className={classes.profile}>
               <img
                 src={mario}
@@ -84,7 +85,7 @@ class SectionAboutMe extends React.Component {
               </div>
             </div>
           </GridItem>
-          <GridItem xs={10} sm={10} md={8}>
+          <GridItem xs={10} md={8}>
             <div
               className={
                 classNames(classes.description, classes.textCenter)
