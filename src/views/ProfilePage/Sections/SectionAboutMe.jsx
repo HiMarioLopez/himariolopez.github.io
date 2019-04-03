@@ -45,7 +45,9 @@ class SectionAboutMe extends React.Component {
                 <Button
                   justIcon
                   simple
+                  name={"Mario's LinkedIn Profile"}
                   href={"https://www.linkedin.com/in/mariolopezarturo/"}
+                  rel={"noreferrer"}
                   target={"_blank"}
                   color="linkedin"
                   className={classes.margin5}
@@ -55,7 +57,9 @@ class SectionAboutMe extends React.Component {
                 <Button
                   justIcon
                   simple
+                  name={"Mario's GitHub Profile"}
                   href={"https://github.com/MarioLopezBaylor"}
+                  rel={"noreferrer"}
                   target={"_blank"}
                   color="github"
                   className={classes.margin5}
@@ -65,6 +69,7 @@ class SectionAboutMe extends React.Component {
                 <Button
                   justIcon
                   simple
+                  name={"Mario's Facebook Profile"}
                   href={"https://www.facebook.com/Mario.Lopez.Arturo"}
                   target={"_blank"}
                   color="facebook"
@@ -75,7 +80,9 @@ class SectionAboutMe extends React.Component {
                 <Button
                   justIcon
                   simple
+                  name={"Mario's Twitter Profile"}
                   href={"https://twitter.com/mariolopez_dev"}
+                  rel={"noreferrer"}
                   target={"_blank"}
                   color="twitter"
                   className={classes.margin5}

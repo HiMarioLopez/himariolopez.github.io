@@ -96,7 +96,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate2: classes.activateRotate
@@ -137,7 +137,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate2: ""
@@ -181,7 +181,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate1: classes.activateRotate
@@ -221,7 +221,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate1: ""
@@ -265,7 +265,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate3: classes.activateRotate
@@ -305,7 +305,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate3: ""
@@ -349,7 +349,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate4: classes.activateRotate
@@ -388,7 +388,7 @@ class SectionWork extends React.Component {
                           <div className={classes.textCenter}>
                             <Button
                               round
-                              color="danger"
+                              color={"white"}
                               onClick={() =>
                                 this.setState({
                                   activeRotate4: ""

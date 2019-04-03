@@ -3,7 +3,6 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 // core components
 import Card from "components/Card/Card.jsx";
-import Danger from "components/Typography/Danger.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -59,9 +58,7 @@ function SectionAcademics({ ...props }) {
                     </CardHeader>
                   </GridItem>
                   <GridItem xs={12} sm={8} md={8}>
-                    <Danger>
-                      <h6 className={classes.cardCategory}>Aug 2016 - May 2020</h6>
-                    </Danger>
+                    <h6 className={classes.cardCategory}>Aug 2016 - May 2020</h6>
                     <h3 className={classes.cardTitle}>
                       <a
                         href="https://www.ecs.baylor.edu/computerscience/"
@@ -161,9 +158,7 @@ function SectionAcademics({ ...props }) {
                     </CardHeader>
                   </GridItem>
                   <GridItem xs={12} sm={8} md={8}>
-                    <Danger>
-                      <h6 className={classes.cardCategory}>Aug 2015 - May 2016 (Transferred)</h6>
-                    </Danger>
+                    <h6 className={classes.cardCategory}>Aug 2015 - May 2016 (Transferred)</h6>
                     <h3 className={classes.cardTitle}>
                       <a href="https://business.utsa.edu/">
                         B.B.A. Entrepreneurship
