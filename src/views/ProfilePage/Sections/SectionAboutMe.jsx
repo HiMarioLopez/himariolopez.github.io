@@ -8,8 +8,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "components/CustomButtons/Button.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-// Lazy Loading Media
-import LazyLoad from "react-lazyload";
 
 import mario from "assets/img/mario_profile.webp";
 
@@ -33,12 +31,10 @@ class SectionAboutMe extends React.Component {
         <GridContainer justify="center">
           <GridItem xs={10} md={8}>
             <div className={classes.profile}>
-              <LazyLoad>
-                <img
-                  src={mario}
-                  alt="Mario Profile"
-                  className={imageClasses} />
-              </LazyLoad>
+              <img
+                src={mario}
+                alt="Mario Profile"
+                className={imageClasses} />
               <div className={classes.name}>
                 <h3 className={classes.title}>
                   Mario Arturo Lopez Martinez
