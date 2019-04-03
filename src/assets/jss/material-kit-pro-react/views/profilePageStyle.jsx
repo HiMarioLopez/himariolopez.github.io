@@ -6,8 +6,7 @@ import {
   mrAuto,
   main,
   whiteColor,
-  mainRaised,
-  grayColor
+  mainRaised
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import imagesStyle from "assets/jss/material-kit-pro-react/imagesStyles.jsx";

@@ -13,10 +13,10 @@ import Badge from "components/Badge/Badge.jsx";
 
 import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
 
-import project1 from "assets/img/work/project_1.jpeg";
-import project2 from "assets/img/work/project_2.jpeg";
-import project3 from "assets/img/work/project_3.png";
-import project4 from "assets/img/work/project_4.jpeg";
+import project1 from "assets/img/work/project_1.webp";
+import project2 from "assets/img/work/project_2.webp";
+import project3 from "assets/img/work/project_3.webp";
+import project4 from "assets/img/work/project_4.webp";
 
 class SectionWork extends React.Component {
   constructor(props) {
