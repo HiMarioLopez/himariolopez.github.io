@@ -25,6 +25,7 @@
     "react-dom": "16.8.1",
     "react-google-maps": "9.4.5",
     "react-image-gallery": "0.8.12",
+    "react-lazyload": "^2.5.0",
     "react-particles-js": "^2.5.1",
     "react-router-dom": "4.3.1",
     "react-scripts": "^2.1.8",

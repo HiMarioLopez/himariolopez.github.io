@@ -7,11 +7,13 @@ import Danger from "components/Typography/Danger.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
+// Lazy Loading Media
+import LazyLoad from 'react-lazyload';
 
 import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
-import baylor from "assets/img/logos/baylorLogo.png";
-import utsa from "assets/img/logos/utsaLogo.png";
+import baylor from "assets/img/logos/baylorLogo.webp";
+import utsa from "assets/img/logos/utsaLogo.webp";
 
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;
@@ -40,7 +42,9 @@ function SectionAcademics({ ...props }) {
                   >
                     <CardHeader image plain>
                       <a href="https://www.baylor.edu/" target={"_blank"}>
-                        <img src={baylor} alt="Baylor Logo" />
+                        <LazyLoad>
+                          <img src={baylor} alt="Baylor Logo" />
+                        </LazyLoad>
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -77,22 +81,34 @@ function SectionAcademics({ ...props }) {
                       <div>
                         <b>Notable Coursework:</b>
                       </div>
-                      <div>
-                        • Software Engineering II (Junior Design Project)
-                        <br />
-                        • Operating Systems & Systems Programming
-                        <br />
-                        • Software Project Management
-                        <br />
-                        • Database Management Systems
-                        <br />
-                        • Algorithm & Data Structures
-                      </div>
+                      <ul>
+                        <li>
+                          Software Engineering II (Junior Design Project):
+                          Strong focus on design patterns and best practice,
+                          project consisted of full-stack web-app built using
+                          ReactJS, Spring Boot, and ElasticSearch.
+                        </li>
+                        <li>
+                          Operating Systems & Systems Programming: UNIX and C
+                          programming, BASH scripting, memory management,
+                          threading and synchronization, processor scheduling, and
+                          implementing parts of a traditional operating system.
+                        </li>
+                        <li>
+                          Software Project Management
+                        </li>
+                        <li>
+                          Database Management Systems
+                        </li>
+                        <li>
+                          Algorithm & Data Structures
+                        </li>
+                      </ul>
                       <div style={{ paddingTop: "1vh" }}>
                         <b>Scholarships & Achievements:</b>
                       </div>
                       <div>
-                        • ECS Highlight Scholar (Featured on Baylor marketing materials)
+                        • ECS Highlight Scholar
                         <br />
                         • Willis Family ECS Scholarship
                         <br />
@@ -130,7 +146,9 @@ function SectionAcademics({ ...props }) {
                   >
                     <CardHeader image plain>
                       <a href="https://www.utsa.edu/" target={"_blank"}>
-                        <img src={utsa} alt="UTSA Logo" />
+                        <LazyLoad>
+                          <img src={utsa} alt="UTSA Logo" />
+                        </LazyLoad>
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -167,7 +185,7 @@ function SectionAcademics({ ...props }) {
                       <div>
                         • Principles of Marketing
                         <br />
-                        • Introduction to Management Information Systems
+                        • Management Information Systems Fundamentals
                         <br />
                         • Microeconomics & Macroeconomics
                       </div>
