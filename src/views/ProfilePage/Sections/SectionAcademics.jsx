@@ -7,8 +7,6 @@ import Danger from "components/Typography/Danger.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-// Lazy Loading Media
-import LazyLoad from 'react-lazyload';
 
 import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
@@ -42,9 +40,7 @@ function SectionAcademics({ ...props }) {
                   >
                     <CardHeader image plain>
                       <a href="https://www.baylor.edu/" target={"_blank"}>
-                        <LazyLoad>
-                          <img src={baylor} alt="Baylor Logo" />
-                        </LazyLoad>
+                        <img src={baylor} alt="Baylor Logo" />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -146,9 +142,7 @@ function SectionAcademics({ ...props }) {
                   >
                     <CardHeader image plain>
                       <a href="https://www.utsa.edu/" target={"_blank"}>
-                        <LazyLoad>
-                          <img src={utsa} alt="UTSA Logo" />
-                        </LazyLoad>
+                        <img src={utsa} alt="UTSA Logo" />
                       </a>
                       <div
                         className={classes.coloredShadow}
