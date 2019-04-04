@@ -9,8 +9,10 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 
 import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
-import baylor from "assets/img/logos/baylorLogo.webp";
-import utsa from "assets/img/logos/utsaLogo.webp";
+import baylor from "assets/img/logos/baylorLogo.png";
+import utsa from "assets/img/logos/utsaLogo.png";
+// import baylor from "assets/img/logos/baylorLogo.webp";
+// import utsa from "assets/img/logos/utsaLogo.webp";
 
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;

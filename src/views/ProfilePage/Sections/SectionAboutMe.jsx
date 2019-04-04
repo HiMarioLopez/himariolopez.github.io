@@ -9,7 +9,8 @@ import Button from "components/CustomButtons/Button.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 
-import mario from "assets/img/mario_profile.webp";
+import mario from "assets/img/mario_profile.png";
+// import mario from "assets/img/mario_profile.webp";
 
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
