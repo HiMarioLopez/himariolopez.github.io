@@ -11,17 +11,11 @@ import academicsSection from "assets/jss/material-kit-pro-react/views/sections/s
 
 import baylor from "assets/img/logos/baylorLogo.png";
 import utsa from "assets/img/logos/utsaLogo.png";
-// import baylor from "assets/img/logos/baylorLogo.webp";
-// import utsa from "assets/img/logos/utsaLogo.webp";
 
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;
   return (
-    <div
-      {...rest}
-      className="cd-section"
-      style={{ marginBottom: "-50px" }}
-    >
+    <div {...rest} className="cd-section">
       <div className={classes.blog}>
         <div className={classes.container}>
           <h2 className={classes.title}>Academics</h2>
@@ -78,16 +72,13 @@ function SectionAcademics({ ...props }) {
                       </div>
                       <ul>
                         <li>
-                          Software Engineering II (Junior Design Project):
-                          Strong focus on design patterns and best practice,
-                          project consisted of full-stack web-app built using
-                          ReactJS, Spring Boot, and ElasticSearch.
+                          Software Engineering II (Junior Design Project)
                         </li>
                         <li>
-                          Operating Systems & Systems Programming: UNIX and C
-                          programming, BASH scripting, memory management,
-                          threading and synchronization, processor scheduling, and
-                          implementing parts of a traditional operating system.
+                          Operating Systems
+                        </li>
+                        <li>
+                          Systems Programming
                         </li>
                         <li>
                           Software Project Management

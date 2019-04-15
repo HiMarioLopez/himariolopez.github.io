@@ -1,4 +1,4 @@
-import ProfilePage from "views/ProfilePage/ProfilePage.jsx";
+import ProfilePage from "views/ProfilePage/HomePage.jsx";
 
 var indexRoutes = [
   { path: "/", name: "ProfilePage", component: ProfilePage }

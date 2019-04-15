@@ -8,10 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "components/CustomButtons/Button.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-
+// assets
 import mario from "assets/img/mario_profile.png";
-// import mario from "assets/img/mario_profile.webp";
-
+// styles
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
 class SectionAboutMe extends React.Component {
