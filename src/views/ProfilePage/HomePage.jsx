@@ -22,7 +22,7 @@ import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePag
 
 configureAnchors({offset: -80, scrollDuration: 500});
 
-class ProfilePage extends React.Component {
+class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -69,12 +69,13 @@ class ProfilePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <AboutMeSection />
-          <ScrollableAnchor id={"academics"}>
-            <SectionAcademics />
-          </ScrollableAnchor>
           <ScrollableAnchor id={"work"}>
             <WorkSection />
           </ScrollableAnchor>
+          <ScrollableAnchor id={"academics"}>
+            <SectionAcademics />
+          </ScrollableAnchor>
+
         </div>
         <Footer
           theme={"dark"}
@@ -95,4 +96,4 @@ class ProfilePage extends React.Component {
   }
 }
 
-export default withStyles(profilePageStyle)(ProfilePage);
+export default withStyles(profilePageStyle)(HomePage);
