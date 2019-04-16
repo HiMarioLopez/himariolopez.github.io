@@ -6,13 +6,16 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // Core Components
 import Footer from "components/Footer/Footer.jsx";
 import Header from "components/Header/Header.jsx";
+import GridItem from "components/Grid/GridItem";
 import Parallax from "components/Parallax/Parallax.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
+import GridContainer from "components/Grid/GridContainer";
 // Sections
-import WorkSection from "views/ProfilePage/Sections/SectionWork";
-import AboutMeSection from "views/ProfilePage/Sections/SectionAboutMe";
+import SectionWork from "views/ProfilePage/Sections/SectionWork";
+import SectionAboutMe from "views/ProfilePage/Sections/SectionAboutMe";
 import SectionAcademics from "views/ProfilePage/Sections/SectionAcademics";
-// Custom Components
+import SectionProjects from "views/ProfilePage/Sections/SectionProjects";
+// Library Components
 import Particles from 'react-particles-js';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
@@ -100,25 +103,32 @@ class HomePage extends React.Component {
           {this.renderParticles()}
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
-          <AboutMeSection />
+          <SectionAboutMe />
           <ScrollableAnchor id={"work"}>
-            <WorkSection />
+            <SectionWork />
           </ScrollableAnchor>
           <ScrollableAnchor id={"academics"}>
             <SectionAcademics />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={"projects"}>
+            <SectionProjects />
           </ScrollableAnchor>
         </div>
         <Footer
           theme={"dark"}
           content={
             <div>
-              <div className={classNames(classes.left, classes.block)}>
-                Legally authorized to work in the US.
-              </div>
-              <div className={classes.right}>
-                Copyright &copy; {1900 + new Date().getYear()},
-                Mario A Lopez Martinez
-              </div>
+              <GridContainer>
+                <GridItem>
+                  <div className={classes.block}>
+                    Legally authorized to work in the U.S. without restriction.
+                  </div>
+                </GridItem>
+                <GridItem>
+                  Copyright &copy; {1900 + new Date().getYear()},
+                  Mario A Lopez Martinez
+                </GridItem>
+              </GridContainer>
             </div>
           }
         />
