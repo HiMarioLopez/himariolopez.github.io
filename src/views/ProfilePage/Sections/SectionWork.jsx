@@ -16,7 +16,7 @@ import project2 from "assets/img/work/project_2.png";
 import project3 from "assets/img/work/project_3.png";
 import project4 from "assets/img/work/project_4.png";
 // Style Sheets
-import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
+import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionWorkStyle.jsx";
 
 class SectionWork extends React.Component {
   constructor(props) {
@@ -120,7 +120,7 @@ class SectionWork extends React.Component {
                         <h5 className={classes.cardTitleWhite}>
                           What do I currently do?
                         </h5>
-                        <p className={classes.cardDescriptionWhite}>
+                        <div className={classes.cardDescriptionWhite}>
                           I help people teach more effectively. I also install
                           and troubleshoot hardware around campus. Over 100
                           tickets completed with 100% completion and
@@ -132,7 +132,7 @@ class SectionWork extends React.Component {
                             <Badge color={"success"}>NodeJS</Badge>
                             <Badge color={"danger"}>MongoDB</Badge>
                           </div>
-                        </p>
+                        </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
@@ -205,7 +205,7 @@ class SectionWork extends React.Component {
                         <h5 className={classes.cardTitleWhite}>
                           What did I do?
                         </h5>
-                        <p className={classes.cardDescriptionWhite}>
+                        <div className={classes.cardDescriptionWhite}>
                           Created a productivity platform; Android application
                           (for wearable devices, phones, and tablets), back
                           end database and storage hosted on Microsoft Azure.
@@ -216,7 +216,7 @@ class SectionWork extends React.Component {
                             <Badge color={"warning"}>Kotlin</Badge>
                             <Badge color={"info"}>Azure</Badge>
                           </div>
-                        </p>
+                        </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
@@ -289,7 +289,7 @@ class SectionWork extends React.Component {
                         <h5 className={classes.cardTitleWhite}>
                           What did I do?
                         </h5>
-                        <p className={classes.cardDescriptionWhite}>
+                        <div className={classes.cardDescriptionWhite}>
                           Excelled at selling products and services. Highest
                           sales in our market; over $27,000 USD sold in a
                           week. Inspired customers by showing them what was
@@ -300,7 +300,7 @@ class SectionWork extends React.Component {
                             <Badge color={"gray"}>Client-Facing</Badge>
                             <Badge color={"success"}>Merchandising</Badge>
                           </div>
-                        </p>
+                        </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
@@ -373,7 +373,7 @@ class SectionWork extends React.Component {
                         <h5 className={classes.cardTitleWhite}>
                           What did I do?
                         </h5>
-                        <p className={classes.cardDescriptionWhite}>
+                        <div className={classes.cardDescriptionWhite}>
                           Raised funds for student scholarship and academic
                           departments around campus. Personally raised over
                           $22,000 USD (highest earner for Fall 2017)!
@@ -383,7 +383,7 @@ class SectionWork extends React.Component {
                             <Badge color={"primary"}>Telecommunications</Badge>
                             <Badge color={"info"}>Marketing</Badge>
                           </div>
-                        </p>
+                        </div>
                         <div className={classes.textCenter}>
                           <Button
                             round

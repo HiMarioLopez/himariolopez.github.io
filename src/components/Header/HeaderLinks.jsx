@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 import Description from "@material-ui/icons/Description";
 // core components
@@ -20,6 +19,16 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
+          href={"#work"}
+          color={"transparent"}
+          className={classes.navButton}
+          round
+        >
+          Work
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
           href={"#academics"}
           color={"transparent"}
           className={classes.navButton}
@@ -30,30 +39,13 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#work"}
+          href={"#projects"}
           color={"transparent"}
           className={classes.navButton}
           round
         >
-          Work
+          Projects
         </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
-          id="tooltip-bottom"
-          title="Coming soon!"
-          placement="bottom"
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            href={"#projects"}
-            color={"transparent"}
-            className={classes.navButton}
-            round
-          >
-            Projects
-          </Button>
-        </Tooltip>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button

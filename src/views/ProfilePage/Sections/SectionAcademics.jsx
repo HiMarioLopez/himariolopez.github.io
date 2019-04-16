@@ -66,59 +66,38 @@ function SectionAcademics({ ...props }) {
                     <p className={classes.author}>
                       <b>Major GPA: 3.30 / 4.00</b>
                     </p>
-                    <p>
-                      <div>
-                        <b>Notable Coursework:</b>
-                      </div>
-                      <ul>
-                        <li>
-                          Software Engineering II (Junior Design Project)
-                        </li>
-                        <li>
-                          Operating Systems
-                        </li>
-                        <li>
-                          Systems Programming
-                        </li>
-                        <li>
-                          Software Project Management
-                        </li>
-                        <li>
-                          Database Management Systems
-                        </li>
-                        <li>
-                          Algorithm & Data Structures
-                        </li>
-                      </ul>
-                      <div style={{ paddingTop: "1vh" }}>
-                        <b>Scholarships & Achievements:</b>
-                      </div>
-                      <div>
-                        • ECS Highlight Scholar
-                        <br />
-                        • Willis Family ECS Scholarship
-                        <br />
-                        • Transfer Scholarship (Highest Tier, 3.75+ Transfer GPA)
-                        <br />
-                        • ECS Student Advocate & Representative
-                      </div>
-                      <div style={{ paddingTop: "1vh" }}>
-                        <b>Clubs & Activities:</b>
-                      </div>
-                      <div>
-                        • The Wacode Team, Co-Founder & President
-                        <br />
-                        • Computing For Compassion (C4C), President
-                        <br />
-                        • Baylor igniteCS, Project Manager & Founder
-                        <br />
-                        • Hispanic Student Association, Event Staff Coordinator & Member
-                        <br />
-                        • Society of Hispanic Professional Engineers, Member
-                        <br />
-                        • Association for Computing Machinery, Member
-                      </div>
-                    </p>
+                    <div>
+                      <b>Notable Coursework:</b>
+                    </div>
+                    <ul>
+                      <li>Software Engineering II (Junior Design Project)</li>
+                      <li>Operating Systems</li>
+                      <li>Systems Programming</li>
+                      <li>Software Project Management</li>
+                      <li>Database Management Systems</li>
+                      <li>Algorithm & Data Structures</li>
+                    </ul>
+                    <div style={{ paddingTop: "1vh" }}>
+                      <b>Scholarships & Achievements:</b>
+                    </div>
+                    <ul>
+                      <li>ECS Highlight Scholar</li>
+                      <li>Willis Family ECS Scholarship</li>
+                      <li>Transfer Scholarship (Highest Tier, 3.75+ Transfer GPA)</li>
+                      <li>ECS Student Advocate & Representative</li>
+                      <li>Presented to the ECS Board & Dean (Spring 2019)</li>
+                    </ul>
+                    <div style={{ paddingTop: "1vh" }}>
+                      <b>Clubs & Activities:</b>
+                    </div>
+                    <ul>
+                      <li>The Wacode Team, Co-Founder & President</li>
+                      <li>Computing For Compassion (C4C), President</li>
+                      <li>Baylor igniteCS, Project Manager & Founder</li>
+                      <li>Hispanic Student Association, Event Staff Coordinator & Member</li>
+                      <li>Society of Hispanic Professional Engineers, Member</li>
+                      <li>Association for Computing Machinery, Member</li>
+                    </ul>
                   </GridItem>
                 </GridContainer>
               </Card>
@@ -160,24 +139,20 @@ function SectionAcademics({ ...props }) {
                     <p className={classes.author}>
                       <b>Cumulative GPA: 3.77 / 4.00</b>
                     </p>
-                    <p>
-                      <div>
-                        <b>Notable Coursework:</b>
-                      </div>
-                      <div>
-                        • Principles of Marketing
-                        <br />
-                        • Management Information Systems Fundamentals
-                        <br />
-                        • Microeconomics & Macroeconomics
-                      </div>
-                      <div>
-                        <b>Achievements:</b>
-                      </div>
-                      <div>
-                        • Dean's List
-                      </div>
-                    </p>
+                    <div>
+                      <b>Notable Coursework:</b>
+                    </div>
+                    <ul>
+                      <li>Principles of Marketing</li>
+                      <li>Fundamentals of Management Information Systems</li>
+                      <li>Microeconomics & Macroeconomics</li>
+                    </ul>
+                    <div>
+                      <b>Achievements:</b>
+                    </div>
+                    <ul>
+                      <li>Dean's List</li>
+                    </ul>
                   </GridItem>
                 </GridContainer>
               </Card>
