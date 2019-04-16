@@ -1,6 +1,9 @@
 {
   "name": "mario-personal-website",
   "version": "1.0.0",
+  "engines": {
+    "node": "11.2.0"
+  },
   "description": "Mario Arturo Lopez Martinez's personal website.",
   "repository": "https://github.com/MarioLopezBaylor/mario-personal-website.git",
   "private": true,
