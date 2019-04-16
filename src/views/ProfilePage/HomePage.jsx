@@ -1,23 +1,22 @@
-/* eslint-disable */
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Sections
-import WorkSection from "./Sections/SectionWork";
-import AboutMeSection from "./Sections/SectionAboutMe";
-import SectionAcademics from "./Sections/SectionAcademics";
-// core components
+// Core Components
 import Footer from "components/Footer/Footer.jsx";
 import Header from "components/Header/Header.jsx";
 import Parallax from "components/Parallax/Parallax.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
-// Other libraries
+// Sections
+import WorkSection from "views/ProfilePage/Sections/SectionWork";
+import AboutMeSection from "views/ProfilePage/Sections/SectionAboutMe";
+import SectionAcademics from "views/ProfilePage/Sections/SectionAcademics";
+// Custom Components
 import Particles from 'react-particles-js';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
-
+// Style Sheets
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
 configureAnchors({offset: -80, scrollDuration: 500});
@@ -27,6 +26,60 @@ class HomePage extends React.Component {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   }
+
+  renderParticles = () => {
+    if (window.innerWidth > 960) {
+      return(
+        <Particles
+          width={"100vw"}
+          height={"500px"}
+          params={{
+            "particles": {
+              "number": {
+                "value": 50
+              },
+              "size": {
+                "value": 5
+              }
+            },
+            "interactivity": {
+              "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                }
+              }
+            }
+          }}
+        />
+      );
+    } else {
+      return (
+        <Particles
+          width={"100vw"}
+          height={"50vh"}
+          params={{
+            "particles": {
+              "number": {
+                "value": 20
+              },
+              "size": {
+                "value": 5
+              }
+            },
+            "interactivity": {
+              "events": {
+                "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+                }
+              }
+            }
+          }}
+        />
+      );
+    }
+  };
 
   render() {
     const { classes, ...rest } = this.props;
@@ -44,28 +97,7 @@ class HomePage extends React.Component {
           {...rest}
         />
         <Parallax className={classes.parallax}>
-          <Particles
-            width={"100vw"}
-            height={"500px"}
-            params={{
-              "particles": {
-                "number": {
-                  "value": 50
-                },
-                "size": {
-                  "value": 5
-                }
-              },
-              "interactivity": {
-                "events": {
-                  "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
-                  }
-                }
-              }
-            }}
-          />
+          {this.renderParticles()}
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <AboutMeSection />
@@ -75,7 +107,6 @@ class HomePage extends React.Component {
           <ScrollableAnchor id={"academics"}>
             <SectionAcademics />
           </ScrollableAnchor>
-
         </div>
         <Footer
           theme={"dark"}

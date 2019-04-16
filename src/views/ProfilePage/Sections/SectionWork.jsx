@@ -3,20 +3,20 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 import Refresh from "@material-ui/icons/Refresh";
-// core components
-import GridContainer from "components/Grid/GridContainer.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
+// Core Components
 import Card from "components/Card/Card.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import Button from "components/CustomButtons/Button.jsx";
 import Badge from "components/Badge/Badge.jsx";
-
-import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
-
+import Button from "components/CustomButtons/Button.jsx";
+import GridItem from "components/Grid/GridItem.jsx";
+import CardBody from "components/Card/CardBody.jsx";
+import GridContainer from "components/Grid/GridContainer.jsx";
+// Assets
 import project1 from "assets/img/work/project_1.png";
 import project2 from "assets/img/work/project_2.png";
 import project3 from "assets/img/work/project_3.png";
 import project4 from "assets/img/work/project_4.png";
+// Style Sheets
+import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionMyWorkStyle.jsx";
 
 class SectionWork extends React.Component {
   constructor(props) {
@@ -118,7 +118,7 @@ class SectionWork extends React.Component {
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
-                          What do I do?
+                          What do I currently do?
                         </h5>
                         <p className={classes.cardDescriptionWhite}>
                           I help people teach more effectively. I also install
@@ -209,7 +209,7 @@ class SectionWork extends React.Component {
                           Created a productivity platform; Android application
                           (for wearable devices, phones, and tablets), back
                           end database and storage hosted on Microsoft Azure.
-                          Presented to the President and CIO!
+                          Presented to the President and CIO of ExxonMobil!
                           <br />
                           <div style={{ padding: "10px" }}>
                             <Badge color={"success"}>Android</Badge>

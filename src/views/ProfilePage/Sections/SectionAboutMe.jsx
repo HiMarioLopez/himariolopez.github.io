@@ -1,16 +1,15 @@
-/* eslint-disable */
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
+// Core Components
 import Button from "components/CustomButtons/Button.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-// assets
+// Assets
 import mario from "assets/img/mario_profile.png";
-// styles
+// Style Sheets
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
 class SectionAboutMe extends React.Component {

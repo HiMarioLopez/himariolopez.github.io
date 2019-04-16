@@ -1,16 +1,16 @@
 import React from "react";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// core components
+// Core Components
 import Card from "components/Card/Card.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
-
-import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
-
+// Assets
 import baylor from "assets/img/logos/baylorLogo.png";
 import utsa from "assets/img/logos/utsaLogo.png";
+// Style Sheets
+import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;
