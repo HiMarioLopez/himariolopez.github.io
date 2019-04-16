@@ -8,8 +8,8 @@ import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 // Assets
-import refur from "assets/img/projects/refur.png";
-import wacode from "assets/img/projects/wacode.png";
+import refur from "assets/img/projects/refur.jpeg";
+import wacode from "assets/img/projects/wacode.jpeg";
 import placeholder from "assets/img/image_placeholder.jpeg";
 // Style Sheets
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sections/sectionProjects.jsx";
