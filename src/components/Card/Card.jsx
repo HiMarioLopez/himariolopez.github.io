@@ -5,7 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
+// Style Sheets
 import cardStyle from "assets/jss/material-kit-pro-react/components/cardStyle.jsx";
 
 function Card({ ...props }) {
