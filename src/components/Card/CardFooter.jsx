@@ -5,9 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-
-// core components
+// Style Sheets
 import cardFooterStyle from "assets/jss/material-kit-pro-react/components/cardFooterStyle.jsx";
 
 function CardFooter({ ...props }) {
@@ -29,6 +27,7 @@ function CardFooter({ ...props }) {
     [classes.cardFooterTestimonial]: testimonial,
     [className]: className !== undefined
   });
+
   return (
     <div className={cardFooterClasses} {...rest}>
       {children}

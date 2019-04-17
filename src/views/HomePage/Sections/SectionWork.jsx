@@ -87,7 +87,7 @@ class SectionWork extends React.Component {
                           Baylor University
                         </h6>
                         <h3 className={classes.cardTitleWhite}>
-                          Classroom Technology Assistant&amp;Developer
+                          Classroom Technology Assistant &amp; Developer
                         </h3>
                         <p className={classes.cardDescriptionWhite}>
                           Jan 2018 - Present
@@ -250,7 +250,7 @@ class SectionWork extends React.Component {
                       <CardBody background className={classes.cardBodyRotate}>
                         <h6 className={classes.cardCategoryWhite}>Best Buy</h6>
                         <h3 className={classes.cardTitleWhite}>
-                          Computer&amp;Digital Imaging Sales Consultant
+                          Computer &amp; Digital Imaging Sales Consultant
                         </h3>
                         <p className={classes.cardDescriptionWhite}>
                           Jan 2018 - Dec 2017

@@ -15,6 +15,7 @@ import headerLinksStyle from "assets/jss/material-kit-pro-react/components/heade
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
+
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>

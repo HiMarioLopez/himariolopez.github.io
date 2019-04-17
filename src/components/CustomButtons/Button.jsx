@@ -3,12 +3,12 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
-
+// Style Sheets
 import buttonStyle from "assets/jss/material-kit-pro-react/components/buttonStyle.jsx";
+
 function RegularButton(props) {
   const {
     classes,

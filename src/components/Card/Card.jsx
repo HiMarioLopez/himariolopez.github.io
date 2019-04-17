@@ -38,6 +38,7 @@ function Card({ ...props }) {
     [classes.cardProduct]: product,
     [className]: className !== undefined
   });
+
   return (
     <div className={cardClasses} {...rest}>
       {children}

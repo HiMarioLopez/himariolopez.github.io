@@ -24,20 +24,16 @@ class Header extends React.Component {
     this.state = {
       mobileOpen: false
     };
-    this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
-    this.headerColorChange = this.headerColorChange.bind(this);
   }
-  handleDrawerToggle() {
+
+  handleDrawerToggle = () => {
     this.setState({ mobileOpen: !this.state.mobileOpen });
-  }
-  componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
-    }
-  }
-  headerColorChange() {
+  };
+
+  headerColorChange = () => {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
+
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
@@ -53,6 +49,16 @@ class Header extends React.Component {
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
     }
+  };
+
+  clickBrand = () => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  };
+
+  componentDidMount() {
+    if (this.props.changeColorOnScroll) {
+      window.addEventListener("scroll", this.headerColorChange);
+    }
   }
 
   componentWillUnmount() {
@@ -60,10 +66,6 @@ class Header extends React.Component {
       window.removeEventListener("scroll", this.headerColorChange);
     }
   }
-
-  clickBrand = () => {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  };
 
   render() {
     const { classes, color, links, brand, fixed, absolute } = this.props;
@@ -73,6 +75,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
+
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>

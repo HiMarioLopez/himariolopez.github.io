@@ -3,10 +3,9 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-
+// Style Sheets
 import badgeStyle from "assets/jss/material-kit-pro-react/components/badgeStyle.jsx";
 
 function Badge({ ...props }) {
@@ -16,6 +15,7 @@ function Badge({ ...props }) {
     [classes[color]]: true,
     [className]: className !== undefined
   });
+
   return <span className={badgeClasses}>{children}</span>;
 }
 

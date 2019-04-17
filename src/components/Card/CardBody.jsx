@@ -5,9 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// @material-ui/icons
-
-// core components
+// Style Sheets
 import cardBodyStyle from "assets/jss/material-kit-pro-react/components/cardBodyStyle.jsx";
 
 function CardBody({ ...props }) {
@@ -33,6 +31,7 @@ function CardBody({ ...props }) {
     [classes.cardBodyColor]: color,
     [className]: className !== undefined
   });
+
   return (
     <div className={cardBodyClasses} {...rest}>
       {children}
