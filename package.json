@@ -22,7 +22,7 @@
     "react-scripts": "2.1.8",
     "react-scrollable-anchor": "0.6.1",
     "react-swipeable-views": "0.13.1",
-    "serve": "10.1.2"
+    "serve": "11.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

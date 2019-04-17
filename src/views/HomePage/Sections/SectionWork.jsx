@@ -70,16 +70,16 @@ class SectionWork extends React.Component {
                 <div
                   className={`${classes.rotatingCardContainer} ${
                     classes.manualRotate
-                    } ${this.state.activeRotate2}`}
+                  } ${this.state.activeRotate2}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
                       className={`${classes.front} ${
                         classes.wrapperBackground
-                        }`}
+                      }`}
                       style={{
                         backgroundImage: `url(${project2})`,
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -87,7 +87,7 @@ class SectionWork extends React.Component {
                           Baylor University
                         </h6>
                         <h3 className={classes.cardTitleWhite}>
-                          Classroom Technology Assistant & Developer
+                          Classroom Technology Assistant&amp;Developer
                         </h3>
                         <p className={classes.cardDescriptionWhite}>
                           Jan 2018 - Present
@@ -95,7 +95,7 @@ class SectionWork extends React.Component {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"danger"}
+                            color="danger"
                             onClick={() =>
                               this.setState({
                                 activeRotate2: classes.activateRotate
@@ -108,12 +108,10 @@ class SectionWork extends React.Component {
                       </CardBody>
                     </div>
                     <div
-                      className={`${classes.back} ${
-                        classes.wrapperWarning
-                        }`}
+                      className={`${classes.back} ${classes.wrapperWarning}`}
                       style={{
                         background: "#202020",
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -124,19 +122,19 @@ class SectionWork extends React.Component {
                           I help people teach more effectively. I also install
                           and troubleshoot hardware around campus. Over 100
                           tickets completed with 100% completion and
-                          satisfaction rate. I also build tools for internal
-                          use by our library staff!
+                          satisfaction rate. I also build tools for internal use
+                          by our library staff!
                           <br />
                           <div style={{ padding: "10px" }}>
-                            <Badge color={"info"}>React</Badge>
-                            <Badge color={"success"}>NodeJS</Badge>
-                            <Badge color={"danger"}>MongoDB</Badge>
+                            <Badge color="info">React</Badge>
+                            <Badge color="success">NodeJS</Badge>
+                            <Badge color="danger">MongoDB</Badge>
                           </div>
                         </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"white"}
+                            color="white"
                             onClick={() =>
                               this.setState({
                                 activeRotate2: ""
@@ -155,16 +153,16 @@ class SectionWork extends React.Component {
                 <div
                   className={`${classes.rotatingCardContainer} ${
                     classes.manualRotate
-                    } ${this.state.activeRotate1}`}
+                  } ${this.state.activeRotate1}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
                       className={`${classes.front} ${
                         classes.wrapperBackground
-                        }`}
+                      }`}
                       style={{
                         backgroundImage: `url(${project1})`,
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -180,7 +178,7 @@ class SectionWork extends React.Component {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"danger"}
+                            color="danger"
                             onClick={() =>
                               this.setState({
                                 activeRotate1: classes.activateRotate
@@ -193,12 +191,10 @@ class SectionWork extends React.Component {
                       </CardBody>
                     </div>
                     <div
-                      className={`${classes.back} ${
-                        classes.wrapperWarning
-                        }`}
+                      className={`${classes.back} ${classes.wrapperWarning}`}
                       style={{
                         background: "#202020",
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -207,20 +203,20 @@ class SectionWork extends React.Component {
                         </h5>
                         <div className={classes.cardDescriptionWhite}>
                           Created a productivity platform; Android application
-                          (for wearable devices, phones, and tablets), back
-                          end database and storage hosted on Microsoft Azure.
+                          (for wearable devices, phones, and tablets), back end
+                          database and storage hosted on Microsoft Azure.
                           Presented to the President and CIO of ExxonMobil!
                           <br />
                           <div style={{ padding: "10px" }}>
-                            <Badge color={"success"}>Android</Badge>
-                            <Badge color={"warning"}>Kotlin</Badge>
-                            <Badge color={"info"}>Azure</Badge>
+                            <Badge color="success">Android</Badge>
+                            <Badge color="warning">Kotlin</Badge>
+                            <Badge color="info">Azure</Badge>
                           </div>
                         </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"white"}
+                            color="white"
                             onClick={() =>
                               this.setState({
                                 activeRotate1: ""
@@ -239,24 +235,22 @@ class SectionWork extends React.Component {
                 <div
                   className={`${classes.rotatingCardContainer} ${
                     classes.manualRotate
-                    } ${this.state.activeRotate3}`}
+                  } ${this.state.activeRotate3}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
                       className={`${classes.front} ${
                         classes.wrapperBackground
-                        }`}
+                      }`}
                       style={{
                         backgroundImage: `url(${project3})`,
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
-                        <h6 className={classes.cardCategoryWhite}>
-                          Best Buy
-                        </h6>
+                        <h6 className={classes.cardCategoryWhite}>Best Buy</h6>
                         <h3 className={classes.cardTitleWhite}>
-                          Computer & Digital Imaging Sales Consultant
+                          Computer&amp;Digital Imaging Sales Consultant
                         </h3>
                         <p className={classes.cardDescriptionWhite}>
                           Jan 2018 - Dec 2017
@@ -264,7 +258,7 @@ class SectionWork extends React.Component {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"danger"}
+                            color="danger"
                             onClick={() =>
                               this.setState({
                                 activeRotate3: classes.activateRotate
@@ -277,12 +271,10 @@ class SectionWork extends React.Component {
                       </CardBody>
                     </div>
                     <div
-                      className={`${classes.back} ${
-                        classes.wrapperWarning
-                        }`}
+                      className={`${classes.back} ${classes.wrapperWarning}`}
                       style={{
                         background: "#202020",
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -291,20 +283,20 @@ class SectionWork extends React.Component {
                         </h5>
                         <div className={classes.cardDescriptionWhite}>
                           Excelled at selling products and services. Highest
-                          sales in our market; over $27,000 USD sold in a
-                          week. Inspired customers by showing them what was
-                          possible with the latest consumer tech.
+                          sales in our market; over $27,000 USD sold in a week.
+                          Inspired customers by showing them what was possible
+                          with the latest consumer tech.
                           <br />
                           <div style={{ padding: "10px" }}>
-                            <Badge color={"rose"}>Sales</Badge>
-                            <Badge color={"gray"}>Client-Facing</Badge>
-                            <Badge color={"success"}>Merchandising</Badge>
+                            <Badge color="rose">Sales</Badge>
+                            <Badge color="gray">Client-Facing</Badge>
+                            <Badge color="success">Merchandising</Badge>
                           </div>
                         </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"white"}
+                            color="white"
                             onClick={() =>
                               this.setState({
                                 activeRotate3: ""
@@ -323,16 +315,16 @@ class SectionWork extends React.Component {
                 <div
                   className={`${classes.rotatingCardContainer} ${
                     classes.manualRotate
-                    } ${this.state.activeRotate4}`}
+                  } ${this.state.activeRotate4}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
                       className={`${classes.front} ${
                         classes.wrapperBackground
-                        }`}
+                      }`}
                       style={{
                         backgroundImage: `url(${project4})`,
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -348,7 +340,7 @@ class SectionWork extends React.Component {
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"danger"}
+                            color="danger"
                             onClick={() =>
                               this.setState({
                                 activeRotate4: classes.activateRotate
@@ -361,12 +353,10 @@ class SectionWork extends React.Component {
                       </CardBody>
                     </div>
                     <div
-                      className={`${classes.back} ${
-                        classes.wrapperWarning
-                        }`}
+                      className={`${classes.back} ${classes.wrapperWarning}`}
                       style={{
                         background: "#202020",
-                        opacity: .95
+                        opacity: 0.95
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -379,15 +369,15 @@ class SectionWork extends React.Component {
                           $22,000 USD (highest earner for Fall 2017)!
                           <br />
                           <div style={{ padding: "10px" }}>
-                            <Badge color={"success"}>Fundraising</Badge>
-                            <Badge color={"primary"}>Telecommunications</Badge>
-                            <Badge color={"info"}>Marketing</Badge>
+                            <Badge color="success">Fundraising</Badge>
+                            <Badge color="primary">Telecommunications</Badge>
+                            <Badge color="info">Marketing</Badge>
                           </div>
                         </div>
                         <div className={classes.textCenter}>
                           <Button
                             round
-                            color={"white"}
+                            color="white"
                             onClick={() =>
                               this.setState({
                                 activeRotate4: ""

@@ -29,14 +29,18 @@ function SectionProjects({ ...props }) {
               md={8}
               className={`${classes.mlAuto} ${classes.mrAuto} ${
                 classes.textCenter
-                }`}
+              }`}
             >
               <h5 className={classes.description}>
-                Howdy! Here is a brief look into some of the work I've done in 
-                my free time. This is not up to date, and I will be adding more
-                projects soon. For a more extensive list please check out my
-                github{" "}
-                <a href="https://github.com/MarioLopezBaylor" target={"_blank"}>
+                Howdy! Here is a brief look into some of the work I&#39;ve done
+                in my free time. This is not up to date, and I will be adding
+                more projects soon. For a more extensive list please check out
+                my github&nbsp;
+                <a
+                  href="https://github.com/MarioLopezBaylor"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   here.
                 </a>
               </h5>
@@ -52,14 +56,11 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img
-                      src={wacode}
-                      alt="..."
-                    />
+                    <img src={wacode} alt="..." />
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: {wacode},
+                        backgroundImage: { wacode },
                         opacity: "1"
                       }}
                     />
@@ -95,14 +96,11 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img
-                      src={refur}
-                      alt="..."
-                    />
+                    <img src={refur} alt="..." />
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: {refur},
+                        backgroundImage: { refur },
                         opacity: "1"
                       }}
                     />
@@ -139,14 +137,11 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img
-                      src={placeholder}
-                      alt="..."
-                    />
+                    <img src={placeholder} alt="Placeholder Project" />
                     <div
                       className={classes.coloredShadow}
                       style={{
-                        backgroundImage: {placeholder},
+                        backgroundImage: { placeholder },
                         opacity: "1"
                       }}
                     />
@@ -166,8 +161,8 @@ function SectionProjects({ ...props }) {
                   <p
                     className={`${classes.description} ${classes.marginTop20}`}
                   >
-                    I've worked on and will be working on more projects in the
-                    very near future. Keep checking back for updates as I
+                    I&#39;ve worked on and will be working on more projects in
+                    the very near future. Keep checking back for updates as I
                     continue to add them to my website!
                   </p>
                 </CardBody>

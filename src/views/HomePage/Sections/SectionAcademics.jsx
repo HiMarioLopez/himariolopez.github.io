@@ -21,10 +21,7 @@ function SectionAcademics({ ...props }) {
           <h2 className={classes.title}>Academics</h2>
           <hr />
           <GridContainer>
-            <GridItem
-              xs={9}
-              className={`${classes.mlAuto} ${classes.mrAuto}`}
-            >
+            <GridItem xs={9} className={`${classes.mlAuto} ${classes.mrAuto}`}>
               <Card plain blog className={classes.card}>
                 <GridContainer>
                   <GridItem
@@ -34,7 +31,11 @@ function SectionAcademics({ ...props }) {
                     style={{ paddingBottom: "3vh" }}
                   >
                     <CardHeader image plain>
-                      <a href="https://www.baylor.edu/" target={"_blank"}>
+                      <a
+                        href="https://www.baylor.edu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={baylor} alt="Baylor Logo" />
                       </a>
                       <div
@@ -54,11 +55,14 @@ function SectionAcademics({ ...props }) {
                     </CardHeader>
                   </GridItem>
                   <GridItem xs={12} sm={8} md={8}>
-                    <h6 className={classes.cardCategory}>Aug 2016 - May 2020</h6>
+                    <h6 className={classes.cardCategory}>
+                      Aug 2016 - May 2020
+                    </h6>
                     <h3 className={classes.cardTitle}>
                       <a
                         href="https://www.ecs.baylor.edu/computerscience/"
-                        target={"_blank"}
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         B.S. Computer Science
                       </a>
@@ -75,27 +79,36 @@ function SectionAcademics({ ...props }) {
                       <li>Systems Programming</li>
                       <li>Software Project Management</li>
                       <li>Database Management Systems</li>
-                      <li>Algorithm & Data Structures</li>
+                      <li>Algorithm &amp; Data Structures</li>
                     </ul>
                     <div style={{ paddingTop: "1vh" }}>
-                      <b>Scholarships & Achievements:</b>
+                      <b>Scholarships &amp; Achievements:</b>
                     </div>
                     <ul>
                       <li>ECS Highlight Scholar</li>
                       <li>Willis Family ECS Scholarship</li>
-                      <li>Transfer Scholarship (Highest Tier, 3.75+ Transfer GPA)</li>
-                      <li>ECS Student Advocate & Representative</li>
-                      <li>Presented to the ECS Board & Dean (Spring 2019)</li>
+                      <li>
+                        Transfer Scholarship (Highest Tier, 3.75+ Transfer GPA)
+                      </li>
+                      <li>ECS Student Advocate &amp; Representative</li>
+                      <li>
+                        Presented to the ECS Board &amp; Dean (Spring 2019)
+                      </li>
                     </ul>
                     <div style={{ paddingTop: "1vh" }}>
-                      <b>Clubs & Activities:</b>
+                      <b>Clubs &amp; Activities:</b>
                     </div>
                     <ul>
-                      <li>The Wacode Team, Co-Founder & President</li>
+                      <li>The Wacode Team, Co-Founder &amp; President</li>
                       <li>Computing For Compassion (C4C), President</li>
-                      <li>Baylor igniteCS, Project Manager & Founder</li>
-                      <li>Hispanic Student Association, Event Staff Coordinator & Member</li>
-                      <li>Society of Hispanic Professional Engineers, Member</li>
+                      <li>Baylor igniteCS, Project Manager &amp; Founder</li>
+                      <li>
+                        Hispanic Student Association, Event Staff Coordinator &
+                        Member
+                      </li>
+                      <li>
+                        Society of Hispanic Professional Engineers, Member
+                      </li>
                       <li>Association for Computing Machinery, Member</li>
                     </ul>
                   </GridItem>
@@ -110,7 +123,11 @@ function SectionAcademics({ ...props }) {
                     style={{ paddingBottom: "3vh" }}
                   >
                     <CardHeader image plain>
-                      <a href="https://www.utsa.edu/" target={"_blank"}>
+                      <a
+                        href="https://www.utsa.edu/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img src={utsa} alt="UTSA Logo" />
                       </a>
                       <div
@@ -130,7 +147,9 @@ function SectionAcademics({ ...props }) {
                     </CardHeader>
                   </GridItem>
                   <GridItem xs={12} sm={8} md={8}>
-                    <h6 className={classes.cardCategory}>Aug 2015 - May 2016 (Transferred)</h6>
+                    <h6 className={classes.cardCategory}>
+                      Aug 2015 - May 2016 (Transferred)
+                    </h6>
                     <h3 className={classes.cardTitle}>
                       <a href="https://business.utsa.edu/">
                         B.B.A. Entrepreneurship
@@ -145,13 +164,13 @@ function SectionAcademics({ ...props }) {
                     <ul>
                       <li>Principles of Marketing</li>
                       <li>Fundamentals of Management Information Systems</li>
-                      <li>Microeconomics & Macroeconomics</li>
+                      <li>Microeconomics &amp; Macroeconomics</li>
                     </ul>
                     <div>
                       <b>Achievements:</b>
                     </div>
                     <ul>
-                      <li>Dean's List</li>
+                      <li>Dean&apos;s List</li>
                     </ul>
                   </GridItem>
                 </GridContainer>

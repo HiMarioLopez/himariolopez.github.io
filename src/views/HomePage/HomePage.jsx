@@ -11,19 +11,19 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import HeaderLinks from "components/Header/HeaderLinks.jsx";
 import GridContainer from "components/Grid/GridContainer";
 // Sections
-import SectionWork from "views/ProfilePage/Sections/SectionWork";
-import SectionAboutMe from "views/ProfilePage/Sections/SectionAboutMe";
-import SectionAcademics from "views/ProfilePage/Sections/SectionAcademics";
-import SectionProjects from "views/ProfilePage/Sections/SectionProjects";
+import SectionWork from "views/HomePage/Sections/SectionWork";
+import SectionAboutMe from "views/HomePage/Sections/SectionAboutMe";
+import SectionAcademics from "views/HomePage/Sections/SectionAcademics";
+import SectionProjects from "views/HomePage/Sections/SectionProjects";
 // Library Components
-import Particles from 'react-particles-js';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor'
+import Particles from "react-particles-js";
+import ScrollableAnchor from "react-scrollable-anchor";
+import { configureAnchors } from "react-scrollable-anchor";
 // Style Sheets
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
-configureAnchors({offset: -80, scrollDuration: 500});
-
+configureAnchors({ offset: -80, scrollDuration: 500 });
+const bodyStyle = { backgroundColor: "#202020" };
 class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -32,24 +32,24 @@ class HomePage extends React.Component {
 
   renderParticles = () => {
     if (window.innerWidth > 960) {
-      return(
+      return (
         <Particles
-          width={"100vw"}
-          height={"500px"}
+          width="100vw"
+          height="500px"
           params={{
-            "particles": {
-              "number": {
-                "value": 50
+            particles: {
+              number: {
+                value: 50
               },
-              "size": {
-                "value": 5
+              size: {
+                value: 5
               }
             },
-            "interactivity": {
-              "events": {
-                "onhover": {
-                  "enable": true,
-                  "mode": "repulse"
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse"
                 }
               }
             }
@@ -59,22 +59,22 @@ class HomePage extends React.Component {
     } else {
       return (
         <Particles
-          width={"100vw"}
-          height={"50vh"}
+          width="100vw"
+          height="50vh"
           params={{
-            "particles": {
-              "number": {
-                "value": 20
+            particles: {
+              number: {
+                value: 20
               },
-              "size": {
-                "value": 5
+              size: {
+                value: 5
               }
             },
-            "interactivity": {
-              "events": {
-                "onhover": {
-                  "enable": true,
-                  "mode": "repulse"
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse"
                 }
               }
             }
@@ -87,7 +87,7 @@ class HomePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
-      <div style={{ backgroundColor: "#202020" }}>
+      <div style={bodyStyle}>
         <Header
           color="transparent"
           brand="Mario Arturo Lopez Martinez"
@@ -104,18 +104,18 @@ class HomePage extends React.Component {
         </Parallax>
         <div className={classNames(classes.main, classes.mainRaised)}>
           <SectionAboutMe />
-          <ScrollableAnchor id={"work"}>
+          <ScrollableAnchor id="work">
             <SectionWork />
           </ScrollableAnchor>
-          <ScrollableAnchor id={"academics"}>
+          <ScrollableAnchor id="academics">
             <SectionAcademics />
           </ScrollableAnchor>
-          <ScrollableAnchor id={"projects"}>
+          <ScrollableAnchor id="projects">
             <SectionProjects />
           </ScrollableAnchor>
         </div>
         <Footer
-          theme={"dark"}
+          theme="dark"
           content={
             <div>
               <GridContainer>
@@ -125,8 +125,8 @@ class HomePage extends React.Component {
                   </div>
                 </GridItem>
                 <GridItem>
-                  Copyright &copy; {1900 + new Date().getYear()},
-                  Mario A Lopez Martinez
+                  Copyright &copy; {1900 + new Date().getYear()}, Mario A Lopez
+                  Martinez
                 </GridItem>
               </GridContainer>
             </div>
