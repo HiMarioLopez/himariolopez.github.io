@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Description from "@material-ui/icons/Description";
 // core components
 import Button from "components/CustomButtons/Button.jsx";
-
+// Style Sheets
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 
 function HeaderLinks({ ...props }) {
@@ -19,8 +19,8 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#work"}
-          color={"transparent"}
+          href="#work"
+          color="transparent"
           className={classes.navButton}
           round
         >
@@ -29,8 +29,8 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#academics"}
-          color={"transparent"}
+          href="#academics"
+          color="transparent"
           className={classes.navButton}
           round
         >
@@ -39,8 +39,8 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={"#projects"}
-          color={"transparent"}
+          href="#projects"
+          color="transparent"
           className={classes.navButton}
           round
         >
@@ -49,8 +49,8 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href={process.env.PUBLIC_URL + '/Resume.pdf'}
-          target={"_blank"}
+          href={process.env.PUBLIC_URL + "/Resume.pdf"}
+          target="_blank"
           color={window.innerWidth < 960 ? "github" : "white"}
           className={classes.navButton}
           round

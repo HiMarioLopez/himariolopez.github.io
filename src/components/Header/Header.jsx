@@ -15,7 +15,7 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
-// core components
+// Style Sheets
 import headerStyle from "assets/jss/material-kit-pro-react/components/headerStyle.jsx";
 
 class Header extends React.Component {
@@ -54,6 +54,7 @@ class Header extends React.Component {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   }
+
   componentWillUnmount() {
     if (this.props.changeColorOnScroll) {
       window.removeEventListener("scroll", this.headerColorChange);
@@ -75,9 +76,7 @@ class Header extends React.Component {
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          <Button
-            onClick={() => this.clickBrand()}
-            className={classes.title}>
+          <Button onClick={() => this.clickBrand()} className={classes.title}>
             <Link to="/">{brand}</Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>
@@ -96,7 +95,7 @@ class Header extends React.Component {
         <Hidden mdUp implementation="css">
           <Drawer
             variant="temporary"
-            anchor={"right"}
+            anchor="right"
             open={this.state.mobileOpen}
             classes={{
               paper: classes.drawerPaper

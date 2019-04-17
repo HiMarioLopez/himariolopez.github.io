@@ -56,7 +56,7 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img src={wacode} alt="..." />
+                    <img src={wacode} alt="Wacode Site" />
                     <div
                       className={classes.coloredShadow}
                       style={{
@@ -96,7 +96,7 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img src={refur} alt="..." />
+                    <img src={refur} alt="ReFur Website" />
                     <div
                       className={classes.coloredShadow}
                       style={{
@@ -131,32 +131,18 @@ function SectionProjects({ ...props }) {
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
-                <a
-                  href="#coming-soon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <CardHeader image plain>
-                    <img src={placeholder} alt="Placeholder Project" />
-                    <div
-                      className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: { placeholder },
-                        opacity: "1"
-                      }}
-                    />
-                  </CardHeader>
-                </a>
+                <CardHeader image plain>
+                  <img src={placeholder} alt="Placeholder Project" />
+                  <div
+                    className={classes.coloredShadow}
+                    style={{
+                      backgroundImage: { placeholder },
+                      opacity: "1"
+                    }}
+                  />
+                </CardHeader>
                 <CardBody plain>
-                  <a
-                    href="#coming-soon"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <h4 className={classes.cardTitle}>
-                      More to be added soon!
-                    </h4>
-                  </a>
+                  <h4 className={classes.cardTitle}>More to be added soon!</h4>
                   <h6 className={classes.description}>Variety</h6>
                   <p
                     className={`${classes.description} ${classes.marginTop20}`}
