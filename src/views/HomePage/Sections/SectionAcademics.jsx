@@ -6,14 +6,27 @@ import Card from "components/Card/Card.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
+// Library Components
+import Image from "react-image-webp";
 // Assets
-import baylor from "assets/img/logos/baylorLogo.png";
-import utsa from "assets/img/logos/utsaLogo.png";
+import baylorPng from "assets/img/logos/baylorLogo.png";
+import baylorWebp from "assets/img/logos/baylorLogo.webp";
+import utsaPng from "assets/img/logos/utsaLogo.png";
+import utsaWebp from "assets/img/logos/utsaLogo.webp";
 // Style Sheets
 import academicsSection from "assets/jss/material-kit-pro-react/views/sections/sectionAcademicsStyle.jsx";
 
+// In-line Styles
+const baylorShadowStyle = {
+  backgroundImage: `url(${baylorPng})`,
+  opacity: "1"
+};
+const utsaShadowStyle = { backgroundImage: `url(${utsaPng})`, opacity: "1" };
+const universityBrandStyle = { paddingBottom: "3vh" };
+
 function SectionAcademics({ ...props }) {
   const { classes, ...rest } = props;
+
   return (
     <div {...rest} className="cd-section">
       <div className={classes.blog}>
@@ -24,33 +37,26 @@ function SectionAcademics({ ...props }) {
             <GridItem xs={9} className={`${classes.mlAuto} ${classes.mrAuto}`}>
               <Card plain blog className={classes.card}>
                 <GridContainer>
-                  <GridItem
-                    xs={12}
-                    sm={4}
-                    md={4}
-                    style={{ paddingBottom: "3vh" }}
-                  >
+                  <GridItem xs={12} sm={4} md={4} style={universityBrandStyle}>
                     <CardHeader image plain>
                       <a
                         href="https://www.baylor.edu/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={baylor} alt="Baylor Logo" />
+                        <Image
+                          src={baylorPng}
+                          webp={baylorWebp}
+                          alt="Baylor Logo"
+                        />
                       </a>
                       <div
                         className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${baylor})`,
-                          opacity: "1"
-                        }}
+                        style={baylorShadowStyle}
                       />
                       <div
                         className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${baylor})`,
-                          opacity: "1"
-                        }}
+                        style={baylorShadowStyle}
                       />
                     </CardHeader>
                   </GridItem>
@@ -81,9 +87,7 @@ function SectionAcademics({ ...props }) {
                       <li>Database Management Systems</li>
                       <li>Algorithm &amp; Data Structures</li>
                     </ul>
-                    <div style={{ paddingTop: "1vh" }}>
-                      <b>Scholarships &amp; Achievements:</b>
-                    </div>
+                    <b>Scholarships &amp; Achievements:</b>
                     <ul>
                       <li>ECS Highlight Scholar</li>
                       <li>Willis Family ECS Scholarship</li>
@@ -95,9 +99,7 @@ function SectionAcademics({ ...props }) {
                         Presented to the ECS Board &amp; Dean (Spring 2019)
                       </li>
                     </ul>
-                    <div style={{ paddingTop: "1vh" }}>
-                      <b>Clubs &amp; Activities:</b>
-                    </div>
+                    <b>Clubs &amp; Activities:</b>
                     <ul>
                       <li>The Wacode Team, Co-Founder &amp; President</li>
                       <li>Computing For Compassion (C4C), President</li>
@@ -116,33 +118,22 @@ function SectionAcademics({ ...props }) {
               </Card>
               <Card plain blog className={classes.card}>
                 <GridContainer>
-                  <GridItem
-                    xs={12}
-                    sm={4}
-                    md={4}
-                    style={{ paddingBottom: "3vh" }}
-                  >
+                  <GridItem xs={12} sm={4} md={4} style={universityBrandStyle}>
                     <CardHeader image plain>
                       <a
                         href="https://www.utsa.edu/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img src={utsa} alt="UTSA Logo" />
+                        <Image src={utsaPng} webp={utsaWebp} alt="UTSA Logo" />
                       </a>
                       <div
                         className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${utsa})`,
-                          opacity: "1"
-                        }}
+                        style={utsaShadowStyle}
                       />
                       <div
                         className={classes.coloredShadow}
-                        style={{
-                          backgroundImage: `url(${utsa})`,
-                          opacity: "1"
-                        }}
+                        style={utsaShadowStyle}
                       />
                     </CardHeader>
                   </GridItem>

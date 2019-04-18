@@ -7,8 +7,11 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "components/CustomButtons/Button.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
+// Library Components
+import Image from "react-image-webp";
 // Assets
-import mario from "assets/img/mario_profile.jpeg";
+import marioPng from "assets/img/mario_profile.jpeg";
+import marioWebp from "assets/img/mario_profile.webp";
 // Style Sheets
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
@@ -25,12 +28,18 @@ class SectionAboutMe extends React.Component {
       classes.imgRoundedCircle,
       classes.imgFluid
     );
+
     return (
       <div>
         <GridContainer justify="center">
           <GridItem xs={10} md={8}>
             <div className={classes.profile}>
-              <img src={mario} alt="Mario Profile" className={imageClasses} />
+              <Image
+                src={marioPng}
+                webp={marioWebp}
+                alt="Mario's Profile"
+                className={imageClasses}
+              />
               <div className={classes.name}>
                 <h3 className={classes.title}>Mario Arturo Lopez Martinez</h3>
                 <h6>Software Engineer</h6>

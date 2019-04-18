@@ -7,15 +7,26 @@ import CardBody from "components/Card/CardBody.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
+// Library Components
+import Image from "react-image-webp";
 // Assets
-import refur from "assets/img/projects/refur.png";
-import wacode from "assets/img/projects/wacode.png";
-import placeholder from "assets/img/image_placeholder.jpeg";
+import refurPng from "assets/img/projects/refur.png";
+import refurWebp from "assets/img/projects/refur.webp";
+import wacodePng from "assets/img/projects/wacode.png";
+import wacodeWebp from "assets/img/projects/wacode.webp";
+import placeholderJpeg from "assets/img/image_placeholder.jpeg";
+import placeholderWebp from "assets/img/image_placeholder.webp";
 // Style Sheets
 import projectsStyle from "assets/jss/material-kit-pro-react/views/sections/sectionProjects.jsx";
 
+// In-line Styles
+const wacodeStyles = { backgroundImage: wacodePng, opacity: "1" };
+const refurStyles = { backgroundImage: refurPng, opacity: "1" };
+const placeholderStyles = { backgroundImage: placeholderJpeg, opacity: "1" };
+
 function SectionProjects({ ...props }) {
   const { classes, ...rest } = props;
+
   return (
     <div className="cd-section" {...rest}>
       <div className={classes.projects}>
@@ -56,13 +67,14 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img src={wacode} alt="Wacode Site" />
+                    <Image
+                      src={wacodePng}
+                      webp={wacodeWebp}
+                      alt="Wacode Site"
+                    />
                     <div
                       className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: { wacode },
-                        opacity: "1"
-                      }}
+                      style={wacodeStyles}
                     />
                   </CardHeader>
                 </a>
@@ -96,13 +108,14 @@ function SectionProjects({ ...props }) {
                   rel="noopener noreferrer"
                 >
                   <CardHeader image plain>
-                    <img src={refur} alt="ReFur Website" />
+                    <Image
+                      src={refurPng}
+                      webp={refurWebp}
+                      alt="ReFur Website"
+                    />
                     <div
                       className={classes.coloredShadow}
-                      style={{
-                        backgroundImage: { refur },
-                        opacity: "1"
-                      }}
+                      style={refurStyles}
                     />
                   </CardHeader>
                 </a>
@@ -132,13 +145,14 @@ function SectionProjects({ ...props }) {
             <GridItem xs={12} sm={4} md={4}>
               <Card plain className={classes.card2}>
                 <CardHeader image plain>
-                  <img src={placeholder} alt="Placeholder Project" />
+                  <Image
+                    src={placeholderJpeg}
+                    webp={placeholderWebp}
+                    alt="Placeholder Project"
+                  />
                   <div
                     className={classes.coloredShadow}
-                    style={{
-                      backgroundImage: { placeholder },
-                      opacity: "1"
-                    }}
+                    style={placeholderStyles}
                   />
                 </CardHeader>
                 <CardBody plain>

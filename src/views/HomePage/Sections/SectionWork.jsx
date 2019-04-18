@@ -11,12 +11,20 @@ import GridItem from "components/Grid/GridItem.jsx";
 import CardBody from "components/Card/CardBody.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 // Assets
-import project1 from "assets/img/work/project_1.png";
-import project2 from "assets/img/work/project_2.png";
+import project1 from "assets/img/work/project_2.png";
+import project2 from "assets/img/work/project_1.png";
 import project3 from "assets/img/work/project_3.png";
 import project4 from "assets/img/work/project_4.png";
 // Style Sheets
 import stylesSectionWork from "assets/jss/material-kit-pro-react/views/sections/sectionWorkStyle.jsx";
+
+// In-line Styles
+const badgeStyle = { padding: "10px" };
+const card1FrontStyle = { backgroundImage: `url(${project1})`, opacity: 0.9 };
+const card2FrontStyle = { backgroundImage: `url(${project2})`, opacity: 0.9 };
+const card3FrontStyle = { backgroundImage: `url(${project3})`, opacity: 0.9 };
+const card4FrontStyle = { backgroundImage: `url(${project4})`, opacity: 0.9 };
+const cardBackStyle = { background: "#202020", opacity: 0.9 };
 
 class SectionWork extends React.Component {
   constructor(props) {
@@ -59,6 +67,7 @@ class SectionWork extends React.Component {
 
   render() {
     const { classes, ...rest } = this.props;
+
     return (
       <div {...rest} className="cd-section" id="cards">
         <div id="morphingCards" className="cd-section">
@@ -77,10 +86,7 @@ class SectionWork extends React.Component {
                       className={`${classes.front} ${
                         classes.wrapperBackground
                       }`}
-                      style={{
-                        backgroundImage: `url(${project2})`,
-                        opacity: 0.95
-                      }}
+                      style={card1FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h6 className={classes.cardCategoryWhite}>
@@ -109,10 +115,7 @@ class SectionWork extends React.Component {
                     </div>
                     <div
                       className={`${classes.back} ${classes.wrapperWarning}`}
-                      style={{
-                        background: "#202020",
-                        opacity: 0.95
-                      }}
+                      style={cardBackStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
@@ -125,7 +128,7 @@ class SectionWork extends React.Component {
                           satisfaction rate. I also build tools for internal use
                           by our library staff!
                           <br />
-                          <div style={{ padding: "10px" }}>
+                          <div style={badgeStyle}>
                             <Badge color="info">React</Badge>
                             <Badge color="success">NodeJS</Badge>
                             <Badge color="danger">MongoDB</Badge>
@@ -160,10 +163,7 @@ class SectionWork extends React.Component {
                       className={`${classes.front} ${
                         classes.wrapperBackground
                       }`}
-                      style={{
-                        backgroundImage: `url(${project1})`,
-                        opacity: 0.95
-                      }}
+                      style={card2FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h6 className={classes.cardCategoryWhite}>
@@ -192,10 +192,7 @@ class SectionWork extends React.Component {
                     </div>
                     <div
                       className={`${classes.back} ${classes.wrapperWarning}`}
-                      style={{
-                        background: "#202020",
-                        opacity: 0.95
-                      }}
+                      style={cardBackStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
@@ -207,7 +204,7 @@ class SectionWork extends React.Component {
                           database and storage hosted on Microsoft Azure.
                           Presented to the President and CIO of ExxonMobil!
                           <br />
-                          <div style={{ padding: "10px" }}>
+                          <div style={badgeStyle}>
                             <Badge color="success">Android</Badge>
                             <Badge color="warning">Kotlin</Badge>
                             <Badge color="info">Azure</Badge>
@@ -242,10 +239,7 @@ class SectionWork extends React.Component {
                       className={`${classes.front} ${
                         classes.wrapperBackground
                       }`}
-                      style={{
-                        backgroundImage: `url(${project3})`,
-                        opacity: 0.95
-                      }}
+                      style={card3FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h6 className={classes.cardCategoryWhite}>Best Buy</h6>
@@ -272,10 +266,7 @@ class SectionWork extends React.Component {
                     </div>
                     <div
                       className={`${classes.back} ${classes.wrapperWarning}`}
-                      style={{
-                        background: "#202020",
-                        opacity: 0.95
-                      }}
+                      style={cardBackStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
@@ -287,7 +278,7 @@ class SectionWork extends React.Component {
                           Inspired customers by showing them what was possible
                           with the latest consumer tech.
                           <br />
-                          <div style={{ padding: "10px" }}>
+                          <div style={badgeStyle}>
                             <Badge color="rose">Sales</Badge>
                             <Badge color="gray">Client-Facing</Badge>
                             <Badge color="success">Merchandising</Badge>
@@ -322,10 +313,7 @@ class SectionWork extends React.Component {
                       className={`${classes.front} ${
                         classes.wrapperBackground
                       }`}
-                      style={{
-                        backgroundImage: `url(${project4})`,
-                        opacity: 0.95
-                      }}
+                      style={card4FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h6 className={classes.cardCategoryWhite}>
@@ -354,10 +342,7 @@ class SectionWork extends React.Component {
                     </div>
                     <div
                       className={`${classes.back} ${classes.wrapperWarning}`}
-                      style={{
-                        background: "#202020",
-                        opacity: 0.95
-                      }}
+                      style={cardBackStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
                         <h5 className={classes.cardTitleWhite}>
@@ -368,7 +353,7 @@ class SectionWork extends React.Component {
                           departments around campus. Personally raised over
                           $22,000 USD (highest earner for Fall 2017)!
                           <br />
-                          <div style={{ padding: "10px" }}>
+                          <div style={badgeStyle}>
                             <Badge color="success">Fundraising</Badge>
                             <Badge color="primary">Telecommunications</Badge>
                             <Badge color="info">Marketing</Badge>

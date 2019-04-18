@@ -22,8 +22,11 @@ import { configureAnchors } from "react-scrollable-anchor";
 // Style Sheets
 import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
 
-configureAnchors({ offset: -80, scrollDuration: 500 });
+// In-line Styles
 const bodyStyle = { backgroundColor: "#202020" };
+
+configureAnchors({ offset: -80, scrollDuration: 500 });
+
 class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -56,32 +59,32 @@ class HomePage extends React.Component {
           }}
         />
       );
-    } else {
-      return (
-        <Particles
-          width="100vw"
-          height="50vh"
-          params={{
-            particles: {
-              number: {
-                value: 20
-              },
-              size: {
-                value: 5
-              }
+    }
+
+    return (
+      <Particles
+        width="100vw"
+        height="50vh"
+        params={{
+          particles: {
+            number: {
+              value: 20
             },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "repulse"
-                }
+            size: {
+              value: 5
+            }
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse"
               }
             }
-          }}
-        />
-      );
-    }
+          }
+        }}
+      />
+    );
   };
 
   render() {
