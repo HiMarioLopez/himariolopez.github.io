@@ -37,7 +37,8 @@
     "react-scripts": "3.0.1",
     "react-slick": "0.24.0",
     "react-swipeable-views": "0.13.3",
-    "react-tagsinput": "3.19.0"
+    "react-tagsinput": "3.19.0",
+    "serve": "^11.1.0"
   },
   "scripts": {
     "start": "serve -s build",
