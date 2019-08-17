@@ -1,0 +1,71 @@
+{
+  "name": "mario-personal-website",
+  "version": "2.0.0",
+  "description": "Mario Arturo Lopez Martinez's Personal Website.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioLopezBaylor/mario-personal-website.git"
+  },
+  "author": "Mario Arturo Lopez Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarioLopezBaylor/mario-personal-website/issues"
+  },
+  "homepage": "https://www.malopez.dev/",
+  "private": false,
+  "dependencies": {
+    "@material-ui/core": "4.1.0",
+    "@material-ui/icons": "4.1.0",
+    "animate.css": "3.7.2",
+    "classnames": "2.2.6",
+    "history": "4.9.0",
+    "moment": "2.24.0",
+    "node-sass": "4.12.0",
+    "nouislider": "13.1.5",
+    "prop-types": "15.7.2",
+    "react": "16.8.6",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-animate-on-scroll": "2.1.5",
+    "react-datetime": "2.16.3",
+    "react-dom": "16.8.6",
+    "react-google-maps": "9.4.5",
+    "react-image-gallery": "0.8.17",
+    "react-image-webp": "^0.3.1",
+    "react-particles-js": "^2.7.0",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "3.0.1",
+    "react-slick": "0.24.0",
+    "react-swipeable-views": "0.13.3",
+    "react-tagsinput": "3.19.0"
+  },
+  "scripts": {
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "compile-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css",
+    "minify-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
+  },
+  "optionalDependencies": {
+    "@types/googlemaps": "3.36.4",
+    "@types/markerclustererplus": "2.1.33",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.13.0",
+    "prettier": "1.18.2",
+    "typescript": "3.5.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": []
+  }
+}
