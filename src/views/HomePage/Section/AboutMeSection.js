@@ -96,9 +96,9 @@ function AboutMeSection({ ...props }) {
               and software development.
             </p>
             <p>
-              In my free time, I enjoy listening to tons of music (Anything from
-              Jazz to EDM to Classical), building web applications, listening
-              to&nbsp;
+              In my free time I enjoy meeting new people, listening to tons of
+              music (Anything from Jazz to EDM to Classical), building web
+              applications, and listening to&nbsp;
               <a
                 style={{ color: "#cc2127" }}
                 href="https://www.npr.org/podcasts/510313/how-i-built-this"
@@ -106,7 +106,7 @@ function AboutMeSection({ ...props }) {
               >
                 How I Built This
               </a>
-              &nbsp;and the&nbsp;
+              &nbsp;or the&nbsp;
               <a
                 style={{ color: "#cc2127" }}
                 href="https://www.npr.org/programs/ted-radio-hour/"
