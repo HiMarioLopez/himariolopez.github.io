@@ -25,11 +25,9 @@
     "nouislider": "13.1.5",
     "prop-types": "15.7.2",
     "react": "16.8.6",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-animate-on-scroll": "2.1.5",
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
-    "react-google-maps": "9.4.5",
     "react-image-gallery": "0.8.17",
     "react-image-webp": "^0.3.1",
     "react-particles-js": "^2.7.0",
@@ -53,8 +51,6 @@
     "map-sass": "node-sass src/assets/scss/material-kit-pro-react.scss src/assets/css/material-kit-pro-react.css --source-map true"
   },
   "optionalDependencies": {
-    "@types/googlemaps": "3.36.4",
-    "@types/markerclustererplus": "2.1.33",
     "eslint-config-prettier": "4.3.0",
     "eslint-plugin-prettier": "3.1.0",
     "eslint-plugin-react": "7.13.0",

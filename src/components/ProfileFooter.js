@@ -9,7 +9,7 @@ import Footer from "components/Footer/Footer.jsx";
 import GridItem from "components/Grid/GridItem";
 import GridContainer from "components/Grid/GridContainer";
 
-import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
+import homePageStyle from "assets/jss/material-kit-pro-react/views/homePageStyle.jsx";
 
 class ProfileFooter extends React.Component {
   render() {
@@ -44,4 +44,4 @@ ProfileFooter.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(profilePageStyle)(ProfileFooter);
+export default withStyles(homePageStyle)(ProfileFooter);

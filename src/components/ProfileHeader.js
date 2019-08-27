@@ -15,7 +15,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 // external libraries
 import Particles from "react-particles-js";
 
-import profilePageStyle from "assets/jss/material-kit-pro-react/views/profilePageStyle.jsx";
+import homePageStyle from "assets/jss/material-kit-pro-react/views/homePageStyle.jsx";
 
 class ProfileHeader extends React.Component {
   renderParticles = () => {
@@ -101,4 +101,4 @@ ProfileHeader.propTypes = {
   classes: PropTypes.object
 };
 
-export default withStyles(profilePageStyle)(ProfileHeader);
+export default withStyles(homePageStyle)(ProfileHeader);
