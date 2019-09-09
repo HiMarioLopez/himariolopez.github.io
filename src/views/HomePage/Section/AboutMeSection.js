@@ -17,7 +17,7 @@ import Clearfix from "components/Clearfix/Clearfix.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import Danger from "components/Typography/Danger.jsx";
 
-import profile from "assets/img/profile.jpeg";
+import profile from "assets/img/profile-min.jpeg";
 
 import homePageStyle from "assets/jss/material-kit-pro-react/views/homePageStyle.jsx";
 
