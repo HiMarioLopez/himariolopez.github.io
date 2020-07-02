@@ -5,7 +5,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// @material-ui/icons
+// core components
+
 import cardAvatarStyle from "assets/jss/material-kit-pro-react/components/cardAvatarStyle.jsx";
 
 function CardAvatar({ ...props }) {
@@ -25,9 +27,8 @@ function CardAvatar({ ...props }) {
     [classes.cardAvatarPlain]: plain,
     [classes.cardAvatarTestimonial]: testimonial,
     [classes.cardAvatarTestimonialFooter]: testimonialFooter,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return (
     <div className={cardAvatarClasses} {...rest}>
       {children}
@@ -36,12 +37,13 @@ function CardAvatar({ ...props }) {
 }
 
 CardAvatar.propTypes = {
+  classes: PropTypes.object,
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   profile: PropTypes.bool,
   plain: PropTypes.bool,
   testimonial: PropTypes.bool,
-  testimonialFooter: PropTypes.bool
+  testimonialFooter: PropTypes.bool,
 };
 
 export default withStyles(cardAvatarStyle)(CardAvatar);

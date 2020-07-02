@@ -38,9 +38,7 @@ function SectionProjects({ ...props }) {
               xs={12}
               sm={8}
               md={8}
-              className={`${classes.mlAuto} ${classes.mrAuto} ${
-                classes.textCenter
-              }`}
+              className={`${classes.mlAuto} ${classes.mrAuto} ${classes.textCenter}`}
             >
               <h5 className={classes.description}>
                 Howdy! Here is a brief look into some of the work I&#39;ve done

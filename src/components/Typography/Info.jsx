@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// core components
 import typographyStyle from "assets/jss/material-kit-pro-react/components/typographyStyle.jsx";
 
 function Info({ ...props }) {
@@ -16,7 +16,8 @@ function Info({ ...props }) {
 }
 
 Info.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  children: PropTypes.node,
 };
 
 export default withStyles(typographyStyle)(Info);

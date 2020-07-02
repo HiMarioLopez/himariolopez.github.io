@@ -3,9 +3,10 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+
 import badgeStyle from "assets/jss/material-kit-pro-react/components/badgeStyle.jsx";
 
 function Badge({ ...props }) {
@@ -13,14 +14,13 @@ function Badge({ ...props }) {
   const badgeClasses = classNames({
     [classes.badge]: true,
     [classes[color]]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return <span className={badgeClasses}>{children}</span>;
 }
 
 Badge.defaultProps = {
-  color: "gray"
+  color: "gray",
 };
 
 Badge.propTypes = {
@@ -32,9 +32,10 @@ Badge.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
+    "gray",
   ]),
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default withStyles(badgeStyle)(Badge);

@@ -6,7 +6,7 @@ import {
   description,
   mlAuto,
   mrAuto,
-  grayColor
+  grayColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const academicsSection = {
@@ -18,7 +18,7 @@ const academicsSection = {
   mrAuto,
   description,
   blog: {
-    paddingTop: "50px"
+    paddingTop: "50px",
   },
   cardCategory: {
     marginBottom: "0",
@@ -26,18 +26,18 @@ const academicsSection = {
     "& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
       position: "relative",
       top: "8px",
-      lineHeight: "0"
-    }
+      lineHeight: "0",
+    },
   },
   description1: {
     ...description,
-    lineHeight: "1.313rem"
+    lineHeight: "1.313rem",
   },
   author: {
     "& a": {
       color: grayColor[1],
-      textDecoration: "none"
-    }
+      textDecoration: "none",
+    },
   },
 };
 

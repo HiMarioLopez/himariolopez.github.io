@@ -5,7 +5,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// @material-ui/icons
+
+// core components
 import cardStyle from "assets/jss/material-kit-pro-react/components/cardStyle.jsx";
 
 function Card({ ...props }) {
@@ -36,9 +38,8 @@ function Card({ ...props }) {
     [classes[color]]: color,
     [classes.cardPricing]: pricing,
     [classes.cardProduct]: product,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return (
     <div className={cardClasses} {...rest}>
       {children}
@@ -62,9 +63,10 @@ Card.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
+    "rose",
   ]),
-  product: PropTypes.bool
+  product: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default withStyles(cardStyle)(Card);

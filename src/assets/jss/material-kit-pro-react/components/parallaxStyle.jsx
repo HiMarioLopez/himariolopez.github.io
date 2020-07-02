@@ -6,7 +6,7 @@ import {
   successColor,
   warningColor,
   dangerColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const parallaxStyle = {
@@ -21,12 +21,12 @@ const parallaxStyle = {
     padding: "0",
     border: "0",
     display: "flex",
-    alignItems: "center"
+    alignItems: "center",
   },
   filter: {},
   primaryColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -34,7 +34,7 @@ const parallaxStyle = {
         hexToRgb(primaryColor[4]) +
         ",.56),rgba(" +
         hexToRgb(primaryColor[5]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -44,12 +44,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   roseColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -57,7 +57,7 @@ const parallaxStyle = {
         hexToRgb(roseColor[3]) +
         ",.56),rgba(" +
         hexToRgb(roseColor[4]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -67,12 +67,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   darkColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -82,12 +82,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   infoColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -95,7 +95,7 @@ const parallaxStyle = {
         hexToRgb(infoColor[6]) +
         ",.56),rgba(" +
         hexToRgb(infoColor[7]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -105,12 +105,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   successColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -118,7 +118,7 @@ const parallaxStyle = {
         hexToRgb(successColor[6]) +
         ",.56),rgba(" +
         hexToRgb(successColor[7]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -128,12 +128,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   warningColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -141,7 +141,7 @@ const parallaxStyle = {
         hexToRgb(warningColor[6]) +
         ",.56),rgba(" +
         hexToRgb(warningColor[7]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -151,12 +151,12 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   dangerColor: {
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after": {
       background:
@@ -164,7 +164,7 @@ const parallaxStyle = {
         hexToRgb(dangerColor[6]) +
         ",.56),rgba(" +
         hexToRgb(dangerColor[7]) +
-        ",.95))"
+        ",.95))",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -174,14 +174,14 @@ const parallaxStyle = {
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   small: {
     height: "65vh",
     minHeight: "65vh",
-    maxHeight: "650px"
-  }
+    maxHeight: "650px",
+  },
 };
 
 export default parallaxStyle;

@@ -4,22 +4,22 @@ const cardFooterStyle = {
     alignItems: "center",
     backgroundColor: "transparent",
     padding: "0.9375rem 1.875rem",
-    paddingTop: "0"
+    paddingTop: "0",
   },
   cardFooterProfile: {
-    marginTop: "-15px"
+    marginTop: "-15px",
   },
   cardFooterPlain: {
     paddingLeft: "5px",
     paddingRight: "5px",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
   cardFooterPricing: {
-    zIndex: "2"
+    zIndex: "2",
   },
   cardFooterTestimonial: {
-    display: "block"
-  }
+    display: "block",
+  },
 };
 
 export default cardFooterStyle;

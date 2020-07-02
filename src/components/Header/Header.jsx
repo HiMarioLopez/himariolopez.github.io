@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // nodejs library that concatenates classes
 import classNames from "classnames";
+
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import AppBar from "@material-ui/core/AppBar";
@@ -12,28 +15,34 @@ import IconButton from "@material-ui/core/IconButton";
 import Button from "@material-ui/core/Button";
 import Hidden from "@material-ui/core/Hidden";
 import Drawer from "@material-ui/core/Drawer";
+
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 import Close from "@material-ui/icons/Close";
-// Style Sheets
+
+// core components
 import headerStyle from "assets/jss/material-kit-pro-react/components/headerStyle.jsx";
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobileOpen: false
+      mobileOpen: false,
     };
+    this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
+    this.headerColorChange = this.headerColorChange.bind(this);
   }
-
-  handleDrawerToggle = () => {
+  handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
-  };
-
-  headerColorChange = () => {
+  }
+  componentDidMount() {
+    if (this.props.changeColorOnScroll) {
+      window.addEventListener("scroll", this.headerColorChange);
+    }
+  }
+  headerColorChange() {
     const { classes, color, changeColorOnScroll } = this.props;
     const windowsScrollTop = window.pageYOffset;
-
     if (windowsScrollTop > changeColorOnScroll.height) {
       document.body
         .getElementsByTagName("header")[0]
@@ -49,37 +58,24 @@ class Header extends React.Component {
         .getElementsByTagName("header")[0]
         .classList.remove(classes[changeColorOnScroll.color]);
     }
-  };
-
-  clickBrand = () => {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  };
-
-  componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
-    }
   }
-
   componentWillUnmount() {
     if (this.props.changeColorOnScroll) {
       window.removeEventListener("scroll", this.headerColorChange);
     }
   }
-
   render() {
     const { classes, color, links, brand, fixed, absolute } = this.props;
     const appBarClasses = classNames({
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
-      [classes.fixed]: fixed
+      [classes.fixed]: fixed,
     });
-
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
-          <Button onClick={() => this.clickBrand()} className={classes.title}>
+          <Button className={classes.title}>
             <Link to="/">{brand}</Link>
           </Button>
           <Hidden smDown implementation="css" className={classes.hidden}>
@@ -95,13 +91,13 @@ class Header extends React.Component {
             </IconButton>
           </Hidden>
         </Toolbar>
-        <Hidden mdUp implementation="css">
+        <Hidden mdUp implementation="js">
           <Drawer
             variant="temporary"
-            anchor="right"
+            anchor={"right"}
             open={this.state.mobileOpen}
             classes={{
-              paper: classes.drawerPaper
+              paper: classes.drawerPaper,
             }}
             onClose={this.handleDrawerToggle}
           >
@@ -122,7 +118,7 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "white",
 };
 
 Header.propTypes = {
@@ -136,7 +132,7 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
   ]),
   links: PropTypes.node,
   brand: PropTypes.string,
@@ -144,7 +140,7 @@ Header.propTypes = {
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from
   // this.props.color (see above) to changeColorOnScroll.color
-  // when the window.pageYOffset is higher or equal to
+  // when the window.pageYOffset is heigher or equal to
   // changeColorOnScroll.height and then when it is smaller than
   // changeColorOnScroll.height change it back to
   // this.props.color (see above)
@@ -159,9 +155,9 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
-    ]).isRequired
-  })
+      "dark",
+    ]).isRequired,
+  }),
 };
 
 export default withStyles(headerStyle)(Header);

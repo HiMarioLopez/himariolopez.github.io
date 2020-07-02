@@ -5,7 +5,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// @material-ui/icons
+
+// core components
 import cardHeaderStyle from "assets/jss/material-kit-pro-react/components/cardHeaderStyle.jsx";
 
 function CardHeader({ ...props }) {
@@ -29,9 +31,8 @@ function CardHeader({ ...props }) {
     [classes.cardHeaderContact]: contact,
     [classes.cardHeaderSignup]: signup,
     [classes.noShadow]: noShadow,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return (
     <div className={cardHeaderClasses} {...rest}>
       {children}
@@ -48,13 +49,14 @@ CardHeader.propTypes = {
     "danger",
     "info",
     "primary",
-    "rose"
+    "rose",
   ]),
   plain: PropTypes.bool,
   image: PropTypes.bool,
   contact: PropTypes.bool,
   signup: PropTypes.bool,
-  noShadow: PropTypes.bool
+  noShadow: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default withStyles(cardHeaderStyle)(CardHeader);

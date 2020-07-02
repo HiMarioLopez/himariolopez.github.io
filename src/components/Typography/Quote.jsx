@@ -5,7 +5,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// core components
 import typographyStyle from "assets/jss/material-kit-pro-react/components/typographyStyle.jsx";
 
 function Quote({ ...props }) {
@@ -13,11 +13,11 @@ function Quote({ ...props }) {
   const quoteClasses = classNames(classes.defaultFontStyle, classes.quote);
   const quoteTextClasses = classNames({
     [classes.quoteText]: true,
-    [textClassName]: textClassName !== undefined
+    [textClassName]: textClassName !== undefined,
   });
   const quoteAuthorClasses = classNames({
     [classes.quoteAuthor]: true,
-    [authorClassName]: authorClassName !== undefined
+    [authorClassName]: authorClassName !== undefined,
   });
   return (
     <blockquote className={quoteClasses}>
@@ -32,7 +32,7 @@ Quote.propTypes = {
   text: PropTypes.node,
   author: PropTypes.node,
   textClassName: PropTypes.string,
-  authorClassName: PropTypes.string
+  authorClassName: PropTypes.string,
 };
 
 export default withStyles(typographyStyle)(Quote);

@@ -36,7 +36,7 @@ class SectionWork extends React.Component {
       activeRotate1: "",
       activeRotate2: "",
       activeRotate3: "",
-      activeRotate4: ""
+      activeRotate4: "",
     };
   }
 
@@ -77,15 +77,11 @@ class SectionWork extends React.Component {
             <GridContainer>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <div
-                  className={`${classes.rotatingCardContainer} ${
-                    classes.manualRotate
-                  } ${this.state.activeRotate2}`}
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${this.state.activeRotate2}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={`${classes.front} ${
-                        classes.wrapperBackground
-                      }`}
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={card1FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -104,7 +100,7 @@ class SectionWork extends React.Component {
                             color="danger"
                             onClick={() =>
                               this.setState({
-                                activeRotate2: classes.activateRotate
+                                activeRotate2: classes.activateRotate,
                               })
                             }
                           >
@@ -140,7 +136,7 @@ class SectionWork extends React.Component {
                             color="white"
                             onClick={() =>
                               this.setState({
-                                activeRotate2: ""
+                                activeRotate2: "",
                               })
                             }
                           >
@@ -154,15 +150,11 @@ class SectionWork extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <div
-                  className={`${classes.rotatingCardContainer} ${
-                    classes.manualRotate
-                  } ${this.state.activeRotate1}`}
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${this.state.activeRotate1}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={`${classes.front} ${
-                        classes.wrapperBackground
-                      }`}
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={card2FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -181,7 +173,7 @@ class SectionWork extends React.Component {
                             color="danger"
                             onClick={() =>
                               this.setState({
-                                activeRotate1: classes.activateRotate
+                                activeRotate1: classes.activateRotate,
                               })
                             }
                           >
@@ -216,7 +208,7 @@ class SectionWork extends React.Component {
                             color="white"
                             onClick={() =>
                               this.setState({
-                                activeRotate1: ""
+                                activeRotate1: "",
                               })
                             }
                           >
@@ -230,15 +222,11 @@ class SectionWork extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <div
-                  className={`${classes.rotatingCardContainer} ${
-                    classes.manualRotate
-                  } ${this.state.activeRotate3}`}
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${this.state.activeRotate3}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={`${classes.front} ${
-                        classes.wrapperBackground
-                      }`}
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={card3FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -255,7 +243,7 @@ class SectionWork extends React.Component {
                             color="danger"
                             onClick={() =>
                               this.setState({
-                                activeRotate3: classes.activateRotate
+                                activeRotate3: classes.activateRotate,
                               })
                             }
                           >
@@ -290,7 +278,7 @@ class SectionWork extends React.Component {
                             color="white"
                             onClick={() =>
                               this.setState({
-                                activeRotate3: ""
+                                activeRotate3: "",
                               })
                             }
                           >
@@ -304,15 +292,11 @@ class SectionWork extends React.Component {
               </GridItem>
               <GridItem xs={12} sm={12} md={6} lg={6}>
                 <div
-                  className={`${classes.rotatingCardContainer} ${
-                    classes.manualRotate
-                  } ${this.state.activeRotate4}`}
+                  className={`${classes.rotatingCardContainer} ${classes.manualRotate} ${this.state.activeRotate4}`}
                 >
                   <Card className={classes.cardRotate}>
                     <div
-                      className={`${classes.front} ${
-                        classes.wrapperBackground
-                      }`}
+                      className={`${classes.front} ${classes.wrapperBackground}`}
                       style={card4FrontStyle}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -331,7 +315,7 @@ class SectionWork extends React.Component {
                             color="danger"
                             onClick={() =>
                               this.setState({
-                                activeRotate4: classes.activateRotate
+                                activeRotate4: classes.activateRotate,
                               })
                             }
                           >
@@ -365,7 +349,7 @@ class SectionWork extends React.Component {
                             color="white"
                             onClick={() =>
                               this.setState({
-                                activeRotate4: ""
+                                activeRotate4: "",
                               })
                             }
                           >

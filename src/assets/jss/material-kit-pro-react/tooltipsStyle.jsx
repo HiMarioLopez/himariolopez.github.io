@@ -2,7 +2,7 @@ import {
   whiteColor,
   blackColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const tooltipsStyle = {
@@ -35,8 +35,8 @@ const tooltipsStyle = {
     wordSpacing: "normal",
     wordWrap: "normal",
     whiteSpace: "normal",
-    lineBreak: "auto"
-  }
+    lineBreak: "auto",
+  },
 };
 
 export default tooltipsStyle;

@@ -5,7 +5,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// @material-ui/icons
+
+// core components
 import cardBodyStyle from "assets/jss/material-kit-pro-react/components/cardBodyStyle.jsx";
 
 function CardBody({ ...props }) {
@@ -29,9 +31,8 @@ function CardBody({ ...props }) {
     [classes.cardPricing]: pricing,
     [classes.cardSignup]: signup,
     [classes.cardBodyColor]: color,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return (
     <div className={cardBodyClasses} {...rest}>
       {children}
@@ -47,7 +48,8 @@ CardBody.propTypes = {
   formHorizontal: PropTypes.bool,
   pricing: PropTypes.bool,
   signup: PropTypes.bool,
-  color: PropTypes.bool
+  color: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default withStyles(cardBodyStyle)(CardBody);

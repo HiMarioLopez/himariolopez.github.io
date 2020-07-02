@@ -5,7 +5,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-// Style Sheets
+// @material-ui/icons
+
+// core components
 import cardFooterStyle from "assets/jss/material-kit-pro-react/components/cardFooterStyle.jsx";
 
 function CardFooter({ ...props }) {
@@ -25,9 +27,8 @@ function CardFooter({ ...props }) {
     [classes.cardFooterProfile]: profile || testimonial,
     [classes.cardFooterPricing]: pricing,
     [classes.cardFooterTestimonial]: testimonial,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
-
   return (
     <div className={cardFooterClasses} {...rest}>
       {children}
@@ -41,7 +42,8 @@ CardFooter.propTypes = {
   plain: PropTypes.bool,
   profile: PropTypes.bool,
   pricing: PropTypes.bool,
-  testimonial: PropTypes.bool
+  testimonial: PropTypes.bool,
+  children: PropTypes.node,
 };
 
 export default withStyles(cardFooterStyle)(CardFooter);

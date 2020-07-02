@@ -1,16 +1,20 @@
 /* eslint-disable */
 import React from "react";
+
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
+
 // @material-ui/icons
 import Description from "@material-ui/icons/Description";
+
 // core components
 import Button from "components/CustomButtons/Button.jsx";
-// Style Sheets
+
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 
 function HeaderLinks({ ...props }) {
@@ -18,36 +22,6 @@ function HeaderLinks({ ...props }) {
 
   return (
     <List className={classes.list + " " + classes.mlAuto}>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#work"
-          color="transparent"
-          className={classes.navButton}
-          round
-        >
-          Work
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#academics"
-          color="transparent"
-          className={classes.navButton}
-          round
-        >
-          Academics
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#projects"
-          color="transparent"
-          className={classes.navButton}
-          round
-        >
-          Projects
-        </Button>
-      </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href={process.env.PUBLIC_URL + "/Resume.pdf"}
@@ -64,7 +38,7 @@ function HeaderLinks({ ...props }) {
 }
 
 HeaderLinks.defaultProps = {
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 HeaderLinks.propTypes = {
@@ -75,8 +49,8 @@ HeaderLinks.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
-  ])
+    "rose",
+  ]),
 };
 
 export default withStyles(headerLinksStyle)(HeaderLinks);

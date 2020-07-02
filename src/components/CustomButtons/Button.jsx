@@ -3,13 +3,14 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
+
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
-// Style Sheets
+
 import buttonStyle from "assets/jss/material-kit-pro-react/components/buttonStyle.jsx";
 
-function RegularButton(props) {
+const RegularButton = React.forwardRef((props, ref) => {
   const {
     classes,
     color,
@@ -38,14 +39,14 @@ function RegularButton(props) {
     [classes.link]: link,
     [classes.justIcon]: justIcon,
     [classes.fileButton]: fileButton,
-    [className]: className
+    [className]: className,
   });
   return (
-    <Button {...rest} className={btnClasses}>
+    <Button {...rest} ref={ref} className={btnClasses}>
       {children}
     </Button>
   );
-}
+});
 
 RegularButton.propTypes = {
   classes: PropTypes.object.isRequired,
@@ -70,7 +71,7 @@ RegularButton.propTypes = {
     "dribbble",
     "reddit",
     "instagram",
-    "transparent"
+    "transparent",
   ]),
   size: PropTypes.oneOf(["sm", "lg"]),
   simple: PropTypes.bool,
@@ -80,7 +81,9 @@ RegularButton.propTypes = {
   block: PropTypes.bool,
   link: PropTypes.bool,
   justIcon: PropTypes.bool,
-  fileButton: PropTypes.bool
+  fileButton: PropTypes.bool,
+  children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 export default withStyles(buttonStyle)(RegularButton);

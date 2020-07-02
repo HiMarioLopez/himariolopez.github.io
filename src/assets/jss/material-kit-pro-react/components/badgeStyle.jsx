@@ -6,7 +6,7 @@ import {
   infoColor,
   roseColor,
   whiteColor,
-  grayColor
+  grayColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const badgeStyle = {
@@ -22,29 +22,29 @@ const badgeStyle = {
     textAlign: "center",
     whiteSpace: "nowrap",
     verticalAlign: "baseline",
-    display: "inline-block"
+    display: "inline-block",
   },
   primary: {
-    backgroundColor: primaryColor[0]
+    backgroundColor: primaryColor[0],
   },
   warning: {
-    backgroundColor: warningColor[0]
+    backgroundColor: warningColor[0],
   },
   danger: {
-    backgroundColor: dangerColor[0]
+    backgroundColor: dangerColor[0],
   },
   success: {
-    backgroundColor: successColor[0]
+    backgroundColor: successColor[0],
   },
   info: {
-    backgroundColor: infoColor[0]
+    backgroundColor: infoColor[0],
   },
   rose: {
-    backgroundColor: roseColor[0]
+    backgroundColor: roseColor[0],
   },
   gray: {
-    backgroundColor: grayColor[7]
-  }
+    backgroundColor: grayColor[7],
+  },
 };
 
 export default badgeStyle;
