@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import headerLinksStyle from "assets/jss/material-kit-pro-react/components/headerLinksStyle.jsx";
 import {
   container,
@@ -21,31 +5,31 @@ import {
   title,
   blackColor,
   whiteColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
-const headersSection = theme => ({
+const headersSection = (theme) => ({
   ...headerLinksStyle(theme),
   sectionBlank: {
     height: "70px",
-    display: "block"
+    display: "block",
   },
   container: {
     ...container,
     zIndex: "2",
     position: "relative",
     "& h1, & h4, & h6": {
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   conatinerHeader2: {
     ...container,
     zIndex: "2",
     position: "relative",
     "& h1, & h4, & h6": {
-      color: whiteColor
+      color: whiteColor,
     },
-    paddingTop: "25vh"
+    paddingTop: "25vh",
   },
   title,
   pageHeader: {
@@ -62,7 +46,7 @@ const headersSection = theme => ({
     MsFlexAlign: "center",
     alignItems: "center",
     "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
+      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)",
     },
     "&:after,&:before": {
       position: "absolute",
@@ -72,8 +56,8 @@ const headersSection = theme => ({
       display: "block",
       left: "0",
       top: "0",
-      content: "''"
-    }
+      content: "''",
+    },
   },
   iframeContainer: {
     "& > iframe": {
@@ -85,26 +69,26 @@ const headersSection = theme => ({
         hexToRgb(blackColor) +
         ", 0.12), 0 8px 10px -5px rgba(" +
         hexToRgb(blackColor) +
-        ", 0.2)"
-    }
+        ", 0.2)",
+    },
   },
   mrAuto,
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   card: {
-    marginTop: "60px"
+    marginTop: "60px",
   },
   formControl: {
     margin: "0",
-    padding: "8px 0 0 0"
+    padding: "8px 0 0 0",
   },
   textRight: {
-    textAlign: "right"
+    textAlign: "right",
   },
   button: {
-    margin: "0 !important"
-  }
+    margin: "0 !important",
+  },
 });
 
 export default headersSection;

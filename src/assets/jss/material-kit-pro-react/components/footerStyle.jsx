@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   primaryColor,
@@ -23,18 +7,18 @@ import {
   twitterColor,
   dribbbleColor,
   instagramColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const footerStyle = {
   left: {
     float: "left!important",
-    display: "block"
+    display: "block",
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right"
+    float: "right",
   },
   rightLinks: {
     float: "right!important",
@@ -45,12 +29,12 @@ const footerStyle = {
       listStyle: "none",
       height: 38,
       "& li": {
-        display: "inline-block"
-      }
+        display: "inline-block",
+      },
     },
     "& i": {
-      fontSize: "20px"
-    }
+      fontSize: "20px",
+    },
   },
   footer: {
     padding: "0.9375rem 0",
@@ -61,27 +45,27 @@ const footerStyle = {
     "& ul": {
       marginBottom: "0",
       padding: 0,
-      listStyle: "none"
-    }
+      listStyle: "none",
+    },
   },
   big: {
     padding: "1.875rem 0",
     "& h5, & h4": {
       fontWeight: 700,
       fontFamily: "Roboto Slab,Times New Roman,serif",
-      marginBottom: "15px"
+      marginBottom: "15px",
     },
     "& p": {
-      color: grayColor[0]
-    }
+      color: grayColor[0],
+    },
   },
   content: {
-    textAlign: "left"
+    textAlign: "left",
   },
   a: {
     color: primaryColor[0],
     textDecoration: "none",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
   dark: {
     background:
@@ -93,27 +77,27 @@ const footerStyle = {
     backgroundSize: "550% 450%",
     color: whiteColor,
     "& p": {
-      color: grayColor[0]
+      color: grayColor[0],
     },
     "& i": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& a": {
       color: whiteColor,
       opacity: ".86",
       "&:visited": {
-        color: whiteColor
+        color: whiteColor,
       },
       "&:focus, &:hover": {
-        opacity: 1
-      }
+        opacity: 1,
+      },
     },
     "& hr": {
-      borderColor: "rgba(" + hexToRgb(whiteColor) + ",0.2)"
+      borderColor: "rgba(" + hexToRgb(whiteColor) + ",0.2)",
     },
     "& $btnTwitter, & $btnDribbble, & $btnInstagram": {
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   white: {
     backgroundColor: whiteColor,
@@ -121,29 +105,29 @@ const footerStyle = {
     textDecoration: "none",
     "& a": {
       "&:visited": {
-        color: grayColor[1]
+        color: grayColor[1],
       },
       "&:hover, &:focus": {
-        color: grayColor[20]
-      }
-    }
+        color: grayColor[20],
+      },
+    },
   },
   container,
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
   },
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   icon: {
     width: "18px",
     height: "18px",
     position: "relative",
-    top: "3px"
+    top: "3px",
   },
   iconSocial: {
     width: "41px",
@@ -152,19 +136,19 @@ const footerStyle = {
     minWidth: "41px",
     padding: 0,
     overflow: "hidden",
-    position: "relative"
+    position: "relative",
   },
   btnTwitter: {
     ...btnLink,
-    color: twitterColor
+    color: twitterColor,
   },
   btnDribbble: {
     ...btnLink,
-    color: dribbbleColor
+    color: dribbbleColor,
   },
   btnInstagram: {
     ...btnLink,
-    color: instagramColor
+    color: instagramColor,
   },
   footerBrand: {
     height: "50px",
@@ -175,14 +159,14 @@ const footerStyle = {
     color: grayColor[1],
     textDecoration: "none",
     fontWeight: 700,
-    fontFamily: "Roboto Slab,Times New Roman,serif"
+    fontFamily: "Roboto Slab,Times New Roman,serif",
   },
   pullCenter: {
     display: "inline-block",
-    float: "none"
+    float: "none",
   },
   clearFix: {
-    clear: "both"
-  }
+    clear: "both",
+  },
 };
 export default footerStyle;

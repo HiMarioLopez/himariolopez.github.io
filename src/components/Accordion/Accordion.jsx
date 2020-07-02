@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
@@ -22,7 +6,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
-
 // @material-ui/icons
 import ExpandMore from "@material-ui/icons/ExpandMore";
 
@@ -33,10 +16,10 @@ class Accordion extends React.Component {
     super(props);
     this.state = {
       active: props.active.length === undefined ? [props.active] : props.active,
-      single: props.active.length === undefined ? true : false
+      single: props.active.length === undefined ? true : false,
     };
   }
-  handleChange = panel => () => {
+  handleChange = (panel) => () => {
     let newArray;
 
     if (this.state.single) {
@@ -54,7 +37,7 @@ class Accordion extends React.Component {
       }
     }
     this.setState({
-      active: newArray
+      active: newArray,
     });
   };
   render() {
@@ -72,7 +55,7 @@ class Accordion extends React.Component {
               key={key}
               classes={{
                 root: classes.expansionPanel,
-                expanded: classes.expansionPanelExpanded
+                expanded: classes.expansionPanelExpanded,
               }}
             >
               <ExpansionPanelSummary
@@ -85,7 +68,7 @@ class Accordion extends React.Component {
                     classes[activeColor + "ExpansionPanelSummaryExpaned"]
                   }`,
                   content: classes.expansionPanelSummaryContent,
-                  expandIcon: classes.expansionPanelSummaryExpandIcon
+                  expandIcon: classes.expansionPanelSummaryExpandIcon,
                 }}
               >
                 <h4 className={classes.title}>{prop.title}</h4>
@@ -103,7 +86,7 @@ class Accordion extends React.Component {
 
 Accordion.defaultProps = {
   active: -1,
-  activeColor: "primary"
+  activeColor: "primary",
 };
 
 Accordion.propTypes = {
@@ -111,12 +94,12 @@ Accordion.propTypes = {
   // index of the default active collapse
   active: PropTypes.oneOfType([
     PropTypes.number,
-    PropTypes.arrayOf(PropTypes.number)
+    PropTypes.arrayOf(PropTypes.number),
   ]),
   collapses: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      content: PropTypes.node
+      content: PropTypes.node,
     })
   ).isRequired,
   activeColor: PropTypes.oneOf([
@@ -126,8 +109,8 @@ Accordion.propTypes = {
     "danger",
     "success",
     "info",
-    "rose"
-  ])
+    "rose",
+  ]),
 };
 
 export default withStyles(accordionStyle)(Accordion);

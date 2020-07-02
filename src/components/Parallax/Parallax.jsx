@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -35,14 +19,14 @@ class Parallax extends React.Component {
       windowScrollTop = 0;
     }
     this.state = {
-      transform: "translate3d(0," + windowScrollTop + "px,0)"
+      transform: "translate3d(0," + windowScrollTop + "px,0)",
     };
   }
   componentDidMount() {
     if (window.innerWidth >= 768) {
       var windowScrollTop = window.pageYOffset / 3;
       this.setState({
-        transform: "translate3d(0," + windowScrollTop + "px,0)"
+        transform: "translate3d(0," + windowScrollTop + "px,0)",
       });
       window.addEventListener("scroll", this.resetTransform);
     }
@@ -55,7 +39,7 @@ class Parallax extends React.Component {
   resetTransform = () => {
     var windowScrollTop = window.pageYOffset / 3;
     this.setState({
-      transform: "translate3d(0," + windowScrollTop + "px,0)"
+      transform: "translate3d(0," + windowScrollTop + "px,0)",
     });
   };
   render() {
@@ -66,13 +50,13 @@ class Parallax extends React.Component {
       children,
       style,
       image,
-      small
+      small,
     } = this.props;
     const parallaxClasses = classNames({
       [classes.parallax]: true,
       [classes[filter + "Color"]]: filter !== undefined,
       [classes.small]: small,
-      [className]: className !== undefined
+      [className]: className !== undefined,
     });
     return (
       <div
@@ -80,7 +64,7 @@ class Parallax extends React.Component {
         style={{
           ...style,
           backgroundImage: "url(" + image + ")",
-          ...this.state
+          ...this.state,
         }}
       >
         {children}
@@ -99,12 +83,12 @@ Parallax.propTypes = {
     "info",
     "success",
     "warning",
-    "danger"
+    "danger",
   ]),
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
-  small: PropTypes.bool
+  small: PropTypes.bool,
 };
 
 export default withStyles(parallaxStyle)(Parallax);

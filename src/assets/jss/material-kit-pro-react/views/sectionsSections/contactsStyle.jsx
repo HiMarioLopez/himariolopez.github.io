@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   section,
@@ -24,7 +8,7 @@ import {
   cardTitle,
   blackColor,
   whiteColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import customCheckboxRadioSwitch from "assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx";
@@ -42,7 +26,7 @@ const contactsSection = {
     position: "relative",
     "& $container": {
       zIndex: "2",
-      position: "relative"
+      position: "relative",
     },
     "&:after": {
       position: "absolute",
@@ -53,77 +37,77 @@ const contactsSection = {
       left: "0",
       top: "0",
       content: "''",
-      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7)"
+      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7)",
     },
     "& $title": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& $description": {
-      color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
+      color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)",
     },
-    "& $infoArea": {}
+    "& $infoArea": {},
   },
   contacts: {
-    padding: "80px 0"
+    padding: "80px 0",
   },
   infoArea: {
     padding: "0",
     margin: "0",
     "& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& h4": {
       marginTop: "20px",
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   card1: {
     marginTop: "30px",
     "& $cardTitle": {
       marginBottom: "0.75rem !important",
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   justifyContentBetween: {
     WebkitBoxPack: "justify !important",
     MsFlexPack: "justify !important",
-    justifyContent: "space-between !important"
+    justifyContent: "space-between !important",
   },
   pullRight: {
-    float: "right"
+    float: "right",
   },
   card2: {
     "@media (min-width: 991px)": {
-      margin: "80px 0 80px 150px"
+      margin: "80px 0 80px 150px",
     },
     maxWidth: "560px",
     float: "left",
     "& $cardTitle": {
       marginBottom: "0.75rem !important",
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   map: {
     overflow: "hidden",
     width: "100%",
     height: "800px",
-    position: "absolute"
+    position: "absolute",
   },
   contacts2: {
     padding: "0",
-    height: "800px"
+    height: "800px",
   },
   infoArea2: {
     padding: "0",
     margin: "0",
     "& h4": {
       fontSize: "1.0625rem",
-      lineHeight: "1.55em"
-    }
-  }
+      lineHeight: "1.55em",
+    },
+  },
 };
 
 export default contactsSection;

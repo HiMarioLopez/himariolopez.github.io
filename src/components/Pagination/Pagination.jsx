@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
@@ -35,7 +19,7 @@ function Pagination({ ...props }) {
         const paginationLink = classNames({
           [classes.paginationLink]: true,
           [classes[color]]: prop.active,
-          [classes.disabled]: prop.disabled
+          [classes.disabled]: prop.disabled,
         });
         return (
           <li className={classes.paginationItem} key={key}>
@@ -64,7 +48,7 @@ function Pagination({ ...props }) {
 }
 
 Pagination.defaultProps = {
-  color: "primary"
+  color: "primary",
 };
 
 Pagination.propTypes = {
@@ -75,11 +59,11 @@ Pagination.propTypes = {
       disabled: PropTypes.bool,
       text: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
         .isRequired,
-      onClick: PropTypes.func
+      onClick: PropTypes.func,
     })
   ).isRequired,
   color: PropTypes.oneOf(["primary", "info", "success", "warning", "danger"]),
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default withStyles(paginationStyle)(Pagination);

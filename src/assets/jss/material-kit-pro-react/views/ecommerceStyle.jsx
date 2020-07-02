@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   title,
   main,
@@ -25,7 +9,7 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 import imagesStyles from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
 
@@ -38,34 +22,34 @@ const styles = {
   mlAuto,
   description,
   textCenter: {
-    textAlign: "center !important"
+    textAlign: "center !important",
   },
   container: {
     ...container,
-    zIndex: "2"
+    zIndex: "2",
   },
   brand: {
     "& h1, & h4": {
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   card: {},
   subscribeButton: {},
   cardBody: {
     padding: "15px",
     "& form": {
-      marginBottom: "0"
-    }
+      marginBottom: "0",
+    },
   },
   cardForm: {
     margin: "0 0 0 14px",
     padding: 0,
-    top: 10
+    top: 10,
   },
   subscribeLine: {
     padding: "1.875rem 0px",
     "& $card": {
-      marginTop: "30px"
+      marginTop: "30px",
     },
     "& form": { margin: "0px" },
     "&$subscribeLineImage:after": {
@@ -77,8 +61,8 @@ const styles = {
       left: 0,
       top: 0,
       content: "''",
-      backgroundColor: "rgba(" + hexToRgb(blackColor) + ",0.66)"
-    }
+      backgroundColor: "rgba(" + hexToRgb(blackColor) + ",0.66)",
+    },
   },
   subscribeLineImage: {
     position: "relative",
@@ -86,14 +70,14 @@ const styles = {
     backgroundSize: "cover",
     "& $container": {
       zIndex: 2,
-      position: "relative"
+      position: "relative",
     },
     "& $title": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& $description": {
-      color: grayColor[0]
-    }
+      color: grayColor[0],
+    },
   },
   socialFeed: {
     "& p": {
@@ -101,42 +85,42 @@ const styles = {
       verticalAlign: "top",
       overflow: "hidden",
       paddingBottom: "10px",
-      maxWidth: 300
+      maxWidth: 300,
     },
     "& i": {
       fontSize: "20px",
       display: "table-cell",
-      paddingRight: "10px"
-    }
+      paddingRight: "10px",
+    },
   },
   img: {
     width: "20%",
     marginRight: "5%",
     marginBottom: "5%",
-    float: "left"
+    float: "left",
   },
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
   },
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   left: {
     float: "left!important",
-    display: "block"
+    display: "block",
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right"
+    float: "right",
   },
   aClass: {
     textDecoration: "none",
-    backgroundColor: "transparent"
+    backgroundColor: "transparent",
   },
   block: {
     color: "inherit",
@@ -147,8 +131,8 @@ const styles = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
-  }
+    display: "block",
+  },
 };
 
 export default styles;

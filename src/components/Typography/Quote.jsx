@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -29,11 +13,11 @@ function Quote({ ...props }) {
   const quoteClasses = classNames(classes.defaultFontStyle, classes.quote);
   const quoteTextClasses = classNames({
     [classes.quoteText]: true,
-    [textClassName]: textClassName !== undefined
+    [textClassName]: textClassName !== undefined,
   });
   const quoteAuthorClasses = classNames({
     [classes.quoteAuthor]: true,
-    [authorClassName]: authorClassName !== undefined
+    [authorClassName]: authorClassName !== undefined,
   });
   return (
     <blockquote className={quoteClasses}>
@@ -48,7 +32,7 @@ Quote.propTypes = {
   text: PropTypes.node,
   author: PropTypes.node,
   textClassName: PropTypes.string,
-  authorClassName: PropTypes.string
+  authorClassName: PropTypes.string,
 };
 
 export default withStyles(typographyStyle)(Quote);

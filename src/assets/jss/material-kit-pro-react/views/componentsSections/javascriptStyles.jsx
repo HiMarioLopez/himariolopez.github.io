@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   title,
@@ -24,7 +8,7 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import modalStyle from "assets/jss/material-kit-pro-react/modalStyle.jsx";
@@ -32,7 +16,7 @@ import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.jsx";
 import popoverStyles from "assets/jss/material-kit-pro-react/popoverStyles.jsx";
 import customCheckboxRadioSwitch from "assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx";
 
-const javascriptStyles = theme => ({
+const javascriptStyles = (theme) => ({
   container,
   description,
   cardTitle,
@@ -43,18 +27,18 @@ const javascriptStyles = theme => ({
   ...modalStyle(theme),
   ...customCheckboxRadioSwitch,
   section: {
-    padding: "70px 0 0"
+    padding: "70px 0 0",
   },
   title: {
     ...title,
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   icon: {
     width: "24px",
     height: "24px",
-    color: grayColor[13]
+    color: grayColor[13],
   },
   label: {
     color: "rgba(" + hexToRgb(blackColor) + ", 0.26)",
@@ -64,47 +48,47 @@ const javascriptStyles = theme => ({
     transition: "0.3s ease all",
     lineHeight: "1.428571429",
     fontWeight: "400",
-    paddingLeft: "0"
+    paddingLeft: "0",
   },
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   cardTitleWhite: {
     ...cardTitle,
-    color: whiteColor + "  !important"
+    color: whiteColor + "  !important",
   },
   socialLine: {
     marginTop: "1rem",
     textAlign: "center",
-    padding: "0"
+    padding: "0",
   },
   socialLineButton: {
     "&, &:hover": { color: whiteColor },
     marginLeft: "5px",
-    marginRight: "5px"
+    marginRight: "5px",
   },
   cardLoginHeader: {
     marginTop: "-40px",
     padding: "20px 0",
     width: "100%",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   cardLoginBody: {
     paddingTop: "0",
-    paddingBottom: "0"
+    paddingBottom: "0",
   },
   justifyContentCenter: {
     WebkitBoxPack: "center !important",
     MsFlexPack: "center !important",
-    justifyContent: "center !important"
+    justifyContent: "center !important",
   },
   infoArea: {
-    padding: "0px 0px 20px !important"
+    padding: "0px 0px 20px !important",
   },
   space50: {
     height: "50px",
-    display: "block"
-  }
+    display: "block",
+  },
 });
 
 export default javascriptStyles;

@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   title,
@@ -23,7 +7,7 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const styles = {
@@ -36,28 +20,28 @@ const styles = {
   cardBody: {
     padding: "15px",
     "& form": {
-      marginBottom: "0"
-    }
+      marginBottom: "0",
+    },
   },
   cardForm: {
     margin: "0 0 0 14px",
     padding: 0,
-    top: 10
+    top: 10,
   },
   socialLine: {
     padding: ".9375rem 0px",
     "& $border": {
-      borderRight: "1px solid rgba(" + hexToRgb(blackColor) + ",0.12)"
+      borderRight: "1px solid rgba(" + hexToRgb(blackColor) + ",0.12)",
     },
     "& $border:last-child": {
-      border: 0
-    }
+      border: 0,
+    },
   },
   textCenter: {
-    textAlign: "center !important"
+    textAlign: "center !important",
   },
   white: {
-    backgroundColor: whiteColor
+    backgroundColor: whiteColor,
   },
   dark: {
     background:
@@ -68,25 +52,25 @@ const styles = {
       " 100%)",
     backgroundSize: "550% 450%",
     "& $border": {
-      borderColor: "rgba(" + hexToRgb(whiteColor) + ",0.1)"
-    }
+      borderColor: "rgba(" + hexToRgb(whiteColor) + ",0.1)",
+    },
   },
   bigIcons: {
     "& a": {
       margin: 0,
       width: "100% !important",
       paddingTop: "45px",
-      paddingBottom: "45px"
+      paddingBottom: "45px",
     },
     "& button i.fab, & a[role='button'] i.fab": {
       fontSize: "25px",
-      lineHeight: "90px"
-    }
+      lineHeight: "90px",
+    },
   },
   subscribeLine: {
     padding: "1.875rem 0px",
     "& $card": {
-      marginTop: "30px"
+      marginTop: "30px",
     },
     "& form": { margin: "0px" },
     "& $formFix": { paddingTop: "0px" },
@@ -99,15 +83,15 @@ const styles = {
       left: 0,
       top: 0,
       content: "''",
-      backgroundColor: "rgba(" + hexToRgb(blackColor) + ",0.66)"
-    }
+      backgroundColor: "rgba(" + hexToRgb(blackColor) + ",0.66)",
+    },
   },
   formFix: {},
   subscribeLineWhite: {
     backgroundColor: whiteColor,
     "& $subscribeButton": {
-      top: "-6px"
-    }
+      top: "-6px",
+    },
   },
   subscribeLineImage: {
     position: "relative",
@@ -115,17 +99,17 @@ const styles = {
     backgroundSize: "cover",
     "& $container": {
       zIndex: 2,
-      position: "relative"
+      position: "relative",
     },
     "& $title": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& $description": {
-      color: grayColor[0]
-    }
+      color: grayColor[0],
+    },
   },
   subscribeButton: {},
-  border: {}
+  border: {},
 };
 
 export default styles;

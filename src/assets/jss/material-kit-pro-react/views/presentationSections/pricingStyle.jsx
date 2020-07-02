@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   section,
   container,
@@ -24,7 +8,7 @@ import {
   card,
   blackColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const pricingStyle = {
@@ -37,19 +21,19 @@ const pricingStyle = {
     padding: "80px 0",
     zIndex: 3,
     position: "relative",
-    textAlign: "center"
+    textAlign: "center",
   },
   socialLine: {
     padding: ".9375rem 0px",
     textAlign: "center",
-    width: "100%"
+    width: "100%",
   },
   marginRight: {
-    marginRight: "3px"
+    marginRight: "3px",
   },
   description: {
     ...description,
-    color: grayColor[0]
+    color: grayColor[0],
   },
   card: {
     ...card,
@@ -66,27 +50,27 @@ const pricingStyle = {
       listStyle: "none",
       padding: 0,
       maxWidth: "240px",
-      margin: "10px auto"
+      margin: "10px auto",
     },
     "& ul li": {
       color: grayColor[0],
       textAlign: "center",
       padding: "12px 0px",
-      borderBottom: "1px solid rgba(" + hexToRgb(grayColor[0]) + ",0.3)"
+      borderBottom: "1px solid rgba(" + hexToRgb(grayColor[0]) + ",0.3)",
     },
     "& ul li b": {
-      color: grayColor[1]
+      color: grayColor[1],
     },
     "& ul li:last-child": {
-      border: 0
-    }
+      border: 0,
+    },
   },
   cardMargin: {
-    marginTop: "80px"
+    marginTop: "80px",
   },
   cardCategory: {
     color: grayColor[0],
-    marginTop: "10px"
+    marginTop: "10px",
   },
   cardTitle: {
     marginTop: "30px",
@@ -99,15 +83,15 @@ const pricingStyle = {
       top: "-17px",
       fontSize: "26px",
       display: "inline-flex",
-      height: 0
-    }
+      height: 0,
+    },
   },
   cardBody: {
-    padding: "15px"
+    padding: "15px",
   },
   navPillsContent: {
-    padding: "20px 0px 50px 0px"
-  }
+    padding: "20px 0px 50px 0px",
+  },
 };
 
 export default pricingStyle;

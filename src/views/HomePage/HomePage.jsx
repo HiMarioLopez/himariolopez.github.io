@@ -44,7 +44,7 @@ class HomePage extends React.Component {
 }
 
 HomePage.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
 };
 
 export default withStyles(homePageStyle)(HomePage);

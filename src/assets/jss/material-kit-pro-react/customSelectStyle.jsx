@@ -1,26 +1,10 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   primaryColor,
   primaryBoxShadow,
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const customSelectStyle = {
@@ -34,32 +18,32 @@ const customSelectStyle = {
     color: grayColor[1],
     letterSpacing: "0",
     "&:focus": {
-      backgroundColor: "transparent"
+      backgroundColor: "transparent",
     },
     "&[aria-owns] + input + svg": {
-      transform: "rotate(180deg)"
+      transform: "rotate(180deg)",
     },
     "& + input + svg": {
-      transition: "all 300ms linear"
-    }
+      transition: "all 300ms linear",
+    },
   },
   selectFormControl: {
     margin: "10px 1px 10px 0px !important",
     "& > div": {
       "&:before": {
         borderBottomWidth: "1px !important",
-        borderBottomColor: grayColor[11] + " !important"
+        borderBottomColor: grayColor[11] + " !important",
       },
       "&:after": {
-        borderBottomColor: primaryColor[0] + "!important"
-      }
-    }
+        borderBottomColor: primaryColor[0] + "!important",
+      },
+    },
   },
   selectLabel: {
     fontSize: "12px",
     textTransform: "uppercase",
     color: grayColor[1] + " !important",
-    top: "8px"
+    top: "8px",
   },
   selectMenu: {
     "& > div > ul": {
@@ -75,11 +59,11 @@ const customSelectStyle = {
       textAlign: "left",
       listStyle: "none",
       backgroundColor: whiteColor,
-      backgroundClip: "padding-box"
+      backgroundClip: "padding-box",
     },
     "& $selectPaper $selectMenuItemSelectedMultiple": {
-      backgroundColor: "inherit"
-    }
+      backgroundColor: "inherit",
+    },
   },
   selectMenuItem: {
     fontSize: "13px",
@@ -97,12 +81,12 @@ const customSelectStyle = {
     "&:hover": {
       backgroundColor: primaryColor[0],
       color: whiteColor,
-      ...primaryBoxShadow
-    }
+      ...primaryBoxShadow,
+    },
   },
   selectMenuItemSelected: {
     backgroundColor: primaryColor[0] + "!important",
-    color: whiteColor
+    color: whiteColor,
   },
   selectMenuItemSelectedMultiple: {
     "&:hover": {
@@ -110,8 +94,8 @@ const customSelectStyle = {
       color: whiteColor,
       ...primaryBoxShadow,
       "&:after": {
-        color: whiteColor
-      }
+        color: whiteColor,
+      },
     },
     "&:after": {
       top: "16px",
@@ -125,8 +109,8 @@ const customSelectStyle = {
       position: "absolute",
       content: "''",
       borderBottom: "2px solid currentColor",
-      transition: "opacity 90ms cubic-bezier(0,0,.2,.1)"
-    }
+      transition: "opacity 90ms cubic-bezier(0,0,.2,.1)",
+    },
   },
   selectPaper: {
     boxSizing: "borderBox",
@@ -142,8 +126,8 @@ const customSelectStyle = {
     textAlign: "left",
     listStyle: "none",
     backgroundColor: "transparent",
-    maxHeight: "266px"
-  }
+    maxHeight: "266px",
+  },
 };
 
 export default customSelectStyle;

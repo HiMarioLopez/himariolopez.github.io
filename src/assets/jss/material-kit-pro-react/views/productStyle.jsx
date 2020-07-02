@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   mlAuto,
@@ -23,7 +7,7 @@ import {
   title,
   cardTitle,
   grayColor,
-  roseColor
+  roseColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import tooltipsStyle from "assets/jss/material-kit-pro-react/tooltipsStyle.jsx";
@@ -38,53 +22,53 @@ const productStyle = {
   ...tooltipsStyle,
   container: {
     ...container,
-    zIndex: 2
+    zIndex: 2,
   },
   mainRaised: {
-    ...mainRaised
+    ...mainRaised,
   },
   section: {
     ...section,
-    padding: "70px 0px"
+    padding: "70px 0px",
   },
   title: {
     ...title,
-    marginBottom: 0
+    marginBottom: 0,
   },
   sectionGray: {
-    background: grayColor[14]
+    background: grayColor[14],
   },
   mainPrice: {
-    margin: "10px 0px 25px"
+    margin: "10px 0px 25px",
   },
   textCenter: {
-    textAlign: "center!important"
+    textAlign: "center!important",
   },
   features: {
-    paddingTop: "30px"
+    paddingTop: "30px",
   },
   productPage: {
     backgroundColor: grayColor[2],
     "& $mainRaised": {
       margin: "-40vh 0 0",
-      padding: "40px"
+      padding: "40px",
     },
     "& .image-gallery-slide img": {
       borderRadius: "3px",
       maxWidth: "300px",
-      height: "auto"
+      height: "auto",
     },
     "& .image-gallery-swipe": {
       margin: "30px 0px",
       overflow: "hidden",
       width: "100%",
       height: "auto",
-      textAlign: "center"
+      textAlign: "center",
     },
     "& .image-gallery-thumbnails > .image-gallery-thumbnails-container a": {
       "&.active > div": {
         opacity: "1",
-        borderColor: grayColor[6]
+        borderColor: grayColor[6],
       },
       "& > div": {
         width: "80%",
@@ -95,57 +79,57 @@ const productStyle = {
         border: "1px solid transparent",
         background: "transparent",
         borderRadius: "3px",
-        opacity: ".8"
+        opacity: ".8",
       },
       "& > div img": {
         borderRadius: "3px",
         width: "100%",
         height: "auto",
-        textAlign: "center"
-      }
-    }
+        textAlign: "center",
+      },
+    },
   },
   titleRow: {
-    marginTop: "-8vh"
+    marginTop: "-8vh",
   },
   floatRight: {
-    float: "right!important"
+    float: "right!important",
   },
   pageHeader: {
     minHeight: "60vh",
     maxHeight: "600px",
     height: "auto",
-    backgroundPosition: "top center"
+    backgroundPosition: "top center",
   },
   relatedProducts: {
     marginTop: "50px",
     "& $title": {
-      marginBottom: "80px"
-    }
+      marginBottom: "80px",
+    },
   },
   pickSize: {
-    marginTop: "50px"
+    marginTop: "50px",
   },
   pullRight: {
-    float: "right"
+    float: "right",
   },
   cardCategory: {
     textAlign: "center",
-    marginTop: "10px"
+    marginTop: "10px",
   },
   cardTitle: {
     ...cardTitle,
-    textAlign: "center"
+    textAlign: "center",
   },
   cardDescription: {
     textAlign: "center",
-    color: grayColor[0]
+    color: grayColor[0],
   },
   textRose: {
-    color: roseColor[0]
+    color: roseColor[0],
   },
   justifyContentBetween: {
-    justifyContent: "space-between!important"
+    justifyContent: "space-between!important",
   },
   socialFeed: {
     "& p": {
@@ -153,19 +137,19 @@ const productStyle = {
       verticalAlign: "top",
       overflow: "hidden",
       paddingBottom: "10px",
-      maxWidth: 300
+      maxWidth: 300,
     },
     "& i": {
       fontSize: "20px",
       display: "table-cell",
-      paddingRight: "10px"
-    }
+      paddingRight: "10px",
+    },
   },
   img: {
     width: "20%",
     marginRight: "5%",
     marginBottom: "5%",
-    float: "left"
+    float: "left",
   },
   block: {
     color: "inherit",
@@ -176,33 +160,33 @@ const productStyle = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
+    display: "block",
   },
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
   },
   left: {
     float: "left!important",
-    display: "block"
+    display: "block",
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right"
+    float: "right",
   },
   icon: {
     top: "3px",
     width: "18px",
     height: "18px",
-    position: "relative"
-  }
+    position: "relative",
+  },
 };
 
 export default productStyle;

@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   section,
   container,
@@ -23,7 +7,7 @@ import {
   mlAuto,
   mrAuto,
   blackColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const sectionStyle = {
@@ -45,23 +29,23 @@ const sectionStyle = {
         ",0.2)",
       transition: "all .2s cubic-bezier(0.4,0,0.2,1)",
       "&:hover": {
-        transform: "scale(1.02)"
-      }
-    }
+        transform: "scale(1.02)",
+      },
+    },
   },
   container,
   containerFluid,
   sectionDescription: {
     textAlign: "center",
-    marginBottom: "60px"
+    marginBottom: "60px",
   },
   title,
   description,
   mlAuto,
   mrAuto,
   photoGallery: {
-    padding: "7.5px"
-  }
+    padding: "7.5px",
+  },
 };
 
 export default sectionStyle;

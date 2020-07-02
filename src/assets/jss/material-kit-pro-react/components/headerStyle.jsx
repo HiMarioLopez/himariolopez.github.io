@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   defaultFont,
@@ -29,10 +13,10 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
-const headerStyle = theme => ({
+const headerStyle = (theme) => ({
   appBar: {
     display: "flex",
     border: "0",
@@ -52,14 +36,14 @@ const headerStyle = theme => ({
     alignItems: "center",
     flexFlow: "row nowrap",
     justifyContent: "flex-start",
-    position: "relative"
+    position: "relative",
   },
   absolute: {
     position: "absolute",
-    top: "auto"
+    top: "auto",
   },
   fixed: {
-    position: "fixed"
+    position: "fixed",
   },
   container: {
     ...container,
@@ -67,7 +51,7 @@ const headerStyle = theme => ({
     alignItems: "center",
     justifyContent: "space-between",
     display: "flex",
-    flexWrap: "nowrap"
+    flexWrap: "nowrap",
   },
   title: {
     letterSpacing: "unset",
@@ -82,13 +66,13 @@ const headerStyle = theme => ({
       color: "inherit",
       "&:hover,&:focus": {
         color: "inherit",
-        background: "transparent"
-      }
-    }
+        background: "transparent",
+      },
+    },
   },
   appResponsive: {
     margin: "20px 10px",
-    marginTop: "0px"
+    marginTop: "0px",
   },
   primary: {
     backgroundColor: primaryColor[0],
@@ -98,7 +82,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(primaryColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   info: {
     backgroundColor: infoColor[0],
@@ -108,7 +92,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(infoColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   success: {
     backgroundColor: successColor[0],
@@ -118,7 +102,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(successColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   warning: {
     backgroundColor: warningColor[0],
@@ -128,7 +112,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(warningColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   danger: {
     backgroundColor: dangerColor[0],
@@ -138,7 +122,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(dangerColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   rose: {
     backgroundColor: roseColor[0],
@@ -148,13 +132,13 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(roseColor[0]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   transparent: {
     backgroundColor: "transparent !important",
     boxShadow: "none",
     paddingTop: "25px",
-    color: whiteColor
+    color: whiteColor,
   },
   dark: {
     color: whiteColor,
@@ -164,7 +148,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.14), 0 7px 12px -5px rgba(" +
       hexToRgb(grayColor[9]) +
-      ", 0.46)"
+      ", 0.46)",
   },
   white: {
     border: "0",
@@ -177,7 +161,7 @@ const headerStyle = theme => ({
       hexToRgb(blackColor) +
       ", 0.12), 0 7px 10px -5px rgba(" +
       hexToRgb(blackColor) +
-      ", 0.15)"
+      ", 0.15)",
   },
   drawerPaper: {
     border: "none",
@@ -199,30 +183,30 @@ const headerStyle = theme => ({
     textAlign: "left",
     paddingRight: "0px",
     paddingLeft: "0",
-    ...transition
+    ...transition,
   },
   hidden: {
-    width: "100%"
+    width: "100%",
   },
   collapse: {
     [theme.breakpoints.up("md")]: {
       display: "flex !important",
       MsFlexPreferredSize: "auto",
-      flexBasis: "auto"
+      flexBasis: "auto",
     },
     WebkitBoxFlex: "1",
     MsFlexPositive: "1",
     flexGrow: "1",
     WebkitBoxAlign: "center",
     MsFlexAlign: "center",
-    alignItems: "center"
+    alignItems: "center",
   },
   closeButtonDrawer: {
     position: "absolute",
     right: "8px",
     top: "9px",
-    zIndex: "1"
-  }
+    zIndex: "1",
+  },
 });
 
 export default headerStyle;

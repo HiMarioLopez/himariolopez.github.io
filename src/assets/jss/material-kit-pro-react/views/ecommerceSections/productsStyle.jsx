@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   section,
   container,
@@ -21,7 +5,7 @@ import {
   coloredShadow,
   mlAuto,
   mrAuto,
-  grayColor
+  grayColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import customCheckboxRadioSwitch from "assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.jsx";
@@ -34,8 +18,8 @@ const styles = {
   checkRoot: {
     padding: "14px",
     "&:hover": {
-      backgroundColor: "unset"
-    }
+      backgroundColor: "unset",
+    },
   },
   coloredShadow,
   mlAuto,
@@ -43,31 +27,31 @@ const styles = {
   cardTitle: {
     ...cardTitle,
     textAlign: "center",
-    marginBottom: "0px !important"
+    marginBottom: "0px !important",
   },
   cardDescription: {
     color: grayColor[0],
-    textAlign: "center"
+    textAlign: "center",
   },
   container: {
-    ...container
+    ...container,
   },
   description: {
-    color: grayColor[0]
+    color: grayColor[0],
   },
   section: {
     ...section,
-    padding: "70px 0px"
+    padding: "70px 0px",
   },
   priceContainer: {
-    display: "inline-flex"
+    display: "inline-flex",
   },
   price: {
     fontSize: "18px",
-    color: grayColor[22]
+    color: grayColor[22],
   },
   pullRight: {
-    float: "right"
+    float: "right",
   },
   cardHeaderImage: {
     position: "relative",
@@ -80,36 +64,36 @@ const styles = {
     "& img": {
       width: "100%",
       borderRadius: "6px",
-      pointerEvents: "none"
+      pointerEvents: "none",
     },
     "& a": {
-      display: "block"
-    }
+      display: "block",
+    },
   },
   justifyContentBetween: {
     WebkitBoxPack: "justify!important",
-    justifyContent: "space-between !important"
+    justifyContent: "space-between !important",
   },
   customExpandPanel: {
     maxHeight: "273px",
     overflowY: "scroll",
     "&  label": {
-      display: "block"
-    }
+      display: "block",
+    },
   },
   priceSlider: {
-    fontWeight: "500"
+    fontWeight: "500",
   },
   refineButton: {
-    margin: "-3px 0"
+    margin: "-3px 0",
   },
   cardBodyRefine: {
     paddingLeft: "15px",
-    paddingRight: "15px"
+    paddingRight: "15px",
   },
   textLeft: {
-    textAlign: "left"
-  }
+    textAlign: "left",
+  },
 };
 
 export default styles;

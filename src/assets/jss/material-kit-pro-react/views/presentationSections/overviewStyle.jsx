@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   section,
   mrAuto,
@@ -26,7 +10,7 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const overviewStyle = {
@@ -36,19 +20,19 @@ const overviewStyle = {
   container,
   description: {
     ...description,
-    marginBottom: "70px"
+    marginBottom: "70px",
   },
   section: {
     ...section,
-    padding: "70px 0px"
+    padding: "70px 0px",
   },
   sectionTestimonials: {
     paddingTop: "50px",
     paddingBottom: "80px",
     textAlign: "center",
     "& $cardTitle": {
-      marginTop: "0px"
-    }
+      marginTop: "0px",
+    },
   },
   features5: {
     ...section,
@@ -60,10 +44,10 @@ const overviewStyle = {
       zIndex: "2",
       position: "relative",
       marginBottom: "30px",
-      color: whiteColor
+      color: whiteColor,
     },
     "& p": {
-      color: whiteColor
+      color: whiteColor,
     },
     "&:after": {
       background: "rgba(" + hexToRgb(blackColor) + ",0.65)",
@@ -73,13 +57,13 @@ const overviewStyle = {
       content: "''",
       zIndex: "0",
       left: "0px",
-      top: "0px"
-    }
+      top: "0px",
+    },
   },
   features: {
     textAlign: "center",
     paddingTop: "30px",
-    pddingBottom: "0px"
+    pddingBottom: "0px",
   },
   featuresShow: {
     zIndex: 3,
@@ -87,18 +71,18 @@ const overviewStyle = {
     borderTop: 0,
     borderBottom: 0,
     "&:last-of-type": {
-      borderRight: 0
+      borderRight: 0,
     },
     "&:first-of-type": {
-      borderLeft: 0
+      borderLeft: 0,
     },
     "& h4,& p,& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
-      color: whiteColor
+      color: whiteColor,
     },
     "& p": {
       lineHeight: "24px",
-      fontSize: "16px"
-    }
+      fontSize: "16px",
+    },
   },
   ourClients: {
     textAlign: "center",
@@ -106,22 +90,22 @@ const overviewStyle = {
       width: "100%",
       maxWidth: "140px",
       margin: "0 auto",
-      display: "inline-block"
-    }
+      display: "inline-block",
+    },
   },
   cardTitle: {
     ...cardTitle,
-    marginTop: 0
+    marginTop: 0,
   },
   cardDescription: {
     fontSize: "16px",
     lineHeight: "1.6em",
-    color: grayColor[0]
+    color: grayColor[0],
   },
   coloredShadow,
   alignLeft: {
-    textAlign: "left"
-  }
+    textAlign: "left",
+  },
 };
 
 export default overviewStyle;

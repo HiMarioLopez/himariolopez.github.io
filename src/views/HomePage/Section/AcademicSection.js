@@ -28,7 +28,7 @@ import academicStyle from "assets/jss/material-kit-pro-react/views/academicStyle
 // In-line Styles
 const baylorShadowStyle = {
   backgroundImage: `url(${baylorPng})`,
-  opacity: "1"
+  opacity: "1",
 };
 const utsaShadowStyle = { backgroundImage: `url(${utsaPng})`, opacity: "1" };
 const universityBrandStyle = { paddingBottom: "3vh" };
@@ -188,7 +188,7 @@ function AcademicSection({ ...props }) {
 }
 
 AcademicSection.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
 };
 
 export default withStyles(academicStyle)(AcademicSection);

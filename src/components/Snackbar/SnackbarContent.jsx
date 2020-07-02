@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
@@ -44,7 +28,7 @@ class SnackbarContent extends React.Component {
           onClick={this.closeAlert}
         >
           <Close className={classes.close} />
-        </IconButton>
+        </IconButton>,
       ];
     }
     let snackIcon = null;
@@ -71,10 +55,10 @@ class SnackbarContent extends React.Component {
           }
           classes={{
             root: classes.root + " " + classes[color],
-            message: classes.message + " " + classes.container
+            message: classes.message + " " + classes.container,
           }}
         />
-      )
+      ),
     };
   }
   closeAlert() {
@@ -90,7 +74,7 @@ SnackbarContent.propTypes = {
   message: PropTypes.node.isRequired,
   color: PropTypes.oneOf(["info", "success", "warning", "danger", "primary"]),
   close: PropTypes.bool,
-  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  icon: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 export default withStyles(snackbarContentStyle)(SnackbarContent);

@@ -1,26 +1,10 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   mrAuto,
   mlAuto,
   title,
   description,
   cardTitle,
-  grayColor
+  grayColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const teamStyle = {
@@ -29,28 +13,28 @@ const teamStyle = {
   title,
   description: {
     ...description,
-    marginBottom: "80px"
+    marginBottom: "80px",
   },
   cardTitle,
   cardDescription: {
-    color: grayColor[0]
+    color: grayColor[0],
   },
   team: {
-    padding: "80px 0px"
+    padding: "80px 0px",
   },
   textCenter: {
-    textAlign: "center!important"
+    textAlign: "center!important",
   },
   img: {
     width: "100%",
-    height: "auto"
+    height: "auto",
   },
   textMuted: {
-    color: grayColor[7] + " !important"
+    color: grayColor[7] + " !important",
   },
   justifyContent: {
-    justifyContent: "center!important"
-  }
+    justifyContent: "center!important",
+  },
 };
 
 export default teamStyle;

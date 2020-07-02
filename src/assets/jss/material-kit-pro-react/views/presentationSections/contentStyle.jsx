@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   section,
@@ -22,14 +6,14 @@ import {
   mlAuto,
   blackColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
-const contentStyle = theme => ({
+const contentStyle = (theme) => ({
   container,
   section: {
     ...section,
-    padding: "70px 0px"
+    padding: "70px 0px",
   },
   sectionDescription,
   title: {
@@ -39,20 +23,20 @@ const contentStyle = theme => ({
     marginBottom: "5px",
     "& + $description": {
       marginBottom: "10px",
-      marginTop: "0px"
-    }
+      marginTop: "0px",
+    },
   },
   description: {
     color: grayColor[0],
     marginTop: "35px",
-    marginBottom: "15px"
+    marginBottom: "15px",
   },
   imageContainer: {
     maxWidth: "900px",
-    position: "relative"
+    position: "relative",
   },
   ipadImg: {
-    width: "100%"
+    width: "100%",
   },
   mlAuto,
   areaImg: {
@@ -71,8 +55,8 @@ const contentStyle = theme => ({
       ", 0.2)",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "130px",
-      maxHeight: "170px"
-    }
+      maxHeight: "170px",
+    },
   },
   infoImg: {
     height: "200px",
@@ -89,19 +73,19 @@ const contentStyle = theme => ({
       ", 0.2)",
     [theme.breakpoints.down("sm")]: {
       maxWidth: "170px",
-      maxHeight: "120px"
-    }
+      maxHeight: "120px",
+    },
   },
   animeInfoImg: {
     top: "50%",
     left: "0%",
-    position: "absolute"
+    position: "absolute",
   },
   animeAreaImg: {
     top: "10%",
     left: "60%",
-    position: "absolute"
-  }
+    position: "absolute",
+  },
 });
 
 export default contentStyle;

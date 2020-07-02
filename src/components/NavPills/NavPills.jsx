@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -36,13 +20,13 @@ class NavPills extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: props.active
+      active: props.active,
     };
   }
   handleChange = (event, active) => {
     this.setState({ active });
   };
-  handleChangeIndex = index => {
+  handleChangeIndex = (index) => {
     this.setState({ active: index });
   };
   render() {
@@ -52,11 +36,11 @@ class NavPills extends React.Component {
       direction,
       color,
       horizontal,
-      alignCenter
+      alignCenter,
     } = this.props;
     const flexContainerClasses = classNames({
       [classes.flexContainer]: true,
-      [classes.horizontalDisplay]: horizontal !== undefined
+      [classes.horizontalDisplay]: horizontal !== undefined,
     });
     const tabButtons = (
       <Tabs
@@ -64,7 +48,7 @@ class NavPills extends React.Component {
           root: classes.root,
           fixed: classes.fixed,
           flexContainer: flexContainerClasses,
-          indicator: classes.displayNone
+          indicator: classes.displayNone,
         }}
         value={this.state.active}
         onChange={this.handleChange}
@@ -78,7 +62,7 @@ class NavPills extends React.Component {
           const pillsClasses = classNames({
             [classes.pills]: true,
             [classes.horizontalPills]: horizontal !== undefined,
-            [classes.pillsWithIcons]: prop.tabIcon !== undefined
+            [classes.pillsWithIcons]: prop.tabIcon !== undefined,
           });
           return (
             <Tab
@@ -88,7 +72,7 @@ class NavPills extends React.Component {
               classes={{
                 root: pillsClasses,
                 label: classes.label,
-                selected: classes[color]
+                selected: classes[color],
               }}
             />
           );
@@ -128,7 +112,7 @@ class NavPills extends React.Component {
 
 NavPills.defaultProps = {
   active: 0,
-  color: "primary"
+  color: "primary",
 };
 
 NavPills.propTypes = {
@@ -139,7 +123,7 @@ NavPills.propTypes = {
     PropTypes.shape({
       tabButton: PropTypes.string,
       tabIcon: PropTypes.object,
-      tabContent: PropTypes.node
+      tabContent: PropTypes.node,
     })
   ).isRequired,
   color: PropTypes.oneOf([
@@ -148,14 +132,14 @@ NavPills.propTypes = {
     "danger",
     "success",
     "info",
-    "rose"
+    "rose",
   ]),
   direction: PropTypes.string,
   horizontal: PropTypes.shape({
     tabsGrid: PropTypes.object,
-    contentGrid: PropTypes.object
+    contentGrid: PropTypes.object,
   }),
-  alignCenter: PropTypes.bool
+  alignCenter: PropTypes.bool,
 };
 
 export default withStyles(navPillsStyle)(NavPills);

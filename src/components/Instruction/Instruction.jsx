@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
@@ -35,15 +19,15 @@ function Instruction({ ...props }) {
     image,
     className,
     imageClassName,
-    imageAlt
+    imageAlt,
   } = props;
   const instructionClasses = cx({
     [classes.instruction]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   const pictureClasses = cx({
     [classes.picture]: true,
-    [imageClassName]: imageClassName !== undefined
+    [imageClassName]: imageClassName !== undefined,
   });
   return (
     <div className={instructionClasses}>
@@ -63,7 +47,7 @@ function Instruction({ ...props }) {
 }
 
 Instruction.defaultProps = {
-  imageAlt: "..."
+  imageAlt: "...",
 };
 
 Instruction.propTypes = {
@@ -73,7 +57,7 @@ Instruction.propTypes = {
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   className: PropTypes.string,
-  imageClassName: PropTypes.string
+  imageClassName: PropTypes.string,
 };
 
 export default withStyles(instructionStyle)(Instruction);

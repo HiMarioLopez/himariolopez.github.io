@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -43,7 +27,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobileOpen: false
+      mobileOpen: false,
     };
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.headerColorChange = this.headerColorChange.bind(this);
@@ -86,7 +70,7 @@ class Header extends React.Component {
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
-      [classes.fixed]: fixed
+      [classes.fixed]: fixed,
     });
     return (
       <AppBar className={appBarClasses}>
@@ -113,7 +97,7 @@ class Header extends React.Component {
             anchor={"right"}
             open={this.state.mobileOpen}
             classes={{
-              paper: classes.drawerPaper
+              paper: classes.drawerPaper,
             }}
             onClose={this.handleDrawerToggle}
           >
@@ -134,7 +118,7 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "white",
 };
 
 Header.propTypes = {
@@ -148,7 +132,7 @@ Header.propTypes = {
     "transparent",
     "white",
     "rose",
-    "dark"
+    "dark",
   ]),
   links: PropTypes.node,
   brand: PropTypes.string,
@@ -171,9 +155,9 @@ Header.propTypes = {
       "transparent",
       "white",
       "rose",
-      "dark"
-    ]).isRequired
-  })
+      "dark",
+    ]).isRequired,
+  }),
 };
 
 export default withStyles(headerStyle)(Header);

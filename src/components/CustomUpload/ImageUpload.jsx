@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // used for making the prop types of this component
 import PropTypes from "prop-types";
@@ -29,23 +13,23 @@ class ImageUpload extends React.Component {
     super(props);
     this.state = {
       file: null,
-      imagePreviewUrl: this.props.avatar ? defaultAvatar : defaultImage
+      imagePreviewUrl: this.props.avatar ? defaultAvatar : defaultImage,
     };
     this.fileInput = React.createRef();
   }
-  handleImageChange = e => {
+  handleImageChange = (e) => {
     e.preventDefault();
     let reader = new FileReader();
     let file = e.target.files[0];
     reader.onloadend = () => {
       this.setState({
         file: file,
-        imagePreviewUrl: reader.result
+        imagePreviewUrl: reader.result,
       });
     };
     reader.readAsDataURL(file);
   };
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     // this.state.file is the file/image uploaded
     // in this function you can save the image (this.state.file) on form submit
@@ -57,7 +41,7 @@ class ImageUpload extends React.Component {
   handleRemove = () => {
     this.setState({
       file: null,
-      imagePreviewUrl: this.props.avatar ? defaultAvatar : defaultImage
+      imagePreviewUrl: this.props.avatar ? defaultAvatar : defaultImage,
     });
     this.fileInput.current.value = null;
   };
@@ -66,7 +50,7 @@ class ImageUpload extends React.Component {
       avatar,
       addButtonProps,
       changeButtonProps,
-      removeButtonProps
+      removeButtonProps,
     } = this.props;
     return (
       <div className="fileinput text-center">
@@ -107,7 +91,7 @@ ImageUpload.propTypes = {
   avatar: PropTypes.bool,
   addButtonProps: PropTypes.object,
   changeButtonProps: PropTypes.object,
-  removeButtonProps: PropTypes.object
+  removeButtonProps: PropTypes.object,
 };
 
 export default ImageUpload;

@@ -38,7 +38,7 @@ function HeaderLinks({ ...props }) {
 }
 
 HeaderLinks.defaultProps = {
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 HeaderLinks.propTypes = {
@@ -49,8 +49,8 @@ HeaderLinks.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
-  ])
+    "rose",
+  ]),
 };
 
 export default withStyles(headerLinksStyle)(HeaderLinks);

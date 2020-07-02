@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -38,7 +22,7 @@ class CustomDropdown extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false
+      open: false,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleClose = this.handleClose.bind(this);
@@ -46,9 +30,9 @@ class CustomDropdown extends React.Component {
   }
 
   handleClick = () => {
-    this.setState(state => ({ open: !state.open }));
+    this.setState((state) => ({ open: !state.open }));
   };
-  handleClose = event => {
+  handleClose = (event) => {
     if (this.anchorEl.contains(event.target)) {
       return;
     }
@@ -77,19 +61,19 @@ class CustomDropdown extends React.Component {
       rtlActive,
       noLiPadding,
       innerDropDown,
-      navDropdown
+      navDropdown,
     } = this.props;
     const caretClasses = classNames({
       [classes.caret]: true,
       [classes.caretDropup]: dropup && !open,
       [classes.caretActive]: open && !dropup,
-      [classes.caretRTL]: rtlActive
+      [classes.caretRTL]: rtlActive,
     });
     const dropdownItem = classNames({
       [classes.dropdownItem]: true,
       [classes[hoverColor + "Hover"]]: true,
       [classes.noLiPadding]: noLiPadding,
-      [classes.dropdownItemRTL]: rtlActive
+      [classes.dropdownItemRTL]: rtlActive,
     });
     const dropDownMenu = (
       <MenuList role="menu" className={classes.menuList}>
@@ -143,7 +127,7 @@ class CustomDropdown extends React.Component {
             aria-label="Notifications"
             aria-owns={open ? "menu-list" : null}
             aria-haspopup="true"
-            buttonRef={node => {
+            buttonRef={(node) => {
               this.anchorEl = node;
             }}
             {...buttonProps}
@@ -165,7 +149,7 @@ class CustomDropdown extends React.Component {
           className={classNames({
             [classes.popperClose]: !open,
             [classes.pooperResponsive]: true,
-            [classes.pooperNav]: open && navDropdown
+            [classes.pooperNav]: open && navDropdown,
           })}
         >
           {() => (
@@ -198,7 +182,7 @@ class CustomDropdown extends React.Component {
 CustomDropdown.defaultProps = {
   caret: true,
   dropup: false,
-  hoverColor: "primary"
+  hoverColor: "primary",
 };
 
 CustomDropdown.propTypes = {
@@ -210,7 +194,7 @@ CustomDropdown.propTypes = {
     "success",
     "warning",
     "danger",
-    "rose"
+    "rose",
   ]),
   buttonText: PropTypes.node,
   buttonIcon: PropTypes.object,
@@ -232,13 +216,13 @@ CustomDropdown.propTypes = {
     "right-start",
     "right-end",
     "left-start",
-    "left-end"
+    "left-end",
   ]),
   noLiPadding: PropTypes.bool,
   innerDropDown: PropTypes.bool,
   navDropdown: PropTypes.bool,
   // This is a function that returns the clicked menu item
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 export default withStyles(customDropdownStyle)(CustomDropdown);

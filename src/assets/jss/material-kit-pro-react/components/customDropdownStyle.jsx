@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   defaultFont,
   primaryColor,
@@ -31,13 +15,13 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
-const customDropdownStyle = theme => ({
+const customDropdownStyle = (theme) => ({
   popperClose: {
     pointerEvents: "none",
-    display: "none !important"
+    display: "none !important",
   },
   pooperNav: {
     [theme.breakpoints.down("sm")]: {
@@ -53,14 +37,14 @@ const customDropdownStyle = theme => ({
         transition: "none !important",
         marginTop: "0px !important",
         marginBottom: "5px !important",
-        padding: "0px !important"
-      }
-    }
+        padding: "0px !important",
+      },
+    },
   },
   manager: {
     "& > div > button:first-child > span:first-child, & > div > a:first-child > span:first-child": {
-      width: "100%"
-    }
+      width: "100%",
+    },
   },
   innerManager: {
     display: "block",
@@ -70,17 +54,17 @@ const customDropdownStyle = theme => ({
       padding: "10px 20px !important",
       "& > span:first-child": {
         width: "100%",
-        justifyContent: "flex-start"
-      }
-    }
+        justifyContent: "flex-start",
+      },
+    },
   },
   target: {
     "& > button:first-child > span:first-child, & > a:first-child > span:first-child": {
-      display: "inline-block"
+      display: "inline-block",
     },
     "& $caret": {
-      marginLeft: "0px"
-    }
+      marginLeft: "0px",
+    },
   },
   dropdown: {
     borderRadius: "3px",
@@ -95,10 +79,10 @@ const customDropdownStyle = theme => ({
     textAlign: "left",
     listStyle: "none",
     backgroundColor: whiteColor,
-    backgroundClip: "padding-box"
+    backgroundClip: "padding-box",
   },
   menuList: {
-    padding: "0"
+    padding: "0",
   },
   pooperResponsive: {
     zIndex: "1200",
@@ -111,8 +95,8 @@ const customDropdownStyle = theme => ({
       backgroundColor: "transparent",
       border: "0",
       boxShadow: "none",
-      color: "black"
-    }
+      color: "black",
+    },
   },
   dropdownItem: {
     ...defaultFont,
@@ -128,7 +112,7 @@ const customDropdownStyle = theme => ({
     height: "100%",
     color: grayColor[8],
     whiteSpace: "nowrap",
-    minHeight: "unset"
+    minHeight: "unset",
   },
   darkHover: {
     "&:hover": {
@@ -139,63 +123,63 @@ const customDropdownStyle = theme => ({
         hexToRgb(grayColor[9]) +
         ", 0.4)",
       backgroundColor: grayColor[9],
-      color: whiteColor
-    }
+      color: whiteColor,
+    },
   },
   primaryHover: {
     "&:hover": {
       backgroundColor: primaryColor[0],
       color: whiteColor,
-      ...primaryBoxShadow
-    }
+      ...primaryBoxShadow,
+    },
   },
   infoHover: {
     "&:hover": {
       backgroundColor: infoColor[0],
       color: whiteColor,
-      ...infoBoxShadow
-    }
+      ...infoBoxShadow,
+    },
   },
   successHover: {
     "&:hover": {
       backgroundColor: successColor[0],
       color: whiteColor,
-      ...successBoxShadow
-    }
+      ...successBoxShadow,
+    },
   },
   warningHover: {
     "&:hover": {
       backgroundColor: warningColor[0],
       color: whiteColor,
-      ...warningBoxShadow
-    }
+      ...warningBoxShadow,
+    },
   },
   dangerHover: {
     "&:hover": {
       backgroundColor: dangerColor[0],
       color: whiteColor,
-      ...dangerBoxShadow
-    }
+      ...dangerBoxShadow,
+    },
   },
   roseHover: {
     "&:hover": {
       backgroundColor: roseColor[0],
       color: whiteColor,
-      ...roseBoxShadow
-    }
+      ...roseBoxShadow,
+    },
   },
   dropdownItemRTL: {
-    textAlign: "right"
+    textAlign: "right",
   },
   dropdownDividerItem: {
     margin: "5px 0",
     backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.12)",
     height: "1px",
-    overflow: "hidden"
+    overflow: "hidden",
   },
   buttonIcon: {
     width: "20px",
-    height: "20px"
+    height: "20px",
   },
   caret: {
     transition: "all 150ms ease-in",
@@ -206,16 +190,16 @@ const customDropdownStyle = theme => ({
     verticalAlign: "middle",
     borderTop: "4px solid",
     borderRight: "4px solid transparent",
-    borderLeft: "4px solid transparent"
+    borderLeft: "4px solid transparent",
   },
   caretActive: {
-    transform: "rotate(180deg)"
+    transform: "rotate(180deg)",
   },
   caretDropup: {
-    transform: "rotate(180deg)"
+    transform: "rotate(180deg)",
   },
   caretRTL: {
-    marginRight: "4px"
+    marginRight: "4px",
   },
   dropdownHeader: {
     display: "block",
@@ -229,12 +213,12 @@ const customDropdownStyle = theme => ({
     minHeight: "24px",
     "&:hover,&:focus": {
       backgroundColor: "transparent",
-      cursor: "auto"
-    }
+      cursor: "auto",
+    },
   },
   noLiPadding: {
-    padding: "0"
-  }
+    padding: "0",
+  },
 });
 
 export default customDropdownStyle;

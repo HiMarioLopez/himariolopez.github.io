@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   defaultFont,
   primaryBoxShadow,
@@ -30,7 +14,7 @@ import {
   dangerColor,
   successColor,
   infoColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const snackbarContentStyle = {
@@ -53,41 +37,41 @@ const snackbarContentStyle = {
       hexToRgb(blackColor) +
       ", 0.12), 0 7px 8px -5px rgba(" +
       hexToRgb(whiteColor) +
-      ", 0.2)"
+      ", 0.2)",
   },
   info: {
     backgroundColor: infoColor[3],
     color: whiteColor,
-    ...infoBoxShadow
+    ...infoBoxShadow,
   },
   success: {
     backgroundColor: successColor[3],
     color: whiteColor,
-    ...successBoxShadow
+    ...successBoxShadow,
   },
   warning: {
     backgroundColor: warningColor[3],
     color: whiteColor,
-    ...warningBoxShadow
+    ...warningBoxShadow,
   },
   danger: {
     backgroundColor: dangerColor[3],
     color: whiteColor,
-    ...dangerBoxShadow
+    ...dangerBoxShadow,
   },
   primary: {
     backgroundColor: primaryColor[3],
     color: whiteColor,
-    ...primaryBoxShadow
+    ...primaryBoxShadow,
   },
   message: {
     padding: "0",
     display: "block",
-    maxWidth: "89%"
+    maxWidth: "89%",
   },
   close: {
     width: "20px",
-    height: "20px"
+    height: "20px",
   },
   iconButton: {
     width: "24px",
@@ -99,17 +83,17 @@ const snackbarContentStyle = {
     position: "absolute",
     right: "-4px",
     top: "0",
-    padding: "0"
+    padding: "0",
   },
   icon: {
     display: "block",
     float: "left",
-    marginRight: "1.071rem"
+    marginRight: "1.071rem",
   },
   container: {
     ...container,
-    position: "relative"
-  }
+    position: "relative",
+  },
 };
 
 export default snackbarContentStyle;

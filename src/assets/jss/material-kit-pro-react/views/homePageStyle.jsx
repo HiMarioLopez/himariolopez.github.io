@@ -7,7 +7,7 @@ import {
   main,
   whiteColor,
   mainRaised,
-  grayColor
+  grayColor,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import imagesStyle from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
@@ -20,7 +20,7 @@ const homePageStyle = {
   ...tooltipsStyle,
   cardTitleWhite: {
     ...cardTitle,
-    color: whiteColor + "  !important"
+    color: whiteColor + "  !important",
   },
   cardTitle,
   profile: {
@@ -29,54 +29,54 @@ const homePageStyle = {
       maxWidth: "160px",
       width: "100%",
       margin: "0 auto",
-      transform: "translate3d(0, -50%, 0)"
-    }
+      transform: "translate3d(0, -50%, 0)",
+    },
   },
   description: {
     margin: "1.071rem auto 0",
     maxWidth: "600px",
-    color: grayColor[0]
+    color: grayColor[0],
   },
   textCenter: {
-    textAlign: "center !important"
+    textAlign: "center !important",
   },
   name: {
-    marginTop: "-80px"
+    marginTop: "-80px",
   },
   bodyBackground: {
-    backgroundColor: "#202020"
+    backgroundColor: "#202020",
   },
   main: {
-    ...main
+    ...main,
   },
   mainRaised: {
-    ...mainRaised
+    ...mainRaised,
   },
   title: {
     ...title,
     position: "relative",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   follow: {
     position: "absolute",
     top: "0",
-    right: "0"
+    right: "0",
   },
   followIcon: {
     width: "20px",
-    height: "20px"
+    height: "20px",
   },
   followButton: {
-    marginTop: "-28px !important"
+    marginTop: "-28px !important",
   },
   gridItem: {
     ...mlAuto,
-    ...mrAuto
+    ...mrAuto,
   },
   collections: {
-    marginTop: "20px"
+    marginTop: "20px",
   },
   cardBody: {
     display: "flex",
@@ -84,26 +84,26 @@ const homePageStyle = {
     boxDirection: "normal",
     flexDirection: "column",
     boxPack: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   badge: {
     display: "inline-table",
-    margin: "0 auto"
+    margin: "0 auto",
   },
   listUnstyled: {
     paddingLeft: "0",
     listStyle: "none",
     "& > li": {
       padding: "5px 0px",
-      fontSize: "1em"
-    }
+      fontSize: "1em",
+    },
   },
   profileTabs: {
     marginTop: "4.284rem",
-    marginBottom: "50px"
+    marginBottom: "50px",
   },
   card: {
-    textAlign: "left !important"
+    textAlign: "left !important",
   },
   block: {
     color: "inherit",
@@ -114,37 +114,37 @@ const homePageStyle = {
     borderRadius: "3px",
     textDecoration: "none",
     position: "relative",
-    display: "block"
+    display: "block",
   },
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
-    width: "auto"
+    width: "auto",
   },
   list: {
     marginBottom: "0",
     padding: "0",
-    marginTop: "0"
+    marginTop: "0",
   },
   left: {
     float: "left!important",
-    display: "block"
+    display: "block",
   },
   right: {
     padding: "15px 0",
     margin: "0",
-    float: "right"
+    float: "right",
   },
   icon: {
     width: "18px",
     height: "18px",
     top: "3px",
-    position: "relative"
+    position: "relative",
   },
   parallax: {
     height: "380px",
-    backgroundPosition: "top center"
-  }
+    backgroundPosition: "top center",
+  },
 };
 
 export default homePageStyle;

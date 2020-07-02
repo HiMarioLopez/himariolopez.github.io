@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   title,
   description,
@@ -27,7 +11,7 @@ import {
   successColor,
   blackColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const freeDemoStyle = {
@@ -39,21 +23,21 @@ const freeDemoStyle = {
   title: {
     ...title,
     marginTop: "15px",
-    marginBottom: "1rem"
+    marginBottom: "1rem",
   },
   section: {
     ...section,
-    padding: "70px 0px"
+    padding: "70px 0px",
   },
   iconGithub: {
     fontSize: "82px",
-    color: grayColor[10]
+    color: grayColor[10],
   },
   iframeGithub: {
     top: "11px",
     display: "inline-block",
     position: "relative",
-    marginLeft: "10px"
+    marginLeft: "10px",
   },
   card: {
     ...card,
@@ -67,34 +51,34 @@ const freeDemoStyle = {
       listStyle: "none",
       padding: "0px",
       maxWidth: "240px",
-      margin: "10px auto"
+      margin: "10px auto",
     },
     "& ul li": {
       color: grayColor[0],
       padding: "12px 0px",
       borderBottom: "1px solid rgba(" + hexToRgb(grayColor[0]) + ",0.3)",
-      textAlign: "left"
+      textAlign: "left",
     },
     "& ul li b": {
       minWidth: "24px",
       display: "inline-block",
       textAlign: "center",
-      color: grayColor[1]
-    }
+      color: grayColor[1],
+    },
   },
   cardPricing: {
-    boxShadow: "none"
+    boxShadow: "none",
   },
   cardIcons: {
     top: "6px",
-    position: "relative"
+    position: "relative",
   },
   dangerColor: {
-    color: dangerColor[0]
+    color: dangerColor[0],
   },
   successColor: {
-    color: successColor[0]
-  }
+    color: successColor[0],
+  },
 };
 
 export default freeDemoStyle;

@@ -25,7 +25,7 @@ import Project_5 from "assets/img/projects/Project_5.png";
 
 const styles = {
   ...examplesStyle,
-  ...imagesStyles
+  ...imagesStyles,
 };
 
 class SectionExamples extends React.Component {
@@ -127,7 +127,7 @@ class SectionExamples extends React.Component {
 }
 
 SectionExamples.propTypes = {
-  classes: PropTypes.object
+  classes: PropTypes.object,
 };
 
 export default withStyles(styles)(SectionExamples);

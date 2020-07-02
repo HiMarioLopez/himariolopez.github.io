@@ -1,24 +1,8 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   title,
   description,
   mrAuto,
-  mlAuto
+  mlAuto,
 } from "assets/jss/material-kit-pro-react.jsx";
 import imagesStyles from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
 
@@ -32,16 +16,16 @@ const servicesStyle = {
   mrAuto,
   mlAuto,
   textCenter: {
-    textAlign: "center!important"
+    textAlign: "center!important",
   },
   office: {
     "& img": {
-      margin: "20px 0px"
-    }
+      margin: "20px 0px",
+    },
   },
   imgRaised,
   rounded,
-  imgFluid
+  imgFluid,
 };
 
 export default servicesStyle;

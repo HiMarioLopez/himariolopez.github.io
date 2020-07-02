@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   roseColor,
   primaryColor,
@@ -24,30 +8,30 @@ import {
   blackColor,
   whiteColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
-const navPillsStyle = theme => ({
+const navPillsStyle = (theme) => ({
   root: {
     marginTop: "20px",
     paddingLeft: "0",
     marginBottom: "0",
-    overflow: "visible !important"
+    overflow: "visible !important",
   },
   flexContainer: {
     [theme.breakpoints.down("xs")]: {
       display: "flex",
-      flexWrap: "wrap"
-    }
+      flexWrap: "wrap",
+    },
   },
   displayNone: {
-    display: "none !important"
+    display: "none !important",
   },
   fixed: {
-    overflow: "visible !important"
+    overflow: "visible !important",
   },
   horizontalDisplay: {
-    display: "block"
+    display: "block",
   },
   pills: {
     float: "left",
@@ -67,30 +51,30 @@ const navPillsStyle = theme => ({
     lineHeight: "24px",
     textTransform: "uppercase",
     fontSize: "12px",
-    fontWeight: "500"
+    fontWeight: "500",
   },
   pillsWithIcons: {
-    borderRadius: "4px"
+    borderRadius: "4px",
   },
   tabIcon: {
     width: "30px",
     height: "30px",
     display: "block",
-    margin: "15px 0 !important"
+    margin: "15px 0 !important",
   },
   horizontalPills: {
     width: "100%",
     float: "none !important",
     "& + button": {
-      margin: "10px 0"
-    }
+      margin: "10px 0",
+    },
   },
   contentWrapper: {
     marginTop: "20px",
     "& .react-swipeable-view-container > div > div": {
       paddingLeft: "15px",
-      paddingRight: "15px"
-    }
+      paddingRight: "15px",
+    },
   },
   primary: {
     "&,&:hover": {
@@ -101,8 +85,8 @@ const navPillsStyle = theme => ({
         hexToRgb(blackColor) +
         ", 0.14), 0 7px 10px -5px rgba(" +
         hexToRgb(primaryColor[0]) +
-        ", 0.4)"
-    }
+        ", 0.4)",
+    },
   },
   info: {
     "&,&:hover": {
@@ -113,8 +97,8 @@ const navPillsStyle = theme => ({
         hexToRgb(blackColor) +
         ", 0.14), 0 7px 10px -5px rgba(" +
         hexToRgb(successColor[0]) +
-        ", 0.4)"
-    }
+        ", 0.4)",
+    },
   },
   success: {
     "&,&:hover": {
@@ -127,8 +111,8 @@ const navPillsStyle = theme => ({
         hexToRgb(successColor[0]) +
         ", 0.2), 0 1px 5px 0 rgba(" +
         hexToRgb(successColor[0]) +
-        ", 0.12)"
-    }
+        ", 0.12)",
+    },
   },
   warning: {
     "&,&:hover": {
@@ -139,8 +123,8 @@ const navPillsStyle = theme => ({
         hexToRgb(blackColor) +
         ", 0.14), 0 7px 10px -5px rgba(" +
         hexToRgb(warningColor[0]) +
-        ", 0.4)"
-    }
+        ", 0.4)",
+    },
   },
   danger: {
     "&,&:hover": {
@@ -151,8 +135,8 @@ const navPillsStyle = theme => ({
         hexToRgb(blackColor) +
         ", 0.14), 0 7px 10px -5px rgba(" +
         hexToRgb(warningColor[0]) +
-        ", 0.4)"
-    }
+        ", 0.4)",
+    },
   },
   rose: {
     "&,&:hover": {
@@ -163,16 +147,16 @@ const navPillsStyle = theme => ({
         hexToRgb(blackColor) +
         ", 0.14), 0 7px 10px -5px rgba(" +
         hexToRgb(roseColor[0]) +
-        ", 0.4)"
-    }
+        ", 0.4)",
+    },
   },
   alignCenter: {
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   tabLabelContainer: {
-    padding: "unset !important"
-  }
+    padding: "unset !important",
+  },
 });
 
 export default navPillsStyle;

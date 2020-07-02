@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   coloredShadow,
@@ -25,7 +9,7 @@ import {
   whiteColor,
   roseColor,
   grayColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 import imageStyles from "assets/jss/material-kit-pro-react/imagesStyles.jsx";
@@ -41,10 +25,10 @@ const styles = {
   ...imageStyles,
   ...rotatingCards,
   sectionGray: {
-    background: grayColor[14]
+    background: grayColor[14],
   },
   sectionWhite: {
-    background: whiteColor
+    background: whiteColor,
   },
   cardTitleAbsolute: {
     ...cardTitle,
@@ -53,7 +37,8 @@ const styles = {
     left: "15px !important",
     color: whiteColor + " !important",
     fontSize: "1.125rem !important",
-    textShadow: "0 2px 5px rgba(" + hexToRgb(grayColor[9]) + ", 0.5) !important"
+    textShadow:
+      "0 2px 5px rgba(" + hexToRgb(grayColor[9]) + ", 0.5) !important",
   },
   cardTitleWhite: {
     "&, & a": {
@@ -61,15 +46,15 @@ const styles = {
       marginTop: ".625rem",
       marginBottom: "0",
       minHeight: "auto",
-      color: whiteColor + " !important"
-    }
+      color: whiteColor + " !important",
+    },
   },
   cardCategory: {
     marginTop: "10px",
     "& svg": {
       position: "relative",
-      top: "8px"
-    }
+      top: "8px",
+    },
   },
   cardCategorySocial: {
     marginTop: "10px",
@@ -78,12 +63,12 @@ const styles = {
       position: "relative",
       marginTop: "-4px",
       top: "2px",
-      marginRight: "5px"
+      marginRight: "5px",
     },
     "& svg": {
       position: "relative",
-      top: "5px"
-    }
+      top: "5px",
+    },
   },
   cardCategorySocialWhite: {
     marginTop: "10px",
@@ -93,45 +78,45 @@ const styles = {
       position: "relative",
       marginTop: "-4px",
       top: "2px",
-      marginRight: "5px"
+      marginRight: "5px",
     },
     "& svg": {
       position: "relative",
-      top: "5px"
-    }
+      top: "5px",
+    },
   },
   cardCategoryWhite: {
     marginTop: "10px",
-    color: "rgba(" + hexToRgb(whiteColor) + ", 0.7)"
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.7)",
   },
   cardCategoryFullWhite: {
     marginTop: "10px",
-    color: whiteColor
+    color: whiteColor,
   },
   cardDescription: {
-    ...description
+    ...description,
   },
   cardDescriptionWhite: {
-    color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)"
+    color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)",
   },
   author: {
     display: "inline-flex",
     "& a": {
-      color: grayColor[1]
-    }
+      color: grayColor[1],
+    },
   },
   authorWhite: {
     display: "inline-flex",
     "& a": {
-      color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)"
-    }
+      color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)",
+    },
   },
   avatar: {
     width: "30px",
     height: "30px",
     overflow: "hidden",
     borderRadius: "50%",
-    marginRight: "5px"
+    marginRight: "5px",
   },
   statsWhite: {
     color: "rgba(" + hexToRgb(whiteColor) + ", 0.8)",
@@ -142,7 +127,7 @@ const styles = {
       marginRight: "3px",
       marginLeft: "3px",
       fontSize: "18px",
-      lineHeight: "18px"
+      lineHeight: "18px",
     },
     "& svg": {
       position: "relative",
@@ -150,8 +135,8 @@ const styles = {
       marginRight: "3px",
       marginLeft: "3px",
       width: "18px",
-      height: "18px"
-    }
+      height: "18px",
+    },
   },
   stats: {
     color: grayColor[0],
@@ -162,7 +147,7 @@ const styles = {
       marginRight: "3px",
       marginLeft: "3px",
       fontSize: "18px",
-      lineHeight: "18px"
+      lineHeight: "18px",
     },
     "& svg": {
       position: "relative",
@@ -170,13 +155,13 @@ const styles = {
       marginRight: "3px",
       marginLeft: "3px",
       width: "18px",
-      height: "18px"
-    }
+      height: "18px",
+    },
   },
   justifyContentCenter: {
     WebkitBoxPack: "center !important",
     MsFlexPack: "center !important",
-    justifyContent: "center !important"
+    justifyContent: "center !important",
   },
   iconWrapper: {
     color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)",
@@ -188,34 +173,34 @@ const styles = {
     lineHeight: "174px",
     "& .fab,& .fas,& .far,& .fal,& .material-icons": {
       fontSize: "55px",
-      lineHeight: "55px"
+      lineHeight: "55px",
     },
     "& svg": {
       width: "55px",
-      height: "55px"
-    }
+      height: "55px",
+    },
   },
   iconWrapperColor: {
-    borderColor: "rgba(" + hexToRgb(whiteColor) + ", 0.25)"
+    borderColor: "rgba(" + hexToRgb(whiteColor) + ", 0.25)",
   },
   iconWhite: {
-    color: whiteColor
+    color: whiteColor,
   },
   iconRose: {
-    color: roseColor[0]
+    color: roseColor[0],
   },
   iconInfo: {
-    color: infoColor[0]
+    color: infoColor[0],
   },
   marginTop30: {
-    marginTop: "30px"
+    marginTop: "30px",
   },
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   marginBottom20: {
-    marginBottom: "20px"
-  }
+    marginBottom: "20px",
+  },
 };
 
 export default styles;

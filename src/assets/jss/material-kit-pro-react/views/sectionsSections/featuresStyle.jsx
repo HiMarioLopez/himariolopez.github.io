@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import {
   container,
   mlAuto,
@@ -22,7 +6,7 @@ import {
   description,
   blackColor,
   whiteColor,
-  hexToRgb
+  hexToRgb,
 } from "assets/jss/material-kit-pro-react.jsx";
 
 const features = {
@@ -33,24 +17,24 @@ const features = {
   description,
   features1: {
     textAlign: "center",
-    padding: "80px 0"
+    padding: "80px 0",
   },
   features2: {
-    padding: "80px 0"
+    padding: "80px 0",
   },
   features3: {
     padding: "80px 0",
     "& $phoneContainer": {
       maxWidth: "220px",
-      margin: "0 auto"
-    }
+      margin: "0 auto",
+    },
   },
   features4: {
     padding: "80px 0",
     "& $phoneContainer": {
       maxWidth: "260px",
-      margin: "60px auto 0"
-    }
+      margin: "60px auto 0",
+    },
   },
   features5: {
     padding: "80px 0",
@@ -59,12 +43,12 @@ const features = {
     backgroundRepeat: "no-repeat",
     position: "relative",
     "& $title": {
-      marginBottom: "30px"
+      marginBottom: "30px",
     },
     "& $title,& $container": {
       position: "relative",
       zIndex: "2",
-      color: whiteColor
+      color: whiteColor,
     },
     "&:after": {
       background: "rgba(" + hexToRgb(blackColor) + ",0.55)",
@@ -74,48 +58,48 @@ const features = {
       content: "''",
       zIndex: "0",
       left: "0px",
-      top: "0px"
+      top: "0px",
     },
     "& $container": {
       "& $gridContainer:last-child": {
         "& $gridItem": {
-          borderBottom: "0"
-        }
+          borderBottom: "0",
+        },
       },
       "& $gridItem": {
         border: "1px solid rgba(" + hexToRgb(whiteColor) + ", 0.35)",
         borderTop: "0",
         borderLeft: "0",
         "&:last-child": {
-          borderRight: "0"
-        }
-      }
+          borderRight: "0",
+        },
+      },
     },
     "& $infoArea5": {
       textAlign: "center",
       maxWidth: "310px",
       minHeight: "320px",
       "& h4,& p,& svg,& .fab,& .fas,& .far,& .fal,& .material-icons": {
-        color: whiteColor
-      }
-    }
+        color: whiteColor,
+      },
+    },
   },
   gridContainer: {},
   gridItem: {},
   textCenter: {
-    textAlign: "center"
+    textAlign: "center",
   },
   phoneContainer: {
     "& img": {
-      width: "100%"
-    }
+      width: "100%",
+    },
   },
   infoArea: {
     maxWidth: "none",
     margin: "0 auto",
-    padding: "10px 0 0px"
+    padding: "10px 0 0px",
   },
-  infoArea5: {}
+  infoArea5: {},
 };
 
 export default features;

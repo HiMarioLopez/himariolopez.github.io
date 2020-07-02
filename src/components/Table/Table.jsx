@@ -1,19 +1,3 @@
-/*!
-
-=========================================================
-* Material Kit PRO React - v1.7.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import cx from "classnames";
 import PropTypes from "prop-types";
@@ -42,7 +26,7 @@ function CustomTable({ ...props }) {
     striped,
     tableShopping,
     customHeadCellClasses,
-    customHeadClassesForCells
+    customHeadClassesForCells,
   } = props;
   return (
     <div className={classes.tableResponsive}>
@@ -60,7 +44,7 @@ function CustomTable({ ...props }) {
                     [customHeadCellClasses[
                       customHeadClassesForCells.indexOf(key)
                     ]]: customHeadClassesForCells.indexOf(key) !== -1,
-                    [classes.tableShoppingHead]: tableShopping
+                    [classes.tableShoppingHead]: tableShopping,
                   });
                 return (
                   <TableCell className={tableCellClasses} key={key}>
@@ -83,7 +67,7 @@ function CustomTable({ ...props }) {
             const tableRowClasses = cx({
               [classes.tableRowHover]: hover,
               [classes[rowColor + "Row"]]: rowColored,
-              [classes.tableStripedRow]: striped && key % 2 === 0
+              [classes.tableStripedRow]: striped && key % 2 === 0,
             });
             if (prop.total) {
               return (
@@ -155,7 +139,7 @@ function CustomTable({ ...props }) {
                       [classes[colorsColls[coloredColls.indexOf(key)]]]:
                         coloredColls.indexOf(key) !== -1,
                       [customCellClasses[customClassesForCells.indexOf(key)]]:
-                        customClassesForCells.indexOf(key) !== -1
+                        customClassesForCells.indexOf(key) !== -1,
                     });
                   return (
                     <TableCell className={tableCellClasses} key={key}>
@@ -181,7 +165,7 @@ CustomTable.defaultProps = {
   customCellClasses: [],
   customClassesForCells: [],
   customHeadCellClasses: [],
-  customHeadClassesForCells: []
+  customHeadClassesForCells: [],
 };
 
 CustomTable.propTypes = {
@@ -193,7 +177,7 @@ CustomTable.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
+    "gray",
   ]),
   tableHead: PropTypes.arrayOf(PropTypes.string),
   // Of(PropTypes.arrayOf(PropTypes.node)) || Of(PropTypes.object),
@@ -208,7 +192,7 @@ CustomTable.propTypes = {
   customHeadClassesForCells: PropTypes.arrayOf(PropTypes.number),
   striped: PropTypes.bool,
   // this will cause some changes in font
-  tableShopping: PropTypes.bool
+  tableShopping: PropTypes.bool,
 };
 
 export default withStyles(style)(CustomTable);
