@@ -5,12 +5,12 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MarioLopezBaylor/mario-personal-website.git"
+    "url": "git+https://github.com/mariolopezmartinez/mario-personal-website.git"
   },
   "author": "Mario Arturo Lopez Martinez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MarioLopezBaylor/mario-personal-website/issues"
+    "url": "https://github.com/mariolopezmartinez/mario-personal-website/issues"
   },
   "homepage": "https://www.malopez.dev/",
   "private": false,
