@@ -19,7 +19,7 @@ import academicsSection from "assets/jss/material-kit-pro-react/views/sections/s
 // In-line Styles
 const baylorShadowStyle = {
   backgroundImage: `url(${baylorPng})`,
-  opacity: "1"
+  opacity: "1",
 };
 const utsaShadowStyle = { backgroundImage: `url(${utsaPng})`, opacity: "1" };
 const universityBrandStyle = { paddingBottom: "3vh" };
@@ -74,7 +74,7 @@ function SectionAcademics({ ...props }) {
                       </a>
                     </h3>
                     <p className={classes.author}>
-                      <b>Major GPA: 3.30 / 4.00</b>
+                      <b>Major GPA: 3.24 / 4.00</b>
                     </p>
                     <div>
                       <b>Notable Coursework:</b>
