@@ -61,36 +61,13 @@ class SectionAboutMe extends React.Component {
                   justIcon
                   simple
                   name="Mario's GitHub Profile"
-                  href="https://github.com/MarioLopezBaylor"
+                  href="https://github.com/mariolopezmartinez"
                   rel="noreferrer"
                   target="_blank"
                   color="github"
                   className={classes.margin5}
                 >
                   <i className="fab fa-github" />
-                </Button>
-                <Button
-                  justIcon
-                  simple
-                  name="Mario's Facebook Profile"
-                  href="https://www.facebook.com/Mario.Lopez.Arturo"
-                  target="_blank"
-                  color="facebook"
-                  className={classes.margin5}
-                >
-                  <i className="fab fa-facebook" />
-                </Button>
-                <Button
-                  justIcon
-                  simple
-                  name="Mario's Twitter Profile"
-                  href="https://twitter.com/mariolopez_dev"
-                  rel="noreferrer"
-                  target="_blank"
-                  color="twitter"
-                  className={classes.margin5}
-                >
-                  <i className="fab fa-twitter" />
                 </Button>
               </div>
             </div>
