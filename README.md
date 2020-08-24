@@ -1,11 +1,11 @@
-# [Mario Lopez Martinez's Personal Website](https://malopez.dev) 
+# [Mario Lopez Martinez's Personal Website](https://malopez.dev)
 
- ![version](https://img.shields.io/badge/version-2.0.0-blue.svg)  
+![version](https://img.shields.io/badge/version-2.0.0-blue.svg)
 
 Welcome to my personal website!
 
-I had a fancy React site, but I got tired of maintaining it. So this is now my new landing page. 
-I found this template and shamlesly copied it from Brandon Leafman (https://www.brandonleafman.com/). 
+I had a fancy React site, but I got tired of maintaining it. So this is now my new landing page.
+I found this template and shamlesly copied it from Brandon Leafman (https://www.brandonleafman.com/).
 
 Thanks, Brandon!
 
@@ -32,48 +32,46 @@ Questions/comments/issues = just email or find me on Twitter. Have fun!
 AJ
 aj@lkn.io | @ajlkn
 
-
 The Scrolling Background:
 
-	This relies entirely on CSS to do its thing, which is cool, but that makes
-	changing it a bit weird/tricky at first. You can still use pretty much any image
-	you want, but for best results make sure yours is:
+    This relies entirely on CSS to do its thing, which is cool, but that makes
+    changing it a bit weird/tricky at first. You can still use pretty much any image
+    you want, but for best results make sure yours is:
 
-	- Horizontally tileable.
-	- Wide and short.
-	- About 1500px wide.
-	- Fades to a solid color either at the top of bottom (which is used to fill
-	  the empty space above or below your image).
+    - Horizontally tileable.
+    - Wide and short.
+    - About 1500px wide.
+    - Fades to a solid color either at the top of bottom (which is used to fill
+      the empty space above or below your image).
 
-	Now, there are two ways to use it: with CSS, or with Sass:
+    Now, there are two ways to use it: with CSS, or with Sass:
 
-	CSS:
+    CSS:
 
-		Look for this line in css/style.css (line 108 as of this writing):
+    	Look for this line in css/style.css (line 108 as of this writing):
 
-			background: #348cb2 url("images/bg.jpg") bottom left;
+    		background: #348cb2 url("images/bg.jpg") bottom left;
 
-		and use it to set the page background color, URL, and placement of
-		your image. It should be as close to 1500px wide as you can get it.
+    	and use it to set the page background color, URL, and placement of
+    	your image. It should be as close to 1500px wide as you can get it.
 
-	Sass:
+    Sass:
 
-		Set the value of $bg to the page background color, URL, and placement
-		of your image. Change $bg-width if your image is something other than
-		1500px wide.
-
+    	Set the value of $bg to the page background color, URL, and placement
+    	of your image. Change $bg-width if your image is something other than
+    	1500px wide.
 
 Credits:
 
-	Background Image:
-		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
-			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
+    Background Image:
+    	Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
+    		"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+    Icons:
+    	Font Awesome (fontawesome.io)
 
-	Other:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+    Other:
+    	Responsive Tools (github.com/ajlkn/responsive-tools)
 
 ---
 
@@ -110,10 +108,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE B
    4. to Distribute and Publicly Perform Adaptations.
    5.
 
-      For the avoidance of doubt:
-         1. Non-waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme cannot be waived, the Licensor reserves the exclusive right to collect such royalties for any exercise by You of the rights granted under this License;
-         2. Waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme can be waived, the Licensor waives the exclusive right to collect such royalties for any exercise by You of the rights granted under this License; and,
-         3. Voluntary License Schemes. The Licensor waives the right to collect royalties, whether individually or, in the event that the Licensor is a member of a collecting society that administers voluntary licensing schemes, via that society, from any exercise by You of the rights granted under this License.
+   For the avoidance of doubt: 1. Non-waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme cannot be waived, the Licensor reserves the exclusive right to collect such royalties for any exercise by You of the rights granted under this License; 2. Waivable Compulsory License Schemes. In those jurisdictions in which the right to collect royalties through any statutory or compulsory licensing scheme can be waived, the Licensor waives the exclusive right to collect such royalties for any exercise by You of the rights granted under this License; and, 3. Voluntary License Schemes. The Licensor waives the right to collect royalties, whether individually or, in the event that the Licensor is a member of a collecting society that administers voluntary licensing schemes, via that society, from any exercise by You of the rights granted under this License.
 
 The above rights may be exercised in all media and formats whether now known or hereafter devised. The above rights include the right to make such modifications as are technically necessary to exercise the rights in other media and formats. Subject to Section 8(f), all rights not expressly granted by Licensor are hereby reserved.
 
