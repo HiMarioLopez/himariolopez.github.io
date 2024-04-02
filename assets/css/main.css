@@ -238,7 +238,7 @@ a:hover {
   background-color: rgba(50, 50, 50, 0.75);
 }
 
-.icon > .label {
+.icon>.label {
   display: none;
 }
 
@@ -646,7 +646,7 @@ a:hover {
   text-align: center;
   top: -1em;
   vertical-align: middle;
-  width: 90%;
+  width: 75%;
 }
 
 #header h1 {
@@ -808,26 +808,18 @@ a:hover {
 /* Footer */
 
 #footer {
-  background-image: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.5) 75%
-  );
-  background-image: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.5) 75%
-  );
-  background-image: -ms-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.5) 75%
-  );
-  background-image: linear-gradient(
-    top,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.5) 75%
-  );
+  background-image: -moz-linear-gradient(top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%);
+  background-image: -webkit-linear-gradient(top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%);
+  background-image: -ms-linear-gradient(top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%);
+  background-image: linear-gradient(top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5) 75%);
   bottom: 0;
   cursor: default;
   height: 6em;
