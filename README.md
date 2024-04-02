@@ -1,10 +1,10 @@
 # [Mario Lopez Martinez's Personal Website](https://mariolopez.org)
 
-![version](https://img.shields.io/badge/version-2.0.0-blue.svg)
+![version](https://img.shields.io/badge/version-2.4.0-blue.svg)
 
 Welcome to my personal website!
 
-I had a fancy React site, but I got tired of maintaining it. So this is now my new landing page. I found this template and shamelessly copied it from Brandon Leafman (https://www.brandonleafman.com/).
+I had a fancy React site, but I got tired of maintaining it. So this is now my new landing page. I found this template and shamelessly copied it from Brandon Leafman (<https://www.brandonleafman.com/>).
 
 Thanks, Brandon!
 
