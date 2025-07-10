@@ -3,6 +3,7 @@
 *.iml
 .vscode/
 .vs/
+.DS_Store
 
 # Logs
 logs
